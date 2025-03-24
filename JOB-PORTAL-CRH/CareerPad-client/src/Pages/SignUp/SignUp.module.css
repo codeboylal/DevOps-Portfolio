@@ -1,0 +1,221 @@
+body {
+    overflow-y: none;
+    height: 100vh;
+    overflow-x: none;
+  }  
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5FAFF;
+    padding: 20px;
+}
+
+.loginForm {
+    background-color: #F5FAFF;
+    display: flex;
+    max-width: max-content;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+.leftTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.getStarted{
+    color:#4B4B4B;
+    font-size: 64px; 
+    font-weight: 500; 
+    text-align: center;
+}
+.about{
+    color: #2A85FE;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.input {
+    width: 620.98px;
+    height: 48px;
+    padding: 10px;
+    padding-left: 30px;
+    margin-bottom: 19px;
+    border: .5px solid #DFDFDF;
+    background-color: #FFFFFF;
+    color: #4B4B4B;
+    border-radius: 8px;
+    outline: 0;
+}
+
+.button {
+    width: 620.98px;
+    height: 36px;
+    padding: 5px;
+    background-color: #2A85FE;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+}
+.bottomLabel{
+    font-size: 20px;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.savePasswordDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    color: #888;
+}
+
+.checkbox {
+    cursor: pointer;
+    position: relative;
+    top: 1.5px;
+}
+
+.label {
+    font-size: 12px;
+}
+
+.checkLabel {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.leftContainer {
+    padding: 20px;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 521.01px;
+    height: 579px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .loginContainer {
+        flex-direction: row;
+    }
+
+    .loginForm {
+        flex-direction: row;
+        max-width: max-content;
+    }
+
+    .leftContainer {
+        min-width: 250px;
+        padding: 20px;
+    }
+    .image {
+        width: 521px;
+        display: block;
+    }
+}
+
+.leftBottom{
+    font-weight: 400;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+    gap: 3px;
+}
+.bluecolor{
+    color: #2A85FE;
+
+}
+.inputGroup{
+    margin-top: 5px;
+}
+
+.blurred {
+    pointer-events: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1001;
+}
+
+.modalContent button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modalContent button:hover {
+    background-color: #0056b3;
+}
+.imgDEs {
+    width: 100%;
+    height: 363px;
+    object-fit: inherit; 
+    display: block;
+  }
+.botImage{
+    width: 100px;
+    height: 100px;
+}
+
+.disFlex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

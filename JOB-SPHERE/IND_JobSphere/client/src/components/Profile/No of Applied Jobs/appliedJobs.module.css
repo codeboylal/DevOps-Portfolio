@@ -1,0 +1,185 @@
+.card {
+    background-color: white; /* White background */
+    border-radius: 12px; /* Rounded corners to match the design */
+    padding: 20px; /* Padding for space inside the card */
+    /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); Soft shadow to give depth */
+    box-shadow: 0px 4px 4px #00000040;
+    width: 400px; /* Width of the card */
+    text-align: left; /* Align text to the left */
+    margin-right: 5px;
+  }
+  
+  .title {
+    font-size: 20px;
+    color: #2A85FE; /* Blue color for the title */
+    font-weight: 500px;
+    margin: 0;
+  }
+  
+  .count {
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676; /* Light grey color for the number */
+    margin-top: 8px; /* Space between title and count */
+  }
+  
+
+
+
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2A85FE; /* Adjust as needed */
+  }
+  
+  .count {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: #767676;
+    margin-bottom: 5px;
+  }
+  
+  .jobList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .jobItem {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0;
+  }
+  
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .jobTitle {
+    font-weight: 400;
+    line-height: 19.36px;
+    font-size: 16px;
+    color: #001220;
+  }
+  
+  .companyName {
+    font-size: 14px;
+    color: #555; /* Adjust color as needed */
+  }
+  
+  .companyInfo {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    color: #4B4B4B; /* Adjust color as needed */
+    /* margin-bottom: 8px; */
+  }
+  
+  .dot {
+    margin: 0 5px;
+  }
+  
+  /* .readMore {
+    background-color: #2A85FE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+   */
+
+
+   .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Make sure it spans the available width */
+  }
+  
+  .appliedToday {
+    height: 31px;
+    width: 100px;
+    font-size: 12px;
+    color: #767676;
+    background-color: #F1F1F1;
+    /* color: white; */
+    padding: 5px 9px 5px 9px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Space between Applied Today and Read More */
+    
+  }
+  
+  .appliedToday .icon {
+    margin-right: 5px;
+  }
+  
+  .readMore {
+    background-color: #2A85FE;
+    height: 31px;
+    width: 140px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 6px 12px 6px 12px;
+
+    
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+  }
+  
+
+.jobAndLength{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.pagination button {
+  background-color: #2A85FE;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #b0c4de; /* Light gray for disabled state */
+  /* cursor: not-allowed; */
+/* } */
+
+/* .pagination span {
+  margin: 0 10px;
+  font-size: 14px;
+} */ 
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.pageDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

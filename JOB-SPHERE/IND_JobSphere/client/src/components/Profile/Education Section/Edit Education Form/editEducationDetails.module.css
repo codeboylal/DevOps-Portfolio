@@ -1,0 +1,152 @@
+
+.educationForm {
+    padding: 20px;
+    background-color: white;
+    border-radius: 24px;
+    width: 688px;
+    /* height: 500px; */
+    /* max-width: 688px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+    /* margin-bottom: 15px; */
+  }
+
+  .time{
+    color: #767676;
+  }
+
+  .headline{
+    color: #2A85FE;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .typeClass{
+    color:#001220;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+
+  .diplomaCheckbox{
+    color: #767676;
+  }
+  .dropBox{
+color: #767676;
+  }
+  
+  .inputClass, .selectClass {
+    /* padding: 10px; */
+    /* border: 1px solid #BDBDBD; */
+    /* border-radius: 5px; */
+    flex: 1;
+    /* outline: 0; */
+  }
+
+  .marksClass{
+    padding: 10px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    height: 36px;
+    width: 649px;
+    /* flex: 1; */
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .saveButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancelButton {
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+
+  .educationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons {
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction: row-reverse; */
+
+  }
+  
+
+  .saveButton {
+    background-color: #2A85FE;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2A85FE;
+    border-radius: 8px;
+    width: 76px;
+    height: 37px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.5px;
+  }
+  
+  .saveButton:hover {
+    background-color: #0d47a1;
+  }
+  
+  
+  .cancelButton {
+    background-color: transparent;
+    border: 1px solid #4B4B4B;
+    display: flex;
+    align-items: center;
+    width: 76px;
+    height: 37px;
+    justify-content: center;
+    border-radius: 8px;
+    color: #4B4B4B;
+    font-weight: 400;
+    line-height: 24.5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .errorText{
+    color: red;
+    font-size: 12px;
+  }
+
+  .cancelButton:hover {
+    background-color: #f5f5f5;
+  }
+  
+
+
+  

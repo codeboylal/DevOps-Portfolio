@@ -1,0 +1,68 @@
+.eduDiv{
+    width: 100%;
+    min-height: max-content;
+    /* padding: 24px 0px; */
+    border-radius: 24px;
+    color: #FF702D;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.eduItem{
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: #001220;
+    justify-content: space-between;
+}
+
+.eduItem:hover{
+    background-color: #FFF7F3;
+    cursor: pointer;
+}
+
+.visibleState{
+    visibility: hidden;
+}
+
+.eduItem:hover .visibleState{
+    visibility: visible;
+}
+
+/* tranisiton div */
+
+.content {
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.open {
+    max-height: 100%; /* Adjust height based on your content */
+    opacity: 1;
+    transform: translateY(0);
+    padding-bottom: 20px;
+}
+
+.closed {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease-in-out;
+}
+
+.bioDesc {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}

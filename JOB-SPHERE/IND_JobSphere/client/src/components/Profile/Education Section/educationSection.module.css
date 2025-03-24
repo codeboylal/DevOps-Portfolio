@@ -1,0 +1,95 @@
+/* src/Education.module.css */
+.container {
+    border: 1px solid #e0e0e0;
+    border-radius: 24px;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 4px 4px #00000040;
+
+
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .header {
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: #2A85FE;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .headline{
+    color: #2A85FE;
+  }
+
+  .icon {
+    font-size: 16px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .details {
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+  }
+  
+  .item {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    font-weight: 400;
+    color: #001220;
+    font-size: 16px;
+
+  }
+  
+  .institution {
+    font-weight: 400;
+    color: #001220;
+    font-size: 16px;
+
+  }
+  
+  .info {
+    color: #767676;
+    font-size: 16px;
+  }
+  
+
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  /* background: white; */
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  max-width: 600px;
+  z-index: 1001;
+}

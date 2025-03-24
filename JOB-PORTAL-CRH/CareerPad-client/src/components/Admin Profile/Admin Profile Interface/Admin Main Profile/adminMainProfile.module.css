@@ -1,0 +1,28 @@
+/* body{
+    background-color: #F0F5FA;
+}
+
+.mainContainer{
+    padding: 30px;
+}
+.profileContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(217, 216, 216);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#afafaf,#949494);
+    border-radius: 13px;
+} */

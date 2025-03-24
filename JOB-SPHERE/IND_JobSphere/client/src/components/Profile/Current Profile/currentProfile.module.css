@@ -1,0 +1,125 @@
+/* src/PersonalDetails.module.css */
+*{
+  font-family: Inter;
+}
+.container {
+  border: 1px solid #e0e0e0;
+  border-radius: 24px;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 4px 4px #00000040;
+
+  position: relative;
+  margin-left: 10px;
+}
+.heading{
+  color: #2A85FE;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+.header {
+  /* font-size: 20px; */
+  /* font-weight: 500; */
+  color: #2A85FE;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 16px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #001220;
+  font-weight: 400;
+  gap: 200px;
+}
+
+.column {
+  width: 48%;
+  /* margin-top: 20px */
+  /* padding-top: 20px; */
+}
+
+.row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  font-weight: 600;
+  color: #555;
+}
+
+.value {
+  color: #000;
+}
+
+.link {
+  color: #2A85FE;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+.careerHeading{
+  color:#767676;
+  font-size: 16px;
+  font-weight: 400;
+  /* padding-top: 30px */
+  /* padding: auto; */
+  /* pad */
+  /* margin-bottom: 50px */
+  
+}
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  z-index: 999; /* Make sure it's above other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modalContent {
+  /* background: #fff; */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 60%; /* Set width according to your design */
+  max-width: 600px;
+  z-index: 1001;
+}
+
+/* Close Button */
+.closeButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}

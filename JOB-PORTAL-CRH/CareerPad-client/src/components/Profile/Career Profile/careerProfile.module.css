@@ -1,0 +1,69 @@
+/* src/PersonalDetails.module.css */
+.container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  width: 870px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  position: relative;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2A85FE;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 16px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #001220;
+  gap: 200px;
+}
+
+.column {
+  width: 48%;
+}
+
+.row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  font-weight: 600;
+  color: #555;
+}
+
+.value {
+  color: #000;
+}
+
+.link {
+  color: #2A85FE;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+.careerHeading{
+  color:#767676;
+  font-size: 16px;
+  font-weight: 400;
+}

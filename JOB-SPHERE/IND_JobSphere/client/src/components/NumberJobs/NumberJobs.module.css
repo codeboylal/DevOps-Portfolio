@@ -1,0 +1,22 @@
+.jobNumberdes{
+    font-size: 20px;
+    font-weight: 500;
+    font-family:  Arial, sans-serif;
+    display: flex;
+    gap: 5px;
+    color: #001220;
+    align-items: center;
+}
+.recentJobButton{
+    background: transparent;
+    color: #7E7E7E;
+    border: 1px solid #7E7E7E;
+    padding: 8px 25px 8px 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.recentJobButton:hover{
+    cursor: pointer;
+}

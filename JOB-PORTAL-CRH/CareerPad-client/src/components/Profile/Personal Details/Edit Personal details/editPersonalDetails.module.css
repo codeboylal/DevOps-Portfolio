@@ -1,0 +1,227 @@
+/* Modal overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+}
+.custom-select {
+  max-height: 150px;
+  overflow-y: auto; /* This allows scrolling when the dropdown exceeds max height */
+}
+
+/* Modal window */
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 709px;
+  /* width: 100%; */
+  /* height: 685px; */
+  min-height: max-content;
+  border-radius: 24px;
+  padding: 32px;
+
+}
+
+/* Form container */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.headline{
+  color: #2A85FE;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #2A85FE;
+  margin-bottom: 16px;
+}
+
+.formGroup {
+  margin-bottom: 16px;
+  margin-top: 10px;
+  
+}
+
+.labelClass {
+  font-weight: 400;
+  font-size: 16px;
+  /* margin-bottom: 8px; */
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.textInput {
+  width: 300px;
+  height: 36px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.permanentAdd{
+  width: 624px;
+  height: max-content;
+  border-radius: 8px;
+ padding: 10px;
+
+
+
+  /* border: 1px; */
+  /* padding: 10px, 16px,10px,16px; */
+  border: 1px solid #BDBDBD;
+  color: black;
+}
+.permanentAdd::placeholder{
+  position: absolute;
+  top: 10px;
+}
+.permanentAdd:focus{
+  outline: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+
+/* Radio and button groups */
+.radioGroup {
+  display: flex;
+  gap: 12px;
+
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Gender and other buttons */
+.button {
+  background-color: white;
+  border: 1px solid #767676;
+  /* font-family: Inter; */
+  color: #767676;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover , .active {
+  background-color: #E4F1FF;
+  border: 1px solid #2A85FE;
+  color: #2A85FE;
+}
+
+
+.dropdown {
+  padding: 8px;
+  padding-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  /* background-color: #; */
+  height: 36px;
+  width: 210px;
+}
+
+.dobGroup {
+  display: flex;
+  gap: 8px;
+}
+
+/* Country dropdown and list */
+.countryDropdown {
+  width: 624px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight:400px;
+  /* background-color: #E4F1FF; */
+}
+
+.selectedCountries {
+  margin-top: 8px;
+}
+
+.countryList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.countryItem {
+  display: inline-block;
+  margin-right: 8px;
+  /* background-color: #E4F1FF; */
+  padding: 4px 8px;
+  border-radius: 5px;
+  background-color: #E4F1FF;
+  color: #2A85FE;
+  border: 1px solid #2A85FE;
+}
+
+.removeButton {
+  margin-left: 4px;
+  /* color: red; */
+  background-color: #E4F1FF;
+  cursor: pointer;
+  border: none;
+  color: #2A85FE;
+}
+
+/* Address and pincode alignment */
+.AddressAndPincode {
+  display: flex;
+  gap: 16px;
+}
+
+/* Footer buttons */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+
+.saveButton {
+  background-color: #2A85FE;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.saveButton:hover {
+  background-color: #0d47a1;
+}
+
+.cancelButton {
+  background-color: transparent;
+  border: 1px solid #767676;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #767676;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancelButton:hover {
+  background-color: #f5f5f5;
+}

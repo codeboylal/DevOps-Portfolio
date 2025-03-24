@@ -1,0 +1,207 @@
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+
+
+}
+
+.mainContainer{
+  border-radius: 10px;
+  box-shadow: 0px 3px 1.4px 0px #0000001A;
+}
+
+
+.tabTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  color: #4B4B4B;
+}
+
+.title {
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tabDivider {
+  width: 181px;
+  height: 1px;
+  color: #919191;
+  background-color: #e0e0e0;
+}
+
+.tabHeader {
+  display: flex;
+  /* justify-content: space-2between; */
+  /* align-items: center; */
+  cursor: pointer;
+  /* padding: 5px 0; */
+ 
+
+}
+
+.tabHeaderText {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  padding: 16px;
+  width: 100%;
+  /* max-width: 1240px; */
+  /* height: max-content; */
+  background-color: #FFFFFF;
+  /* border-radius: 10px; */
+  box-shadow: 0px 3px 1.4px 0px #0000001A;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  /* border-radius: 10px; */
+/* box-shadow: 0px 3px 1.4px 0px #0000001A; */
+
+}
+
+.readOrVid{
+  padding-top: 10px;
+
+}
+
+.iconAndIntro{
+  display: flex;
+  /* justify-content:center ; */
+}
+
+.introText {
+  font-size: 1em;
+}
+
+.downloadIcon {
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s ease;
+  margin-right: 10px;
+}
+
+.downloadIcon:hover {
+  color: #000;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+}
+
+.tabContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.tabContentOpen {
+  max-height: 100%; /* Increased to accommodate video height */
+  box-shadow: 0px 3px 1.4px 0px #0000001A;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+
+
+}
+
+.videoContainer {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+
+
+
+@media (max-width: 1500px) {
+  .tabContainer, .tabHeaderText, .tabContentOpen, .tabTitle {
+    width: 94%; 
+    margin: 0 10px; /* Further reduce side margins */
+  }
+
+  .title{
+    font-size: 20px;
+  }
+  .tabDivider{
+    width: 130px;
+  }
+}
+@media (max-width: 1350px) {
+  .tabContainer, .tabHeaderText, .tabContentOpen ,.tabTitle {
+    width: 88%; 
+    margin: 0 10px; /* Further reduce side margins */
+  }
+
+  .title{
+    font-size: 18px;
+  }
+  .tabDivider{
+    width: 130px;
+    /* padding-right:21px ; */
+  }
+}
+@media (max-width: 1200px) {
+  .tabContainer, .tabHeaderText, .tabContentOpen, .tabTitle {
+    width: 83.5%; 
+    margin: 0 10px; /* Further reduce side margins */
+
+  }
+
+  .title{
+    font-size: 18px;
+  }
+  .tabDivider{
+    width: 130px;
+    /* padding-right:21px ; */
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .tabContainer, .tabHeaderText, .tabContentOpen, .tabTitle {
+    width: 80.5%; 
+    margin: 0 10px; /* Further reduce side margins */
+
+  }
+
+  .title{
+    font-size: 12px;
+  }
+  .tabDivider{
+    width: 80px;
+    /* padding-right:21px ; */
+  }
+}
+
+
+@media (max-width: 900px) {
+  .tabContainer, .tabHeaderText, .tabContentOpen, .tabTitle {
+    width: 78%; 
+    margin: 0 10px; /* Further reduce side margins */
+
+  }
+
+  .title{
+    font-size: 12px;
+  }
+  .tabDivider{
+    width: 80px;
+    /* padding-right:21px ; */
+  }
+}
+
+
+
+

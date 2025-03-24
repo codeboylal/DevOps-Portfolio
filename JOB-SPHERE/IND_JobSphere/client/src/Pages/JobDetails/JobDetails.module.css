@@ -1,0 +1,102 @@
+.HeaderBottom{
+    background-color: #F0F5FA;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 30px;
+    /* align-items: center; */
+    /* justify-items: center; */
+    width: 1340px;
+}
+.DisplayJobs{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.jobFullDesContainer{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+.buttonDes{
+    background-color: #2A85FE;
+    color: white;
+    border: 0;
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.buttonDes:hover{
+    cursor: pointer;
+}
+.applyButtonApplied{
+    background-color: #1D963F;
+}
+.applyButtonApplied:hover{
+    cursor: not-allowed;
+}
+
+.paraText{
+    color: #4B4B4B;
+    font-weight: 400;
+    font-size: 14px;
+}
+.paraHeading{
+    color: #2A85FE;
+    font-weight: 500;
+    font-size: 16px;
+}
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.service{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px 6px 12px;
+    background-color: #EFF3F5;
+    border-radius: 8px;
+}
+.skill{
+    font-weight: 400;
+}
+
+.skillContainer{
+    display: flex;
+    align-items: center;
+}
+.dot {
+    height: 5px; 
+    width: 5px; 
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+
+  .levels {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .levelBadge {
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  

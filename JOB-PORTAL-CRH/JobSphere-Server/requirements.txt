@@ -1,0 +1,8 @@
+bcryptjs
+body-parser
+cors
+dotenv
+express
+jsonwebtoken
+mongoose
+multer

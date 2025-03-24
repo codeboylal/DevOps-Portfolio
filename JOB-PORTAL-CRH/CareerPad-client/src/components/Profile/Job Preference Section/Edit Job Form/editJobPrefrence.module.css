@@ -1,0 +1,297 @@
+/* editJobPreference.module.css */
+
+.form {
+  background-color: white;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* max-width: 600px; */
+  width: 688px;
+  height: max-content;
+  margin: 0 auto;
+  font-family: Inter;
+}
+.inputDES{
+  width: 100%;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  height: 40px;
+  outline: 0;
+  padding-left: 10px;
+}
+
+.heading {
+  font-size: 24px;
+  color: #2A85FE;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #001220;
+}
+
+.preinput {
+  width: calc(100% - 10px);
+  padding-bottom: 50px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  border: 1px solid #BDBDBD;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  font-weight: 400;
+  height: 624px;
+  height: 84px;
+}
+
+.lablePay{
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #001220;
+}
+
+.payInput{
+  width: calc(100% - 10px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #BDBDBD;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  font-weight: 400;
+  height: 556px;
+  height: 36px;
+  color: #767676;
+}
+
+.JobTypes{
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #001220;
+}
+
+.input:focus {
+  border-color: #2A85FE;
+}
+
+.shift{
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #001220;
+}
+.locationInputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.addLocationButton {
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.remoteLabel{
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #001220;
+}
+
+.addLocationButton:hover {
+  background-color: white;
+}
+
+.selectedLocations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.locationTag {
+  background-color: #e3f2fd;
+  color: #2A85FE;
+  border: 2px solid #2A85FE;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.removeLocationButton {
+  background: none;
+  border: none;
+  color: #2A85FE;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.removeLocationButton:hover {
+  color: #d32f2f;
+}
+
+.basePayWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.currency {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.checkboxGroup, .radioGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: px;
+  color: black;
+
+  /* background-color: black; */
+}
+
+.checkBoxInput {
+  background-color: #002B4E !important;
+  color: white;
+}
+
+.checkboxGroup div, .radioGroup div {
+  display: flex;
+  /* align-items: center; */
+  /* min-width: 150px; Adjust this for alignment */
+  gap: 10px;
+
+}
+
+.checkboxGroup label, .radioGroup label {
+  /* margin-left: 5px; */
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.cancelButton {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.checkBoxInput {
+  width: 15px;
+  height: 15px;
+  accent-color: black;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  accent-color: black;
+}
+
+
+.cancelButton:hover {
+  background-color: #f5f5f5;
+}
+
+.saveButton {
+  background-color: #2A85FE;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.saveButton:hover {
+  background-color: #0d47a1;
+}
+
+
+
+
+
+
+.heads{
+  display:flex ;
+  flex-direction: column;
+
+}
+.salaryWrapper {
+  display: flex;
+  flex-direction: column; 
+}
+
+.currencySalary {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 8px; 
+}
+
+.currencySelect {
+  width: 80px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding-left: 10px;
+  background-color: #fff;
+}
+
+.salaryInput {
+  width: 530px;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.salaryWrapper input:focus, .salaryWrapper select:focus {
+  outline: none;
+  border-color: #767676;
+}
+
+
+
+.headings{
+  font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+/* line-height: 19.36px; */
+text-align: left;
+margin-top: 8px;
+color: #001220;
+
+}

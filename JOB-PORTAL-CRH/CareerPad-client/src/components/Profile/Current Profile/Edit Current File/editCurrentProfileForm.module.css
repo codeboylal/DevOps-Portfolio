@@ -1,0 +1,247 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    width: 688px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.inputField {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    /* margin-bottom: 15px; */
+    
+    
+}
+
+.inputField .inputCurrentProfile {
+    width: 300px;
+    /* height: 36px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #767676;
+    font-size: 1rem;
+    outline: 0; */
+}
+
+.checkboxContainer, .radioContainer, .locationContainer {
+    /* margin-bottom: 20px; */
+    width: 100%;
+}
+
+
+.inlineFields {
+    display: flex;
+    gap: 20px; /* Adjust the space between fields */
+    margin-bottom: 15px;
+}
+
+.inputField {
+    flex: 1;
+}
+
+
+.checkboxContainer h4, .radioContainer h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.checkboxContainer label, .radioContainer label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.checkboxContainer input, .radioContainer input {
+    margin-right: 5px;
+}
+
+.locationContainer input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.locationTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.locationTag {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.salaryContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.salaryContainer select {
+    margin-right: 10px;
+    height: 36px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.salaryContainer input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    /* flex-direction: row-reverse; */
+    gap: 10px;
+    width: 100%;
+}
+.saveButton {
+    background-color: #2A85FE;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .saveButton:hover {
+    background-color: #0d47a1;
+  }
+  .cancelButton {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+  }
+.cancelButton:hover {
+    background-color: #f5f5f5;
+  }
+
+
+
+
+  /* editCurrentProfileForm.module.css */
+
+.formContainer {
+    /* Your existing form container styles */
+    position: relative; /* Ensure the dropdown stays within the form */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the form */
+    border-radius: 24px; /* Rounded corners for the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the form */
+}
+
+.inputCurrentProfile {
+    margin-bottom: 16px; /* Margin between fields */
+}
+
+/* Enhanced Dropdown Styles */
+.dropdown {
+    position: absolute; /* Absolute positioning for overlay */
+    z-index: 1000; /* High z-index for overlay effect */
+    max-height: 250px; /* Maximum height for dropdown */
+    overflow-y: auto; /* Scroll for long lists */
+    width: 300px; /* Match parent width with padding compensation */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for visibility */
+    border: 1px solid #e0e0e0; /* Light border */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 8px; /* Small gap between field and dropdown */
+    padding: 4px 0; /* Vertical padding for dropdown */
+    font-family: Arial, sans-serif; /* Consistent font */
+    font-size: 14px; /* Slightly larger font */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for appearance */
+    opacity: 1; /* Initially visible */
+}
+
+/* Dropdown animation on open/close */
+.dropdown-closed {
+    opacity: 0; /* Hide the dropdown when closed */
+    pointer-events: none; /* Prevent interaction */
+}
+
+/* List item styles */
+.dropdown .MuiListItem-root {
+    padding: 10px 16px; /* Spacing inside each item */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Consistent font size */
+    color: #333; /* Darker text color */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effects */
+}
+
+/* List item hover effect */
+.dropdown .MuiListItem-root:hover {
+    background-color: #f5f5f5; /* Slightly darker background on hover */
+    color: #0073e6; /* Change text color on hover */
+    border-left: 4px solid #0073e6; /* Indicator on hover */
+}
+
+/* Style the list container */
+.dropdown .MuiList-root {
+    padding: 0; /* Remove default padding */
+}
+
+/* Scrollbar styles for the dropdown */
+.dropdown::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded edges for the thumb */
+}
+
+.dropdown::-webkit-scrollbar-thumb:hover {
+    background-color: #9e9e9e; /* Darker on hover */
+}
+
+.dropdown::-webkit-scrollbar-track {
+    background-color: #f5f5f5; /* Lighter track */
+}
+
+/* TextField styles */
+.inputCurrentProfile .MuiOutlinedInput-root {
+    background-color: #fff; /* White background */
+    border-radius: 4px; /* Rounded corners */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+}
+
+.inputCurrentProfile .MuiOutlinedInput-root:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+.inputCurrentProfile .MuiOutlinedInput-root.Mui-focused {
+    box-shadow: 0 0 8px rgba(0, 115, 230, 0.3); /* Blue shadow when focused */
+    border-color: #0073e6; /* Blue border when focused */
+}

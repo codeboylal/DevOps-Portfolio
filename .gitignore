@@ -29,10 +29,3 @@ coverage/
 
 # Ignore dependency directories
 vendor/
-
-# Ignore specific directories containing .git
-CRH-DEVOPS/BACKUP-CRH-LMS-FINAL-DEPLOY/CRH-VPS-DEPLOY/
-JOB-PORTAL-CRH/CareerPad-client/
-JOB-PORTAL-CRH/JobSphere-Server/
-JOB-SPHERE/IND_JobSphere/
-WORDPRESS - CONTAINERIZATION/

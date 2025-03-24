@@ -1,0 +1,62 @@
+.instructorItem{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+
+.notificationDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0px 4px 5.3px 0px #00000026;
+    width: 609px;
+    /* height: 322px; */
+    min-height: 322px;
+    height: auto;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #FFFFFF;
+}
+
+
+@media (max-width: 1500px) {
+
+    .notificationDiv{
+        width: 1076px;
+
+      }
+  
+
+}
+
+/* Adjust .analysisDownloads layout for specific screen widths */
+@media (max-width: 1300px) {
+    .notificationDiv {
+        width: 955px;
+
+      }
+}
+
+/* Adjust .analysisDownloads layout for specific screen widths */
+@media (max-width: 1200px) {
+    .notificationDiv {
+        width: 837px;
+
+      }
+}
+
+/* Additional breakpoints for finer control */
+@media (max-width: 1100px) {
+    .notificationDiv{
+        width: 717px;
+
+      }
+}
+
+@media (max-width: 900px) {
+    .notificationDiv {
+        width: 539px;
+
+      }
+}

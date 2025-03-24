@@ -1,0 +1,93 @@
+
+.modalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3); /* Dimmed background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* background:fixed; */
+}
+
+
+
+/* Form Container */
+.formContainer {
+    background-color: white;
+    width: 688px;
+    height: 361;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+/* Form Title */
+.formTitle {
+    color: #2A85FE;
+    font-size: 26px;
+    margin-bottom: 20px;
+    
+}
+
+/* 
+.textArea {
+    width: 624px;
+    height: 191px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #767676;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    resize: none;
+    outline: none;
+} */
+
+/* Button Container */
+.buttonContainer {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row-reverse;
+    column-gap: 10px;
+    width: 100%;
+    /* padding: 0 16px; */
+}
+
+.cancelButton {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+.cancelButton:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .saveButton {
+    background-color: #2A85FE;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .saveButton:hover {
+    background-color: #0d47a1;
+  }
+
+
+
+  

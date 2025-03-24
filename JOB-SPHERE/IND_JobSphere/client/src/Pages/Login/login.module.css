@@ -1,0 +1,190 @@
+body {
+    /* overflow-y: auto; */
+    height: 100vh;
+  }  
+.centerDiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    background-color: #F5FAFF;
+}
+.imgDEs {
+    width: 100%;
+    height: 363px;
+    object-fit: inherit; 
+    display: block;
+  }
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;    
+    width:1200px;
+    background-color: #F5FAFF;  
+    border-radius: 10px;
+}
+
+.loginForm {
+    background-color: #fff;
+    display: flex;
+    min-width: 1200px;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.welcome {
+    color: #4B4B4B;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.logintoAccount {
+    color: #2A85FE;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.leftTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: 0;
+    height: 48px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 38%;
+    transform: translateY(-50%);
+    color: black;
+}
+.iconVisiblePass{
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    transform: translateY(-50%);
+    color: black;
+}
+.savePasswordDiv {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    color: #888;
+}
+
+.checkbox {
+    cursor: pointer;
+    position: relative;
+    top: 1.5px;
+}
+
+.label {
+    font-size: 20px;
+}
+
+.checkLabel {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.leftContainer {
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 40%;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .loginContainer {
+        flex-direction: row;
+    }
+
+    .loginForm {
+        flex-direction: row;
+    }
+
+    .leftContainer {
+        padding: 20px;
+    }
+    .image {
+        display: block;
+    }
+    .input{
+        width: 100%;
+    }
+}
+
+.leftBottom{
+    font-weight: 400;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    gap: 3px;
+}
+.bluecolor{
+    color: #2A85FE;
+
+}
+.botImage{
+    width: 100px;
+    height: 100px;
+}
+.disFlex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

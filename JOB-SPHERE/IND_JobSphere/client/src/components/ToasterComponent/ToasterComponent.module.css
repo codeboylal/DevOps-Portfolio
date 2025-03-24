@@ -1,0 +1,46 @@
+.toaster {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: max-content;
+    min-width: 200px;
+    max-width: 100%;
+    z-index: 1000;
+  }
+  
+  .toasterMessage {
+    padding-right: 10px;
+    white-space: pre-line;
+  }
+  
+  .toasterClose {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .toaster.success {
+    background-color: #4caf50; /* Green for success */
+    color: white;
+  }
+  
+  .toaster.error {
+    background-color: #f44336; /* Red for error */
+    color: white;
+  }
+  
+  .toaster.info {
+    background-color: #2196f3; /* Blue for info */
+    color: white;
+  }
+  
+  .toaster.warning {
+    background-color: #ff9800; /* Orange for warning */
+    color: white;
+  }
+  
