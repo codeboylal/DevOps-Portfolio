@@ -1,0 +1,47 @@
+.wave-loader {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  /* perspective: 500px; */
+  height: 100%;
+}
+
+.cube {
+  width: 30px; /* Smaller cubes */
+  height: 30px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 1.5s infinite ease-in-out;
+}
+
+.square {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(45deg, #FF8C00, #FF4500);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* Positioning the squares to form a cube */
+.square:nth-child(1) { transform: rotateY(0deg) translateZ(15px); }
+.square:nth-child(2) { transform: rotateY(90deg) translateZ(15px); }
+.square:nth-child(3) { transform: rotateY(180deg) translateZ(15px); }
+.square:nth-child(4) { transform: rotateY(-90deg) translateZ(15px); }
+.square:nth-child(5) { transform: rotateX(90deg) translateZ(15px); }
+.square:nth-child(6) { transform: rotateX(-90deg) translateZ(15px); }
+
+/* Keyframes for smooth 3D rotation */
+@keyframes rotateCube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}

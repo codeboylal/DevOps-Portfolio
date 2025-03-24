@@ -1,0 +1,44 @@
+{
+    "id": "2b7888dd-de3e-4cf5-8114-49bf36b41d8f",
+    "webhook": {
+        "id": "2b7888dd-de3e-4cf5-8114-49bf36b41d8f",
+        "userid": 89090937,
+        "team_id": 9016623030,
+        "endpoint": "https://036b-38-137-53-149.ngrok-free.app/api/webhooks/trigger",
+        "client_id": "pk_89090937_F647LNTDWOJJ1AZNFR3UZZGBZ2OKZL3A",
+        "events": [
+            "taskCreated",
+            "taskUpdated",
+            "taskDeleted",
+            "taskPriorityUpdated",
+            "taskStatusUpdated",
+            "taskAssigneeUpdated",
+            "taskDueDateUpdated",
+            "taskTagUpdated",
+            "taskMoved",
+            "taskCommentPosted",
+            "taskCommentUpdated",
+            "taskTimeEstimateUpdated",
+            "taskTimeTrackedUpdated",
+            "listCreated",
+            "listUpdated",
+            "listDeleted",
+            "folderCreated",
+            "folderUpdated",
+            "folderDeleted",
+            "spaceCreated",
+            "spaceUpdated",
+            "spaceDeleted"
+        ],
+        "task_id": null,
+        "list_id": null,
+        "folder_id": null,
+        "space_id": null,
+        "view_id": null,
+        "health": {
+            "status": "active",
+            "fail_count": 0
+        },
+        "secret": "HJ4V8MAHVV9X7ZUEKRWI6GULGSJFJPFERH4ZHK4SU88D7YHMOAF9HXK2H6TTFV6O"
+    }
+}

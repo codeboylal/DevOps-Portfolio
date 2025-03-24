@@ -1,0 +1,42 @@
+
+services:
+  client:
+    container_name: client-container
+    build:
+      context: ./LMS-Client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80" 
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: "512M"
+    depends_on:
+      - server
+    networks:
+      - lms-networks 
+
+  server:
+    container_name: server-container
+    build:
+      context: ./LMS-Server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000" 
+    env_file:
+      - ./LMS-Server/.env 
+    environment:
+      - MONGODB_URI=${MONGODB_URI} 
+      - JWT_SECRET=${JWT_SECRET}
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: "2048M"
+    networks:
+      - lms-networks
+
+networks:
+  lms-networks:
+    driver: bridge

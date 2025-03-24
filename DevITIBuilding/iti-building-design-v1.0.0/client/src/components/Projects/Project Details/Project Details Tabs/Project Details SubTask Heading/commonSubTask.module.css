@@ -1,0 +1,47 @@
+/* .container {
+    font-family: Arial, sans-serif;
+  } */
+  
+  .tabContainer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border-bottom: 1px solid #e0e0e0; */
+  }
+  
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    color: #b0b0b0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .tab.active {
+    color: #000000;
+    font-weight: 600;
+  }
+  
+  .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: transform 0.3s ease;
+  }
+  
+  .subtaskDetails {
+    /* margin-top: 20px; */
+    font-size: 16px;
+    color: #333333;
+  }
+  
+
+
+
+

@@ -1,0 +1,235 @@
+.pointer{
+    cursor: pointer;
+}
+
+.containerContact {
+    z-index: 2;
+    width: 100%;
+    max-width: 1240px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    padding: 0 16px;
+}
+
+.querySelect {
+    color: inherit;
+    height: 36px;
+    min-height: 45px;
+    border-color: inherit;
+}
+
+.placeholderOption {
+    color: #767676;
+}
+
+.option {
+    color: black;
+}
+
+.errorLabel {
+    display: block;
+    color: red;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.hiddenInput {
+    display: none;
+}
+
+.ratingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ratingLabel {
+    color: #767676;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.ratingIcons {
+    height: 24px;
+    color: #FF702D;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    /* padding-top: 124px; */
+  }
+  
+  .contentContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 16px; /* Gap between sidebar and content */
+    
+  }
+.mainDiv{
+    display:flex;
+    flex-direction:column; 
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 24px;
+}
+
+.divInput{
+    width: 98.5%;
+    max-width: 1179px;
+    /* height: 534px; */
+    height: max-content;
+    border-radius: 24px;
+    position: relative;
+    top: 70px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.inputDivTop{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inputDes {
+    width: 100%;
+    min-height: 170px; /* minimum height */
+    max-height: 400px; /* maximum height, adjust as needed */
+    border-radius: 8px;
+    border: 1px solid #BDBDBD;
+    font-weight: 400;
+    outline: 0;
+    font-size: 16px;
+    color: #767676;
+    padding: 10px 16px;
+    overflow-y: auto; /* enable scrolling when max-height is reached */
+    resize: none; /* disable manual resizing */
+    white-space: normal; /* ensure words break properly */
+    word-wrap: break-word; /* wrap long words */
+    /* border: 1px solid #ccc; */
+    transition: border-color 0.3s ease;
+}
+/* .placeholderRed::placeholder {
+    color: red;
+} */
+
+.pointer {
+    cursor: pointer;
+    color: gray; /* Default color */
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .selectedPointer {
+    cursor: pointer;
+    color: #FF702D;
+    transform: scale(1.1); /* Slightly enlarge the selected icon */
+  }
+  
+
+.focused {
+    /* border-color: orange; */
+    border: 2px solid orange;
+  }
+  
+.chooseFileOuterBox{
+    width: 280px;
+    height: 150px;
+    border: 1px dotted #767676;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chooseFile{
+    border: 1px solid #FF702D;
+    color: #FF702D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    width: 127px;
+    height: 37px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chooseFile:hover{
+    cursor: pointer;
+}
+
+.ButtonDes{
+    color: white;
+    background-color: #FF702D;
+    border-radius: 8px;
+    border: 0;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+/* 
+@media (max-width: 1200px) {
+    .containerContact {
+        max-width: 950px;
+    }
+} */
+
+/* @media (max-width: 992px) {
+    .containerContact {
+        max-width: 780px;
+    }
+} */
+
+
+/* Add to your CSS file */
+
+.selectContainer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.selectElement {
+    width: 100%;
+    padding-right: 24px; /* Add space for the icon */
+    appearance: none; /* Hide the default icon */
+}
+
+.selectContainer::after {
+    content: url('./dropdown.svg'); /* Use the content property with the image URL */
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjust this value to add more padding */
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents clicks on the icon */
+  
+    /* Optional: Adjust the size of the image */
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+  }
+  

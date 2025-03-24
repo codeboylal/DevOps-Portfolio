@@ -1,0 +1,15 @@
+.filterButton{
+    border: 1px solid #BBBBBB;
+    padding: 6px 27px;
+    border-radius: 8px;
+    color: #7E7E7E;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pointer{
+    cursor: pointer;
+}

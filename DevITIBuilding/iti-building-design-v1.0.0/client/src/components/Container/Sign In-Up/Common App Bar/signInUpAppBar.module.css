@@ -1,0 +1,19 @@
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8; /* Light grey background */
+    height: 60px; /* Adjust height as necessary */
+  }
+  
+  .iconAndText {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+  }
+  
+  .icon {
+    height: 42px; 
+    width: 158px;  
+  }
+  

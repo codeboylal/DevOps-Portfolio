@@ -1,0 +1,56 @@
+
+
+// V1 - Working pipeline
+
+pipeline {
+    agent any
+
+    environment {
+        REPO_URL = 'https://github.com/codeboylal/CRH-ITI-Project-Deploy.git'
+        BRANCH_NAME = 'new-stag'
+        CREDENTIALS_ID = 'iti-github-jenkins'
+        DOCKER_COMPOSE_FILE = 'docker-compose.yml'
+    }
+
+    stages {
+        stage('Code Fetch') {
+            steps {
+                echo 'Fetching code from GitHub'
+                checkout([$class: 'GitSCM', 
+                    branches: [[name: "*/${BRANCH_NAME}"]], 
+                    userRemoteConfigs: [[url: REPO_URL, credentialsId: CREDENTIALS_ID]]
+                ])
+            }
+        }
+
+
+        stage('Build and Deploy') {
+            steps {
+                echo 'Using the secret `.env` file from Jenkins'
+
+                // Use the secret .env file securely from Jenkins credentials
+                withCredentials([file(credentialsId: 'env-file', variable: 'SECRET_ENV_FILE')]) {
+                    echo 'Stopping existing containers and cleaning up unused Docker objects'
+
+                    // Secure handling of Docker commands and secret file
+                    sh script: """
+                        docker-compose down || true
+                        docker system prune -f || true
+                        docker-compose --env-file \$SECRET_ENV_FILE up --build -d --remove-orphans
+                    """
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline execution completed.'
+        }
+    }
+}
+
+
+
+
+

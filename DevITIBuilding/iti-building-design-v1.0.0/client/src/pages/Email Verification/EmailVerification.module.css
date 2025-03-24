@@ -1,0 +1,12 @@
+.mainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.appbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

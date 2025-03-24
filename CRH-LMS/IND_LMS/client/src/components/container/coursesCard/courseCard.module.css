@@ -1,0 +1,196 @@
+.pointer {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.alignItems {
+    align-items: center;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.alignFlexEnd {
+    align-items: flex-end;
+}
+
+.fontWeight400 {
+    font-weight: 400;
+}
+
+.fontWeight500 {
+    font-weight: 500;
+}
+
+.fontWeight700 {
+    font-weight: 700;
+}
+
+.color4B4B4B {
+    color: #4B4B4B;
+}
+
+.none {
+    display: none;
+}
+
+.gap16px {
+    gap: 1rem;
+}
+
+.cardDiv {
+    max-width: 23.35rem;
+    width: 100%;
+    min-height: 32rem;
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px .3312rem 0px #00000026;
+    position: relative;
+}
+
+.enrollMinHeight {
+    min-height: 36.3188rem;
+}
+
+.img {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    width: 100%;
+    height: 16.5938rem;
+    object-fit: fill;
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.p {
+    font-weight: 500;
+    font-size: .875rem;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.gap6px {
+    gap: .375rem;
+}
+
+.label {
+    font-size: .875rem;
+}
+
+.button {
+    padding: .375rem .75rem;
+    border-radius: .5rem;
+    color: white;
+}
+
+.orangeButton {
+    background-color: #FF702D;
+}
+
+.reviewButton{
+    background-color: #ff6f2d80;
+    border: 1px solid #FF702D;
+}
+
+.purchasedButton{
+    background-color: #1d963f60;
+    border: 1px solid #1D963F;
+}
+
+.goToButton {
+    background-color: #1D963F;
+}
+
+.ruppe {
+    color: #FF702D;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.contentBottom {
+    position: absolute;
+    bottom: 1.5rem;
+    width: 100%;
+    padding: 0px 1.5rem;
+    left: 0rem;
+}
+
+.borderRadius50px {
+    border-radius: 3.125rem;
+}
+
+.line {
+    height: .375rem;
+    width: 100%;
+}
+
+.progressLine {
+    background-color: #D9D9D9;
+}
+
+.filledProgress {
+    background-color: #FF702D;
+}
+
+.cut{
+    text-decoration: line-through;
+    text-decoration-color: #FF702D;
+}
+
+.free{
+    background-color: #1D963F;
+    padding: .375rem .75rem;
+    border-radius: .5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1274px) {
+    .cardDiv {
+        max-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 821px) {
+    .cardDiv {
+        max-width: calc(100%);
+    }
+}
+
+@media (max-width: 370px){
+    .difficulty{
+        display: none;
+    }
+}

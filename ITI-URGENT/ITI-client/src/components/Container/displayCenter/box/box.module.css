@@ -1,0 +1,40 @@
+.boxDiv{
+    width: 99%;
+    max-width: 1128px;
+    /* min-height: 308px; */
+    border-radius: 18px;
+    border: 1px solid #D8D8D8;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.imgMainDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* margin: 14px; */
+}
+
+
+@media (min-width: 900px) {
+    .imgMainDiv {
+        display: none;
+    }
+}
+@media (min-width: 900px) {
+    .boxDiv{
+        flex-direction: row;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .boxDiv {
+        flex-direction: column;
+    }
+}
+

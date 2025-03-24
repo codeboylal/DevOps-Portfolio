@@ -1,0 +1,124 @@
+/* .mainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 28px;
+    justify-content: center;
+
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 21px; 
+    margin-top: 1rem;
+
+}
+
+
+.card {
+    height: 10.2rem;
+    border-radius: 0.6rem; 
+    background-color: rgba(248, 248, 248, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5rem;
+}
+
+
+.icon {
+  
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgba(30, 30, 30, 1);
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: rgba(113, 113, 122, 1);
+} */
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 28px;
+    justify-content: flex-start; /* Ensure content aligns to the top */
+    height: calc(100vh - 174px); /* Set the height as specified */
+    overflow-y: auto; /* Add vertical scrolling */
+    padding-top: 0; /* Remove any extra padding at the top */
+}
+
+
+.cardContainer {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    gap: 21px; /* Add spacing between the cards */
+    margin-top: 0; /* Remove unnecessary margin from the top */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 21px); /* Allow the card to take 1/3 of the row, minus the gap */
+    max-width: calc(33.33% - 21px); /* Prevent the card from exceeding its share of the row */
+    height: 10.2rem;
+    border-radius: 0.6rem;
+    background-color: rgba(248, 248, 248, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    border: 2px solid transparent; /* Default transparent border */
+}
+
+.card:hover {
+    border-color: black; /* Set border color to black on hover */
+}
+
+.icon {
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgba(30, 30, 30, 1);
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: rgba(113, 113, 122, 1);
+}
+
+/* Add responsiveness with media queries */
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(50% - 21px); /* Switch to two cards per row on medium screens */
+        max-width: calc(50% - 21px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(100% - 21px); /* Switch to two cards per row on medium screens */
+        max-width: calc(100% - 21px);
+        padding-left: 15px;
+    }
+   
+    .cardContainer{
+        margin-left: 20px;
+    }
+}
+
+

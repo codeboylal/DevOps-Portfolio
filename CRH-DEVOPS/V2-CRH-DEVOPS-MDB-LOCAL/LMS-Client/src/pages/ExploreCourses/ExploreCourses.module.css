@@ -1,0 +1,100 @@
+.bodyDiv{
+    display: flex;
+    display:flex;
+    flex-direction:column; 
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.newClassDiv{
+    max-width: 1240px;
+    width: 98%;
+    display: flex;
+    position: relative;
+    top: 116px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    
+    /* padding-top: 124px; */
+  }
+  
+  .contentContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 16px; /* Gap between sidebar and content */
+    
+  }
+.mainDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.expCards{
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+
+@media (max-width: 1500px) {
+
+  .newClassDiv{
+    max-width: 1000px;
+    width: 98%;
+    column-gap: 34px;
+
+
+}
+
+
+}
+
+
+
+@media (max-width: 1400px) {
+
+  .newClassDiv{
+    max-width: 900px;
+    width: 98%;
+    column-gap: 34px;
+
+
+}
+}
+
+
+@media (max-width: 1300px) {
+
+  .newClassDiv{
+    max-width: 850px;
+    width: 98%;
+    column-gap: 34px;
+
+
+}
+}
+
+
+
+@media (max-width: 1100px) {
+
+  .newClassDiv{
+    max-width: 700px;
+    width: 98%;
+    column-gap: 34px;
+
+
+}
+}

@@ -1,0 +1,179 @@
+.pointer {
+    cursor: pointer;
+}
+
+.poupDiv {
+    max-width: 250px;
+    /* max-height: 424px; */
+    /* max-height: 256px; */
+    width: 100%;
+    /* height: max-content; */
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    /* padding: 1rem; */
+    font-weight: 500;
+    font-size: .875rem;
+    z-index: 999999999;
+    line-height: 1rem;
+    color: #020617;
+    /* display: flex; */
+    /* flex-direction: column; */
+    position: absolute;
+    /* top:20px; */
+    /* right: 90px; */
+}
+
+
+
+.statusCheckBox {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 1rem;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* gap: 1.125rem; */
+}
+
+.progressDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 168px;
+    background-color: #F5D451;
+    /* width: max-content; */
+    padding: 0rem 1rem;
+    border-radius: 2.5rem;
+    color: #000000;
+    size: .875rem;
+    margin-bottom: 1.125rem;
+}
+
+.chechkBoxDes {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #DADADA;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Heading {
+    display: none;
+    /* padding-bottom: 1rem; */
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+
+@media (max-width:900px) {
+    .poupDiv {
+        width: 100%;
+        max-width: 900px;
+        height: 300px;
+        /* max-height: 256; */
+        /* background: #000; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        border-radius: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+    }
+
+
+    .statusCheckBox {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: center;
+
+        gap: 1.125rem;
+    }
+
+
+
+    .Heading {
+        font-size: 18px;
+        font-weight: 700;
+        color: #020617;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* Align items vertically */
+        /* padding-bottom: 38px; Gap between the bottom border and content   */
+        border-bottom: 1px solid #E2E8F0;
+        margin-bottom: 1.2rem;
+    }
+
+    .Heading p {
+        margin: 0;
+        /* Reset default margin for <p> */
+    }
+
+    .progressDiv {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) {
+    .poupDiv {
+        padding-top: 1.2rem;
+        border: 1px solid #D8D8D8;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .poupDiv {
+        width: 100%;
+        max-width: 800px;
+        height: 300px;
+        /* max-height: 256; */
+        /* background: #000; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .statusCheckBox {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: center;
+
+        gap: 1.125rem;
+    }
+
+
+
+    .Heading {
+        font-size: 18px;
+        font-weight: 700;
+        color: #020617;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* Align items vertically */
+        /* padding-bottom: 38px; Gap between the bottom border and content */
+        border-bottom: 1px solid #E2E8F0;
+        margin-bottom: 1.2rem;
+
+    }
+
+    .Heading p {
+        margin: 0;
+        /* Reset default margin for <p> */
+    }
+
+    .progressDiv {
+        width: 100%;
+    }
+}

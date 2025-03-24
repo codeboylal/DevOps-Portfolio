@@ -1,0 +1,68 @@
+.outerDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    margin-left: 26px;
+    margin-right: 7px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.contentDiv{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* gap: 29px; */
+    gap: 1rem;
+    width: 100%;
+
+}
+.filterSection{
+    width: 100%;
+    max-width: 467px;
+    margin-left: 20px;
+}
+.BottomBarDiv{
+    position: absolute;
+    bottom: 0;
+    left: -12px;
+    display: none;
+}
+
+@media (min-width: 1731px){
+    .filterSection{
+        background-color: #FFFFFF;
+        box-shadow: 0px 25px 50px -12px #0000001A;
+    }
+    .contentDiv{
+        width: 1128px;
+    }
+}
+
+@media (max-width: 1730px){
+    .filterSection{
+        display: none;
+    }
+    .outerDiv{
+        margin-left: 18px;
+    }
+}
+@media (max-width: 1150px){
+    .sideBarDiv{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    
+
+    .outerDiv{
+        margin: 0px;
+    }
+    .BottomBarDiv{
+        display: flex;
+    }
+}

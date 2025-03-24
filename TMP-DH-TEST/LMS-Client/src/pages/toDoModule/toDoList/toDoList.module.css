@@ -1,0 +1,183 @@
+.pointer{
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+.contentContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 16px;
+}
+.midDiv{
+    width: 98.5%;
+    max-width: 1227px;
+    min-height: 900px;
+    display: flex;
+    margin-top: 100px;
+    gap: 24px;
+    padding: 24px;
+    flex-direction: row;
+}
+
+
+.rightDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 892px;
+    width: 100%;
+}
+
+.rightTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 892px;
+    width: 100%;
+}
+
+.rightBottom{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0px 4.27px 6.41px 0px #00000017;
+    height: 795px;
+    max-width: 892px;
+    width: 100%;
+}
+
+.rightLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.backButton{
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightLeftTop{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    color: #FF702D;
+    height: 20px;
+    align-items: center;
+}
+
+.rightBottomTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 24px 12px 24px;
+}
+
+.toDoListLabel{
+    color: #121212;
+    font-weight: 600;
+    line-height: 29.74px;
+    font-size: 16px;
+}
+
+
+.listItems{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.listItem{
+    height: 67px;
+    width: 100%;
+    padding: 12px 24px;
+    color: #121212;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listItem:hover{
+    background-color: #FFF7F3;;
+}
+
+.iconItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    color: #BDBDBD;
+}
+
+.displayNone{
+    display: none;
+}
+
+.listItem:hover .displayNone{
+    display: block;
+}
+
+.gapBig{
+    gap: 24px;
+}
+
+.leftCards{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+
+
+
+/* check box */
+.inputDes {
+    appearance: none; /* Remove the default checkbox styles */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FF702D; /* Add a border to define the box */
+    border-radius: 4px; /* Optional: to give rounded corners */
+    background-color: #FF4B000F;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.inputDes:checked {
+    background-color: #FF702D; /* Ensure the background remains white */
+    border-color: #FF702D; /* Optional: adjust border color if needed */
+}
+
+.inputDes:checked::after {
+    content: ''; /* Add the checkmark */
+    width: 4.5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    transform: rotate(45deg);
+    display: inline-block;
+}

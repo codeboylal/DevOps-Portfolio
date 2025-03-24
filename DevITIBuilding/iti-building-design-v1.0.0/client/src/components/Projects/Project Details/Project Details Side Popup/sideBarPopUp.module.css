@@ -1,0 +1,244 @@
+/* Full-screen overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: flex-end; /* Align sidebar to the right */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; 
+  }
+  
+  /* Sidebar container */
+  .sidebar {
+    width: 350px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    z-index: 1000; /* Above the overlay */
+    box-shadow: -2px 0px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Close button */
+  .closeButton {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    align-self: flex-end;
+    transition: color 0.3s ease;
+  }
+  
+  .closeButton:hover {
+    color: #333;
+  }
+
+  .titleActionContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 1rem; */
+  }
+  
+  .titleContainer {
+    width: 150px;  /* Ensures text fits */
+    height: 69px;
+    padding: 12px;  /* Adds spacing */
+    background-color: #E2E8F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    /* font-weight: bold;  */
+    text-transform: capitalize; 
+    text-align: center;
+    overflow: hidden; /* Prevents text from overflowing */
+    /* margin-right: 1rem; */
+  }
+  
+  /* Document List Container */
+  .container {
+    display: flex;
+    /* flex-direction: column; */
+    /* padding-top: 14px; */
+    justify-content: center;
+    /* gap: 1rem; */
+    /* width: 419px; */
+    height: calc(100vh - 110px);
+
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    /* column-gap: 10px; */
+    margin: 0px 16px;
+    padding: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    height: auto;
+    margin-bottom: 16px;
+
+  }
+  
+  .details {
+    flex: 1;
+    margin-right: 1rem;
+  }
+  
+  .title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #1E293B;
+    margin: 0;
+    /* margin-right: 1; */
+
+  }
+  
+  .meta {
+    font-size: 0.8rem;
+    color: #888;
+    /* margin: 0; */
+    padding-top: 10px;
+  }
+  
+  .desContainer {
+    width: 120px;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    background-color: #e2e8f0;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 12px;
+    color: #1e293b;
+    text-align: center;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .actionButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #f9f9f9;
+    border: none;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+  }
+  
+  /* .actionButton:hover { */
+    /* background-color: #d1d1d1; */
+  /* } */
+  
+  
+
+
+
+  @media (max-width: 768px) {
+    .overlay {
+      justify-content: center; /* Center the sidebar on smaller screens */
+    }
+  
+    .sidebar {
+      width: 90%; /* Occupy most of the screen width */
+      padding: 1rem;
+    }
+  
+    .container {
+      width: 100%; /* Adjust container width */
+      gap: 0.5rem; /* Reduce gap between cards */
+      height: calc(100vh - 246px);
+    }
+  
+    .card {
+      flex-direction: row; 
+      /* align-items: flex-start; */
+      padding: 16px;
+      height: calc(100vh- 100px);
+      /* align-items: center; */
+
+    }
+  
+    .details {
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 0.5rem;
+    }
+  
+    .title {
+      font-size: 14px;
+      font-weight:500px ; 
+      
+    }
+
+    .titleActionContainer{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-content: center;
+
+    }
+
+    .titleContainer{
+      width: 150px;  /* Ensures text fits */
+      height: 69px;
+      padding: 12px; 
+      background-color: #E2E8F0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      /* font-weight: bold;  */
+      text-transform: capitalize; 
+      text-align: center;
+      overflow: hidden; /* Prevents text from overflowing */
+    /* margin-right: 1; */
+
+    
+    }
+  
+    .meta {
+      font-size: 0.75rem; 
+    }
+  
+    .desContainer {
+      width: 100%; /* Make description take full width */
+      margin-bottom: 0.5rem;
+    }
+  
+    .description {
+      font-size: 0.8rem; /* Adjust font size for mobile */
+      padding: 0.4rem;
+    }
+  
+    .actions {
+      width: 100%; /* Ensure action buttons align to full width */
+      justify-content: center; /* Distribute buttons evenly */
+    }
+  
+    .actionButton {
+      width: 28px;
+      height: 28px; /* Adjust button size */
+    }
+  }
+  

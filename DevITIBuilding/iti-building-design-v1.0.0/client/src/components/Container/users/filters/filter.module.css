@@ -1,0 +1,80 @@
+.pointer{
+    cursor: pointer;
+}
+
+.filtersMainDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0px 24px;
+}
+
+.bottomDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: calc(100vh - 110px);
+}
+
+.select{
+    outline: 0;
+    border: 1px solid #EDEEF0;
+    background-color: #F8F8F8;
+    border-radius: 6px;
+    height: 70px;
+    /* max-width: 332px; */
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #9999A0;
+    font-weight: 500;
+    font-size: 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.col16{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.subHeading{
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.optionsDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+
+.valueLabelDiv{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkBox{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E2E8F0;
+    border-radius: 3px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radius50{
+    border-radius: 50%;
+}

@@ -1,0 +1,247 @@
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useToaster } from "../../Toaster";
+
+import styles from "./bottomBar.module.css";
+import cx from "classnames";
+import LockUnverifiedPopUp from "../Container/lock-Unverified pop up/lock-Unverified pop up";
+import { getUserData } from "../../services/user/getUser";
+import { useAccessStore } from "../../hooks/access";
+
+function BottomBar({ active = "displayCenter" }) {
+  const setToast = useToaster();
+  const navigate = useNavigate();
+
+  const [id, setId] = useState(localStorage.getItem("id") || null);
+  // const [access, setAccess] = useState([]);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     getUserData({ userId: id })
+  //       .then((response) => {
+  //         // console.log(response?.data?.data?.access)
+  //         setAccess(response?.data?.data?.access);
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
+  //   };
+  //   if (id) {
+  //     fetchData();
+  //   }
+  // }, [id]);
+
+  const { access, nameDB, userImg, role, fetchAccess } = useAccessStore();
+
+  useEffect(() => {
+    if (id) {
+      fetchAccess(id, navigate);
+    }
+  }, [id, fetchAccess, navigate]);
+
+  const [module, setModule] = useState("")
+  const [lockPopUp, setLockPopUp] = useState(false);
+  const handleCheckAccess = (ind, nav, Module) => {
+    if (access?.length !== 0) {
+      if (access?.[ind]?.value) {
+        navigate(nav);
+      } else {
+        setModule(Module)
+        setLockPopUp(true);
+        return;
+      }
+    } else {
+      // console.log("no access");
+      // setToast(`Verifying your access to ${Module}`, "success");
+    }
+  };
+
+  return (
+    <div className={styles.div}>
+      <div
+        className={cx(styles.DivChild, {
+          [styles.projectsActive]: active === "projects",
+        })}
+        // onClick={() => {
+        //   navigate("/projects");
+        // }}
+        onClick={() => {
+          handleCheckAccess(3, "/projects", "Pre-Construction");
+        }}
+      >
+        <svg
+          className={cx(styles.imgDes, styles.projectsSVG)}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id={styles.projects}
+            d="M1.50075 4.95683C1.50075 4.19708 1.82325 3.46808 2.385 2.95658C2.95575 2.43833 3.699 2.19158 4.46925 2.26733C5.83425 2.39783 6.903 3.64433 6.903 5.10383V15.9016C6.15525 15.2618 5.193 14.9018 4.18575 14.9018C3.87075 14.9018 3.55275 14.9371 3.23475 15.0098C2.5845 15.1576 1.992 15.4636 1.5 15.8843L1.50075 4.95683Z"
+            fill="#BBBBBB"
+          />
+          <path
+            id={styles.projects}
+            d="M21.528 5.50806H8.34675V17.4203C8.34675 17.8463 8.0565 18.2123 7.64025 18.3113C7.233 18.4111 6.81 18.2146 6.62025 17.8381C6.051 16.6996 4.82325 16.1296 3.5565 16.4176C2.5905 16.6366 1.794 17.4323 1.575 18.3976C1.5285 18.5963 1.5045 18.7951 1.50075 18.9901V19.0433C1.50075 19.0531 1.5 19.0621 1.5 19.0726C1.5045 19.6756 1.70475 20.2456 2.08875 20.7271C2.60475 21.3743 3.37575 21.7456 4.20225 21.7456L21.5288 21.7463C22.065 21.7463 22.5008 21.3113 22.5008 20.7751V6.48006C22.5 5.94381 22.0643 5.50806 21.528 5.50806ZM10.9463 7.56756H14.5155C14.9138 7.56756 15.237 7.89081 15.237 8.28906C15.237 8.68731 14.9138 9.01056 14.5155 9.01056H10.9463C10.548 9.01056 10.2248 8.68731 10.2248 8.28906C10.2248 7.89081 10.5473 7.56756 10.9463 7.56756ZM10.224 10.7843C10.224 10.3861 10.5473 10.0628 10.9455 10.0628H12.4013C12.7995 10.0628 13.1228 10.3861 13.1228 10.7843C13.1228 11.1826 12.7995 11.5058 12.4013 11.5058H10.9455C10.5473 11.5058 10.224 11.1826 10.224 10.7843ZM19.2428 17.8343C19.2428 18.4583 18.7365 18.9646 18.1125 18.9646H12.7298C12.1058 18.9646 11.5995 18.4583 11.5995 17.8343V14.5471C11.5995 14.1736 11.784 13.8241 12.093 13.6133L14.784 11.7788C15.168 11.5171 15.6728 11.5171 16.0568 11.7788L18.7478 13.6133C19.0568 13.8241 19.2413 14.1736 19.2413 14.5471V17.8343H19.2428Z"
+            fill="#BBBBBB"
+          />
+        </svg>
+        <p id={styles.projectsText}>Preconstruct</p>
+      </div>
+      <div
+        className={cx(styles.DivChild, {
+          [styles.salesActive]: active === "sales",
+        })}
+        // onClick={() => {
+        //   navigate("/salespage");
+        // }}
+        onClick={() => {
+          handleCheckAccess(1, "/salespage", "Sales");
+        }}
+      >
+        <svg
+          className={cx(styles.imgDes, styles.salesSVG)}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id={styles.sales}
+            d="M12 13.4199C10.21 13.4199 8.75 14.8799 8.75 16.6699V22.4199H15.25V16.6699C15.25 14.8799 13.79 13.4199 12 13.4199Z"
+            fill="#BBBBBB"
+          />
+          <path
+            id={styles.sales}
+            d="M21.15 7.15996L14.15 2.25996C12.86 1.35996 11.13 1.35996 9.85 2.25996L2.85 7.15996C1.85 7.85996 1.25 9.00996 1.25 10.23V18.67C1.25 20.74 2.93 22.42 5 22.42H7.25V16.67C7.25 14.05 9.38 11.92 12 11.92C14.62 11.92 16.75 14.05 16.75 16.67V22.42H19C21.07 22.42 22.75 20.74 22.75 18.67V10.23C22.75 9.00996 22.15 7.85996 21.15 7.15996Z"
+            fill="#BBBBBB"
+          />
+        </svg>
+        <p id={styles.salesText}>Sales</p>
+      </div>
+      <div
+        className={cx(styles.DivChild, {
+          [styles.displayCenterActive]: active === "displayCenter",
+        })}
+        // onClick={() => {
+        //   navigate("/");
+        // }}
+        onClick={() => {
+          handleCheckAccess(0, "/", "Display Center");
+        }}
+      >
+        <svg
+          className={cx(styles.imgDes, styles.displayCenterSVG)}
+          viewBox="0 0 36 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id={styles.displayCenter}
+            d="M22.5 22.5C20.8431 22.5 19.5 23.8431 19.5 25.5V30C19.5 31.6569 20.8431 33 22.5 33H22.536C24.4157 33 26.0286 32.9013 27.3762 32.6018C28.741 32.2985 29.9241 31.7697 30.8469 30.8469C31.7697 29.9241 32.2985 28.741 32.6018 27.3762C32.7393 26.7573 32.83 26.1291 32.8896 25.4969C33.0451 23.8473 31.6569 22.5 30 22.5H22.5Z"
+            fill="#BBBBBB"
+          />
+          <path
+            id={styles.displayCenter}
+            d="M3 22.536V19.5C3 17.8431 4.34314 16.5 6 16.5H13.5C15.1569 16.5 16.5 17.8431 16.5 19.5V30C16.5 31.6569 15.1569 33 13.5 33H13.464C11.5843 33 9.97143 32.9013 8.62372 32.6018C7.25899 32.2985 6.07598 31.7697 5.15315 30.8469C4.23032 29.9241 3.70158 28.741 3.39828 27.3762C3.09876 26.0286 3 24.4157 3 22.536Z"
+            fill="#BBBBBB"
+          />
+          <path
+            id={styles.displayCenter}
+            d="M33 16.5C33 18.1569 31.6569 19.5 30 19.5H22.5C20.8431 19.5 19.5 18.1569 19.5 16.5V6C19.5 4.34314 20.8431 3 22.5 3H22.536C24.4157 3 26.0286 3.09876 27.3762 3.39828C28.741 3.70158 29.9241 4.23032 30.8469 5.15315C31.7697 6.07598 32.2985 7.25899 32.6018 8.62372C32.9013 9.97143 33 11.5843 33 13.464V16.5Z"
+            fill="#BBBBBB"
+          />
+          <path
+            id={styles.displayCenter}
+            d="M16.5002 6C16.5002 4.34315 15.1571 3 13.5002 3H13.4642C11.5845 3 9.97163 3.09876 8.62393 3.39828C7.2592 3.70158 6.07618 4.23032 5.15335 5.15315C4.23052 6.07598 3.70178 7.259 3.39848 8.62373C3.26092 9.2427 3.17014 9.87095 3.11054 10.5032C2.95507 12.1527 4.34335 13.5 6.0002 13.5H13.5002C15.1571 13.5 16.5002 12.1569 16.5002 10.5V6Z"
+            fill="#BBBBBB"
+          />
+        </svg>
+        <p id={styles.displayCenterText}>Display Center</p>
+      </div>
+      <div
+        className={cx(styles.DivChild, {
+          [styles.settingsActive]:
+            active === "settings" ||
+            active === "help" ||
+            active === "terms" ||
+            active === "Contractor Contacts" ||
+            active === "Profile",
+        })}
+        onClick={() => {
+          navigate("/settings");
+        }}
+      >
+        <svg
+          className={cx(styles.imgDes, styles.settingsSVG)}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id={styles.settings}
+            d="M18.3677 3.18739C18.1708 2.8523 17.8905 2.57393 17.554 2.3794C17.2175 2.18487 16.8364 2.08083 16.4477 2.07739H7.55273C7.16408 2.08083 6.78295 2.18487 6.44647 2.3794C6.10999 2.57393 5.82964 2.8523 5.63273 3.18739L1.18523 10.8899C0.987753 11.2319 0.883789 11.6199 0.883789 12.0149C0.883789 12.4098 0.987753 12.7978 1.18523 13.1399L5.63273 20.8124C5.82964 21.1475 6.10999 21.4259 6.44647 21.6204C6.78295 21.8149 7.16408 21.919 7.55273 21.9224H16.4477C16.8364 21.919 17.2175 21.8149 17.554 21.6204C17.8905 21.4259 18.1708 21.1475 18.3677 20.8124L22.8152 13.1099C23.0127 12.7678 23.1167 12.3798 23.1167 11.9849C23.1167 11.5899 23.0127 11.2019 22.8152 10.8599L18.3677 3.18739ZM15.7502 11.9999C15.7502 12.7416 15.5303 13.4666 15.1182 14.0833C14.7062 14.7 14.1205 15.1806 13.4353 15.4644C12.7501 15.7483 11.9961 15.8225 11.2686 15.6778C10.5412 15.5331 9.87303 15.176 9.34858 14.6515C8.82414 14.1271 8.46698 13.4589 8.32229 12.7315C8.17759 12.0041 8.25186 11.2501 8.53568 10.5648C8.81951 9.87961 9.30016 9.29394 9.91684 8.88188C10.5335 8.46983 11.2586 8.24989 12.0002 8.24989C12.9948 8.24989 13.9486 8.64498 14.6519 9.34824C15.3551 10.0515 15.7502 11.0053 15.7502 11.9999Z"
+            fill="#BBBBBB"
+          />
+        </svg>
+        <p id={styles.settingsText}>Settings</p>
+      </div>
+      <div
+        className={cx(styles.DivChild, {
+          [styles.inboxActive]: active === "inbox",
+        })}
+        onClick={() => {
+          navigate("/inbox");
+        }}
+      >
+        <svg
+          className={cx(styles.imgDes, styles.inboxSVG)}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clipPath="url(#clip0_1856_71)">
+            <mask
+              id="mask0_1856_71"
+              style={{ maskType: "luminance" }}
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="24"
+              height="24"
+            >
+              <path d="M0 0H24V24H0V0Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_1856_71)">
+              <path
+                id={styles.inbox}
+                d="M21.0851 5.00391L14.9845 10.04C13.252 11.4701 10.7486 11.4701 9.01619 10.04L2.91555 5.00391C2.81003 4.91677 2.18657 4.42029 1.47266 3.85451C2.31194 3.06316 3.44323 2.57812 4.6878 2.57812H19.3128C20.5305 2.57812 21.6397 3.04243 22.4731 3.80366C22.3742 3.8894 22.2782 3.97265 22.1859 4.0527C21.5973 4.56291 21.1591 4.94278 21.0851 5.00391Z"
+                fill="#BBBBBB"
+              />
+              <path
+                id={styles.inbox}
+                d="M23.2343 4.69727L15.8197 11.0523C13.6022 12.8829 10.3979 12.8829 8.18035 11.0523L0.669117 4.85078C0.36818 5.35047 0 5.72462 0 6.35842V16.7364C0 19.3252 2.09866 21.4239 4.68751 21.4239H19.3125C21.7396 21.4239 23.7358 19.5793 23.9758 17.2157C23.9918 17.0581 24 16.8982 24 16.7364V6.35842C24 5.68975 23.5789 5.22231 23.2343 4.69727Z"
+                fill="#BBBBBB"
+              />
+            </g>
+          </g>
+          <defs>
+            <clipPath id="clip0_1856_71">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <p id={styles.inboxText}>Inbox</p>
+      </div>
+      {lockPopUp && (
+        <LockUnverifiedPopUp
+          setLockUnverified={setLockPopUp}
+          pos={"relative"}
+          lockPopUp={false}
+          Module={module}
+        />
+      )}
+    </div>
+  );
+}
+
+export default BottomBar;

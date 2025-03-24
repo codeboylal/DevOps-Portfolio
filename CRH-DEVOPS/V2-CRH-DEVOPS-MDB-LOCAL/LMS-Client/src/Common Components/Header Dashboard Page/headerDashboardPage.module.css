@@ -1,0 +1,229 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px; /* Adjust as needed */
+    /* width: 1227px;  */
+
+    width: 100%; 
+
+    /* width: 90%;  */
+
+position:fixed;
+left: 0px;
+    /* padding: 10px; */
+    /* padding-right: 0px; */
+    background-color: white;
+    /* gap: 100px */
+
+    /* margin-left: 11%; */
+
+    /* margin-left: 210px; */
+
+    z-index: 20;
+
+  }
+
+
+  .navbar {
+    position: fixed; /* Fixes the navbar at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust as needed */
+    background-color: #fff; /* Navbar background color */
+    z-index: 20; /* Higher than the sidebar to ensure proper stacking */
+  }
+  
+.tab{
+  margin-left: 38px;
+  /* padding-bottom: 94px; */
+
+}
+  
+  .userInfo {
+    display: flex;
+    align-items: center;
+    padding-left: 285px;
+  }
+  
+  .profileImage {
+    width: 47px;  /* Adjust size as per your image */
+    height: 47px;
+    border-radius: 50%;
+    margin-right: 15px;
+  object-fit:contain;
+
+  }
+
+  
+  .notificationPanel {
+    position: absolute;
+    top: 70px;
+    right: 110px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  
+  .greeting h1 {
+    /* font-size: 24px; */
+    font-weight: 600;
+    color: #211C37;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .greeting p {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: #85878D;
+    
+  }
+  
+  
+  .searchBar {
+    flex: 1;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+  
+  .searchIcon {
+    color: #aaa;
+    margin-right: 10px;
+  }
+  
+  .searchInput {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .icons {
+    display: flex;
+    /* width: ; */
+    /* width: 1500px; */
+    /* align-items: center; */
+    gap: 40px;
+    padding-right: 20px;
+
+  }
+
+  
+
+  .tabUserInfo{
+        display: flex;
+    /* align-items: center;
+    gap: 40px;
+    padding-left: 48px; */
+    /* padding-bottom: 32px; */
+    /* justify-content: center; */
+
+  }
+  
+  .bellIcon {
+    color: #4B4B4B;  /* Color for bell icon */
+    /* height: 100px;
+    width:100px; */
+  }
+  
+  .smallProfileImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit:cover;
+  }
+
+
+  .smallProfileImage:hover {
+    /* background: #e33737; */
+    color: #f0f0f0;
+    transition-duration: 0.3s;
+    box-shadow: 4px 8px 10px rgba(8, 8, 8, 0.3);
+    cursor: pointer;
+  }
+  
+  
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
+
+
+
+  .header.expanded {
+
+    margin-left: 7%;
+    /* padding-left: 50px; */
+    width: 93%;
+
+  }
+  
+
+.userInfo .expanded {
+  padding-left: 24px;
+}
+
+
+
+
+
+
+
+@media  (max-width: 1550px){
+  .greeting h1 {
+    font-size: 22px; /* Slightly smaller */
+  }
+
+  .greeting p {
+    font-size: 14.5px; /* Slightly smaller */
+  }
+  .userInfo{
+    padding-left: 10px;
+  }
+}
+
+/* Responsive font sizes for screens up to 700px wide */
+@media (max-width: 1000px),(max-width: 900px) {
+  .greeting h1 {
+    font-size: 18px; /* Smaller */
+  }
+
+  .greeting p {
+    font-size: 14.5px; /* Smaller */
+  }
+  .userInfo{
+
+    padding-left: 10px;
+  }
+
+}
+
+

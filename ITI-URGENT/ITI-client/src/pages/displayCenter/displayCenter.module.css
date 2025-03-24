@@ -1,0 +1,36 @@
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* gap: 28px; */
+    gap: 1rem;
+    justify-content: center;
+}
+.mainDiv_child{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: calc(100vh - 148px);
+    /* margin-bottom: -20px; */
+}
+@media (max-width: 900px){
+    .mainDiv{
+        gap: 12px;
+        margin: 0rem 0rem 0rem 1.125rem;
+    }
+    .topbarDiv{
+        display: none;
+    }
+    .mainDiv_child{
+        /* height: calc(100vh - 222px); */
+        height: calc(100vh - 220px);    
+    }
+}
+
+
+    /* @media (max-width: 400px){
+        .mainDiv{
+            width: 100%;
+        }
+    } */

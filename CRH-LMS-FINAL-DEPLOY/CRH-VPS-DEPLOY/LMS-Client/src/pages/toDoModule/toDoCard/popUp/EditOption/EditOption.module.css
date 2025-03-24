@@ -1,0 +1,34 @@
+.pointer{
+    cursor: pointer;
+}
+.container{
+    width: 169px;
+    height: 78px;
+    border-radius: 10px;
+    /* padding: 12px; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 12px; */
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 9.1px 0px #0000001A;
+    color: #4B4B4B;
+    /* line-height: 19px; */
+    font-weight: 600px;
+}
+.iconLabelDiv{
+    padding-top: 12px;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    gap: 10px;
+    /* background-color: red; */
+    line-height: 19px;
+}
+.iconLabelDiv:hover{
+    background-color: #afafaf77;
+}
+.icon{
+    width: 18px;
+    height: 18px;
+}

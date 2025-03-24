@@ -1,0 +1,143 @@
+.card {
+  border-radius: 12px;
+  /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 4px 5.3px 0px #00000026;
+  border-radius: 24px 24px 24px 24px;
+
+
+  width: 376.65px;
+  /* height: 206px; */
+  height: 450px;
+
+  background-color: white;
+}
+
+.card:hover {
+  border: 2px solid #ffa41c; /* Set the border width, style, and color */
+}
+
+
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: left;
+  color: #4B4B4B;
+  padding-bottom: 16px;
+  padding-top: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.imageContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  /* padding: 24px; */
+
+}
+.freetag {
+  position: absolute;
+  top: 24px; /* Adjust position as needed */
+  right: 24px; 
+  /* padding-right: 10px; */
+}
+.image {
+  width: 376.39px;
+  height: 225px;
+  left: 801.17px;
+  /* padding: 24px 0px 0px 0px; */
+  /* gap: 16px; */
+  border-radius: 24px 24px 0px 0px;
+  /* opacity: 0px; */
+  
+}
+
+
+.startCourseButton{
+  position: absolute;
+  bottom: 10px;
+}
+
+
+.cardContent {
+  width: 376.27px;
+  height: 213px;
+  position: relative;
+  /* top: 225px; */
+  /* left: 800.92px; */
+  /* padding: 24px 0px 0px 0px; */
+  /* gap: 16px; */
+  /* padding: auto; */
+  border-radius: 0px 0px 24px 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* padding-top: 24px; */
+  /* padding-bottom: 24px; */
+
+/* padding: 24px; */
+
+  /* opacity: 0px; */
+  ;
+  
+}
+
+.progressSection {
+  margin-top: 16px;
+}
+
+.progressText {
+  /* margin-bottom: 8px;
+  text-align: right;
+  font-size: 12px;
+  color: #6B6B6B; */
+  font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+/* line-height: 16.94px; */
+text-align: right;
+color: #4B4B4B;
+padding-bottom: 6px;
+
+}
+
+
+.progressText span{
+  font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+/* line-height: 16.94px; */
+text-align: right;
+color: #4B4B4B;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3; /* Display ellipsis after 3 lines */
+  line-clamp: 3;
+
+  line-height: 1.2em;
+  max-height: calc(3 * 1.2em); /* Ensures max-height fits 3 lines */
+  text-overflow: ellipsis;
+
+  font-size: 14px;
+  color: #4B4B4B;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-align: left;
+}

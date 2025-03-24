@@ -1,0 +1,57 @@
+.pointer{
+    cursor: pointer;
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    align-items: center;
+    width: max-content;
+    max-width: 450px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.labelDes{
+    font-size: 16px;
+    color: #9999A0;
+}
+
+.emailDes{
+    font-weight: 600;
+    color: black;
+}
+
+.emailDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.emailParentDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.codeDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+a{
+    text-decoration: none;
+}

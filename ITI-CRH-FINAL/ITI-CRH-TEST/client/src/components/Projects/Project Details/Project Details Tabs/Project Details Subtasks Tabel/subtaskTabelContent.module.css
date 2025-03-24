@@ -1,0 +1,298 @@
+.assignedLabel {
+  font-weight: 500;
+  color: #666;
+  margin-right: 4px;
+}
+
+
+.tableContainer {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  /* table-layout: fixed; */
+  /* border: black; */
+  /* border-top-left-radius: 8px; */
+  /* border-top-right-radius: 8px; */
+
+}
+
+.tableRow {
+  /* background-color: #F3F3F3; */
+border-radius: 8px;
+  text-align: center;
+  
+
+
+}
+
+.tableRow th {
+  padding: 16px;
+  /* border-bottom: 1px solid #F3F3F3; */
+  /* border-top-left-radius: 8px; */
+  /* height: 56px; */
+}
+
+.tableData {
+  border: 1px solid #F0F0F0;
+  
+}
+
+
+.tableRow .tasks{
+ display: flex;
+ justify-content: flex-start;
+}
+
+.tableData .tasks{
+  display: flex;
+  /* margin-top: 15.5px; */
+  align-items: baseline;
+  
+ }
+
+ .tableRow .taskCompletion{
+  display: flex;
+  justify-content: flex-end;
+  /* border-top-right-radius: 20px; */
+  /* background-color: ; */
+ }
+
+ .tableData .taskCompletion{
+  display: flex;
+  justify-content: flex-end;
+  padding-top:17px ;
+
+ }
+
+ .assignData{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  width: 25px;
+height: 25px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+ }
+
+ .tableData .assigned{
+  text-transform: capitalize;
+
+ }
+.tableData td {
+  /* padding-bottom: 10px;
+  padding-top: 10px; */
+  padding: 5px;
+  /* border-bottom: 1px solid #ddd; */
+  text-align: center; /* Center align table data */
+  /* height: 70px; */
+}
+
+
+
+.inProgress {
+  background-color: #F5D451;
+  color: black;
+  /* padding: 4px 28px; */
+  border-radius: 40px;
+}
+
+.notStarted {
+  background-color: #C8C8C8;
+  color: white;
+  /* padding: 4px 28px; */
+  border-radius: 40px;
+}
+
+/* .status {
+text-transform: capitalize;
+} */
+
+
+.status {
+  height: 34px;
+  /* width: 120px; */
+  /* margin-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      /* padding: 4px 12px; */
+      border-radius: 40px;
+      font-size: 14px;
+      font-weight: 500;
+      /* text-transform: uppercase; */
+      text-transform: capitalize;
+      color: #000;
+}
+
+.onHold {
+  background-color: #000000;
+  color: white;
+  /* padding: 4px 28px; */
+  border-radius: 40px;
+}
+
+.completed {
+  background-color: #51CE60;
+  color: white;
+  /* padding: 4px 28px; */
+  border-radius: 40px;
+}
+
+.unknown {
+  background-color: #C8C8C8;
+  color: white;
+  /* padding: 4px 22px; */
+  border-radius: 40px;
+}
+
+
+/* Example ScrollBar styling */
+.scrollBarContainer {
+  max-height: 300px; /* Set a max height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow: visible;
+}
+
+.clickableRow {
+  cursor: pointer;
+  transition: background-color 0.2s;
+  /* transition: background-color 0.2s; */
+    border-bottom: 1px solid #ddd;
+    height: 56px;
+}
+
+/* @media(minwidth:769px and  max-width: 1176px){
+  .assigned{
+    padding-left:0px;
+  }
+} */
+
+@media (max-width: 1000px)  {
+  .tableData .assigned{
+    /* text-transform: capitalize; */
+    padding-left: 0px;
+  
+   }
+}
+
+
+@media (max-width: 768px) {
+  .tableRow {
+    display: none;
+  }
+
+  .clickableRow{
+    height: auto;
+  }
+
+
+
+  .tableData tr {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    /* border: 1px solid #ddd; */
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    justify-content: space-between; /* Space between Name and Status/Completion */
+    /* height: 96px; */
+    height: auto;
+  }
+
+  .tasks{
+    align-items: left !important;
+  }
+
+  .tableData td {
+    display: flex;
+ 
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* width: 100%; */
+    padding: 5px 0;
+    border-bottom: 0;
+  }
+
+  .tableData td:first-child {
+    /* max-width: 200px; */
+    font-weight: bold;
+    text-align: left;
+    /* flex-direction: row-reverse; */
+    /* margin-bottom: 5px; */
+    flex-grow: 1; /* Pushes the content to the left */
+  }
+
+
+  .assignData{
+  
+    margin-left: 0px;
+    width: 25px !important;
+  height: 25px !important;
+ 
+   }
+
+
+
+  .status {
+    /* font-weight: bold; */
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+  /* text-align: left; */
+/* position: absolute; */
+display: flex;
+flex-direction: row-reverse;
+
+    width: 120px;
+    height: 34px;
+    margin-left: 0px;
+
+  }
+
+  /* .button{
+    position: relative;
+  } */
+
+
+
+
+
+  .completion {
+    font-weight: normal;
+    text-align: center;
+  }
+
+  /* .assign {
+    display: none !important; 
+  } */
+  
+.two{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+}
+
+
+  /* .subtaskPopup{
+    width: 10%;
+  } */
+}
+
+
+
+@media(min-width: 768px){
+  .tableData tr:hover {
+    background-color: #f1f1f1;
+
+  }
+  .clickableRow:hover {
+    background-color: #f0f0f0;
+  }
+
+
+
+}

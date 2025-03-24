@@ -1,0 +1,15 @@
+.pointer{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.gap27px{
+    gap: 1.7106rem;
+}

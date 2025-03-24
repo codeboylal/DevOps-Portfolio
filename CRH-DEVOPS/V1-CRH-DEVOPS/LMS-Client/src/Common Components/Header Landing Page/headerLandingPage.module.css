@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 122px;
+    /* width: 1440px; */
+    width: 100%;
+    
+    /* margin: 0 auto; */
+    padding: 10px 24px 10px 24px;
+    background-color: #FFFFFF;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoImage {
+    height: 50px; /* Adjust based on the actual logo size */
+    width: auto;  /* Keep the aspect ratio of the image */
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLinks li {
+    font-size: 18px;
+    /* font-weight: 700; */
+  }
+  
+  .navLinks li a {
+    text-decoration: none;
+    /* color: black; */
+    color: #000000;
+    cursor:pointer;
+    font-weight: 700;
+  }
+  
+  .navLinks li a:hover {
+    color: #FF702D;
+  }
+  
+  .active a {
+    color: #FF702D;
+  }
+  
+  .authButtons {
+    display: flex;
+    gap: 20px;
+  }

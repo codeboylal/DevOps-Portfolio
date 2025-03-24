@@ -1,0 +1,41 @@
+.inboxContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 8px 0px 0px;
+  height: calc(100vh - 145px);
+}
+
+.marginBottom{
+  margin-bottom: 23px;
+}
+
+@media (min-width:900px) and (max-width: 1350px){
+  .inboxContainer{
+    height: calc(100vh - 225px);
+  }
+}
+
+
+@media (max-width: 900px) {
+  .marginBottom{
+    margin-bottom: 0px;
+  }
+  .inboxContainer {
+    width: 97%;
+    /* margin: 0rem 0rem 0rem 1.125rem; */
+    height: calc(100vh - 205px);
+    position: relative;
+    bottom: 16px;
+  }
+  .warning{
+    position: relative;
+    top: 16px;
+    padding: 0px 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .inboxContainer {
+    width: 95%;
+  }
+}

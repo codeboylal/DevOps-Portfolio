@@ -1,0 +1,83 @@
+.popUp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.25rem;
+    width: 380px;
+}
+
+.heading{
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.inputDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nameDiv{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.signInNav{
+    display: flex;
+    gap: .5rem;
+}
+
+.spanNav{
+    color: #9999A0;
+}
+
+.labelNav{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.mailOTP{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.notYourMail{
+    justify-content: center;
+    font-size: 12px;
+}
+
+.emailEnterAgain{
+    color: #9999A0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.buttonDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 12px;
+}
+
+
+@media (min-width:500px) and (max-width:900px){
+    .popUp{
+        width: 320px;
+    }
+}
+
+@media (max-width:499px){
+    .popUp{
+        width: 280px;
+    }
+    .nameDiv{
+        flex-direction: column;
+    }
+}

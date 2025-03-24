@@ -1,0 +1,62 @@
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: iti-client-dev
+    ports:
+      - 8098:3000
+    restart: unless-stopped
+    environment:
+      - BASEURL=${BASEURL}
+    networks:
+      - iti-network-dev
+    depends_on:
+      - server
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: iti-server-dev
+    restart: unless-stopped
+    environment:
+      - PORT=${PORT}
+      - Client_URL=${Client_URL}
+      - MY_SECRET_KEY=${MY_SECRET_KEY}
+      - Mongo_URL=${Mongo_URL}
+      - clickUpToken=${clickUpToken}
+      - planListID=${planListID}
+      - facadeListID=${facadeListID}
+      - directoryListID=${directoryListID}
+      - projectRunningID=${projectRunningID}
+      - projectCompletedID=${projectCompletedID}
+      - fileNamingSystem=${fileNamingSystem}
+      - BASEURL=${BASEURL}
+      - AWS_ACCESS_KEY=${AWS_ACCESS_KEY}
+      - AWS_SECRET_KEY=${AWS_SECRET_KEY}
+      - AWS_REGION=${AWS_REGION}
+      - AWS_BUCKET_NAME=${AWS_BUCKET_NAME}
+      - webhook_project_running=${webhook_project_running}
+      - webhook_project_completed=${webhook_project_completed}
+      - webhook_contacts_owner_details=${webhook_contacts_owner_details}
+      - webhook_contacts_water_authority=${webhook_contacts_water_authority}
+      - webhook_contacts_contractors=${webhook_contacts_contractors}
+      - webhook_contacts_estate=${webhook_contacts_estate}
+      - webhook_contacts_councils=${webhook_contacts_councils}
+      - webhook_contacts_company_contacts=${webhook_contacts_company_contacts}
+      - webhook_contacts_company=${webhook_contacts_company}
+      - webhook_facades=${webhook_facades}
+      - webhook_plans=${webhook_plans}
+      - SENDER_EMAIL=${SENDER_EMAIL}
+      - WEBHOOK_TRIGGER_SECRET=${WEBHOOK_TRIGGER_SECRET}
+      - WEBHOOK_INBOX_SECRET=${WEBHOOK_INBOX_SECRET}
+
+    ports:
+      - 8099:8000
+    networks:
+      - iti-network-dev
+
+networks:
+  iti-network-dev:
+    driver: bridge

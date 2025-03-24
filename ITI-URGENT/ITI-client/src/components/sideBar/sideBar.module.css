@@ -1,0 +1,245 @@
+.pointer{
+    cursor: pointer;
+}
+
+.mainDiv{
+    margin-top: .615rem;
+    height: calc(100vh - 1.5rem);
+    width: 16.25rem;
+    border-radius: 1.5rem;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1.75rem 0rem 1.125rem 1.375rem;
+    /* padding: 24px; */
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.325rem;
+    color: #0E0E0F;
+    /* overflow: auto;  */
+}
+.imgDiv{
+    width: 13.5rem;
+    /* padding: 16px; */
+    /* width: 216px; */
+    /* max-width: 158px; */
+    object-fit: fill;
+    position: absolute;
+    padding-top: 1rem;
+    top: 1.625rem;
+    background-color: #F3F3F3;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.closeSVG{
+    display: none;
+}
+
+.logoDes{
+    width: 9.875rem;
+
+}
+
+.navPage__items{
+    display: flex;
+    flex-direction: column;
+    gap: .875rem;
+    margin-top: 4.68rem;
+    padding-bottom: 3.75rem;
+    /* padding: 60px 0px */
+    
+}
+.navPage__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 13.5rem;
+    gap: .625rem;
+    border-radius: 6.25rem;
+    height: 3.31rem;
+    border: .0625rem solid transparent;
+    /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+.svgDimension{
+    width: 1.25rem;
+}
+
+.navPage__item:hover{
+    border-color: #19191A;
+    cursor: pointer;
+}
+
+.displayCenterActive{
+    background-color: #19191A;
+    color: white;
+} 
+
+.displayCenterActive #displayCenter{
+    fill: #FFFFFF;
+} 
+.navPage__item:hover{
+    border-color: #19191A;
+    cursor: pointer;
+}
+
+.constructorActive{
+    background-color: #19191A;
+    color: white;
+} 
+
+.constructorActive #constructor{
+    fill: #FFFFFF;
+} 
+
+/* .displayCenter:hover #displayCenter {
+    fill: #FFFFFF;
+} */
+
+.salesActive{
+    background-color: #19191A;
+    color: white;
+} 
+
+.salesActive #sales{
+    fill: #FFFFFF;
+} 
+
+/* .sales:hover #sales {
+    fill: #FFFFFF;
+} */
+
+.projectsActive{
+    background-color: #19191A;
+    color: white;
+} 
+
+.projectsActive #projects{
+    fill: #FFFFFF;
+} 
+
+/* .projects:hover #projects {
+    fill: #FFFFFF;
+} */
+
+
+.settingsActive{
+    background-color: #19191A;
+    color: white;
+} 
+
+.settingsActive #settings{
+    fill: #FFFFFF;
+} 
+
+/* .settings:hover #settings {
+    fill: #FFFFFF;
+} */
+
+
+.inboxActive{
+    background-color: #19191A;
+    color: white;
+} 
+
+.inboxActive #inbox{
+    fill: #FFFFFF;
+} 
+
+
+/* .inbox:hover #inbox {
+    fill: #FFFFFF;
+} */
+
+
+.adminActive{
+    background-color: #19191A;
+    color: white;
+} 
+
+.adminActive #admin{
+    fill: #FFFFFF;
+} 
+
+
+/* .admin:hover #admin {
+    fill: #FFFFFF;
+} */
+
+
+.profile{
+    position: absolute;
+    bottom: 1.625rem;
+    /* width: 100%; */
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: .625rem;
+
+    padding: 1rem 1rem;
+    background-color: #F3F3F3;
+    width: 13.5rem;
+}
+
+.imgDes{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 6.25rem;
+    object-fit: cover;
+}
+
+.truncatedLabel {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 6.25rem; /* Adjust the width as needed */
+}
+
+.absright{
+    position: absolute;
+    right: 0px;
+}
+@media (max-width: 1150px){
+    .mainDiv{
+        height: calc(100vh);
+        margin-top: 0px;
+        border-radius: 0px;
+        padding: 1.75rem 0rem 1.125rem 0rem ;
+    }
+    .imgDiv{
+        padding-left: 1.125rem;
+        padding-top: 0px;
+        top: .75rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #E2E8F0;
+        width: 16.25rem;
+    }
+    .closeSVG{
+        display: block;
+    }
+    .profile{
+        bottom: 0px;
+        padding-left: 2.125rem;
+        width: 14.75rem;
+        /* padding: 1rem; */
+        /* margin-bottom: .875rem; */
+    }
+    .navPage__items{
+        margin-top: 4.125rem;
+        padding-left: 1.25rem;
+    }
+    .displayActive{
+        display: none;
+    }
+}
+
+@media (min-width: 1151px){
+    .displayNone{
+        display: none;
+    }
+}

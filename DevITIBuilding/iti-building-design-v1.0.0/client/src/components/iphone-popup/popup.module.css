@@ -1,0 +1,91 @@
+.div {
+  background-color: #000000B2;
+  width: 100vw;
+  height: 100vh; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  }
+  
+  .popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: auto; /* Adjust height to fit the content */
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .title {
+    margin: 10px 0 20px; /* Add spacing between the title and list */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+  }
+  
+  .steps {
+    list-style: decimal; /* Use decimal numbering (1, 2, 3) */
+    padding-left: 30px; /* Ensure enough space for numbers */
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Make the list take full width */
+  }
+  
+  .steps li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Change the color of the list numbers */
+  .steps li::marker {
+    color: #000; /* Set the numbers to black */
+    font-weight: bold; /* Make them bold if desired */
+  }
+  
+  .icon {
+    margin-left: 8px; /* Ensure proper spacing for icons */
+    margin-right: 8px; /* Add spacing after icons for clarity */
+    width: 24px;
+    height: 24px;
+  }
+  
+
+
+  
+@media (max-width: 768px) {
+
+  .popup{
+    width: 90vw;
+    /* padding-right: 20px; */
+  }
+
+  .steps{
+    font-size: 14px;
+
+  }
+}
+

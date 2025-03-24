@@ -1,0 +1,63 @@
+
+# V1 - Working
+services:
+  client:
+    build:
+      context: ./ITI-client
+      dockerfile: Dockerfile
+    container_name: iti-client-stag
+    ports:
+      - 8098:3000
+    restart: unless-stopped
+    networks:
+      - iti-network
+
+  server:
+    build:
+      context: ./ITI-server
+      dockerfile: Dockerfile
+    container_name: iti-server-stag
+    ports:
+      - 8099:8000
+    restart: unless-stopped
+    networks:
+      - iti-network
+    environment:
+      - Mongo_URL=mongodb+srv://iti-dev:GDy2cEiHT25iQJDg@iti-dev-cluster.givskys.mongodb.net/ITI-Buildings-Project
+
+networks:
+  iti-network:
+    driver: bridge
+
+
+
+
+# # V2 Working - For Optimization
+# services:
+#   client:
+#     build:
+#       context: ./ITI-client
+#       dockerfile: Dockerfile
+#     container_name: iti-client-stag
+#     ports:
+#       - 8098:80
+#     restart: unless-stopped
+#     networks:
+#       - iti-network
+
+#   server:
+#     build:
+#       context: ./ITI-server
+#       dockerfile: Dockerfile
+#     container_name: iti-server-stag
+#     ports:
+#       - 8099:8000
+#     restart: unless-stopped
+#     networks:
+#       - iti-network
+#     environment:
+#       - Mongo_URL=mongodb+srv://iti-dev:GDy2cEiHT25iQJDg@iti-dev-cluster.givskys.mongodb.net/ITI-Buildings-Project
+
+# networks:
+#   iti-network:
+#     driver: bridge

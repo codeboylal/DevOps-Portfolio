@@ -1,0 +1,50 @@
+.belowAppBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px;
+    width: 100%;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.likeDiv{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+    border: 1px solid #EDEEF0;
+    border-radius: 6px;
+}
+
+.search{
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    z-index: 99;
+}
+
+.searchDiv{
+    position: relative;
+    width: 240px;
+}
+.searchDiv:hover  #search{
+    stroke: black;
+}
+
+
+
+
+
+
+
+
+@media (min-width:900px){
+    .belowAppBar{
+        display: none;
+    }
+}

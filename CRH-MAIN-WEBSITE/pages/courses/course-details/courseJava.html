@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.config.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c83f347ff1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Programming Constructs using Java</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div
+      class="fixed sm:py-2 w-full z-[100] transition ease-in-out duration-[0.4s] scroll-nav-bg top-0"
+    >
+      <div
+        class="flex items-center justify-between container w-full xl:w-[1350px] m-auto px-5 py-2 md:px-10 sm:px-0"
+      >
+        <div class="ml-2">
+          <a href="/"
+            ><img
+              class="max-w-32 md:max-w-44"
+              src="/img/logo-company.png"
+              alt="logo"
+          /></a>
+        </div>
+        <ul
+          class="hidden lg:flex flex-col sm:flex-row text-white font-medium text-lg nav-links padding-nav-links mr-3"
+        >
+          <li><a href="/">Home</a></li>
+          <li>
+            <a class="active" href="/pages/courses/index.html">Courses</a>
+          </li>
+          <li><a href="/pages/blogs/index.html">Blogs</a></li>
+          <li><a href="/pages/events/index.html">Events</a></li>
+          <li><a href="/pages/auth/login.html">Login</a></li>
+        </ul>
+
+        <!-- Hidden Hamburger Menu -->
+        <button class="lg:hidden" id="menu-btn">
+          <i class="text-white text-xl fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <ul
+        class="hidden lg:hidden flex flex-col relative justify-center bg-white shadow-lg"
+        id="menu-ham"
+      >
+        <li>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="/">Home</a>
+        </li>
+        <li>
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="/pages/courses/index.html"
+            >Courses</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="/pages/blogs/index.html"
+            >Blogs</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="/pages/events/index.html"
+            >Events</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="/pages/auth/login.html"
+            >Login</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Course Section -->
+    <section class="cursor-default">
+      <div class="h-full bg-gradient-to-t from-codroid_purple pt-36 pb-20">
+        <div class="container m-auto w-full xl:w-[1250px]">
+          <div class="flex flex-col-reverse xl:flex-row gap-10">
+            <div
+              class="flex flex-col justify-center gap-5 text-gray-800 mx-10 xl:mx-0"
+            >
+              <div
+                class="hidden xl:flex md:text-sm font-medium mb-16 items-center gap-3"
+              >
+                <a class="hover:underline" href="/">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <a class="hover:underline" href="/pages/courses/index.html"
+                  >Courses</a
+                >
+                <i class="fa-solid fa-angle-right"></i>
+                <a class="hover:underline" href="#"
+                  >Programming Constructs using Java</a
+                >
+              </div>
+
+              <div class="flex flex-col gap-3 text-center xl:text-start">
+                <h2 class="text-3xl md:text-5xl font-medium">
+                  Programming Constructs using Java
+                </h2>
+                <p class="text-md md:text-lg font-medium text-gray-700">
+                  Understand the fundamental building blocks of programming
+                  using the popular and versatile Java language.
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 items-center xl:items-start">
+                <div class="flex gap-2 items-center text-gray-700 font-medium">
+                  <div class="relative hidden xl:flex gap-2">
+                    <p>4.8</p>
+                    <div
+                      class="absolute flex gap-1 text-sm text-amber-400 start-8 top-[3px]"
+                    >
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <!-- <div class="flex gap-4 ml-28 items-center text-sm">
+                    <p
+                      class="py-2 px-4 text-md bg-white bg-opacity-10 rounded-full text-white font-normal text-opacity-80"
+                    >
+                      388,602 ratings
+                    </p>
+                    <p class="font-medium text-md">1,294,956 students</p>
+                  </div> -->
+                </div>
+                <p class="text-sm text-gray-800 font-medium">
+                  Created by <a class="underline" href="#">CodroidHub</a>
+                </p>
+                <div class="flex gap-4 text-gray-800 font-medium mt-2">
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p class="text-sm">Last updated 06/2024</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-globe"></i>
+                    <p class="text-sm">English</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="place-self-center max-w-full md:max-w-[500px] md:min-w-[500px] h-full overflow-hidden rounded-2xl h-full shadow-xl mx-10 xl:mx-0"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="/img/courses/java.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 py-10">
+        <div class="container m-auto w-full xl:w-[1250px]">
+          <!-- Left Section -->
+          <div class="flex flex-col lg:flex-row gap-10 px-5 xl:px-0">
+            <div class="flex flex-col gap-10">
+              <div
+                class="flex flex-col gap-5 p-10 bg-white shadow-xl rounded-xl leading-7"
+              >
+                <h2
+                  class="font-medium text-2xl text-gray-800 border-b border-1 border-slate-200 pb-5"
+                >
+                  What You'll Learn
+                </h2>
+                <p class="text-gray-700">
+                  Welcome to Programming Constructs Using Java! This course is
+                  designed for beginners with little to no prior programming
+                  experience. We will embark on a journey together to understand
+                  the fundamental building blocks of programming using the
+                  popular and versatile Java language.
+                </p>
+                <div class="mt-5">
+                  <ul
+                    class="grid grid-cols-1 md:grid-cols-2 details-list text-gray-700 gap-x-10 gap-y-4"
+                  >
+                    <li>
+                      Understand the core concepts of Java programming: This
+                      includes data types, variables, operators, and control
+                      flow statements.
+                    </li>
+                    <li>
+                      Utilize control flow structures: You'll learn how to
+                      control the flow of your program using conditional
+                      statements (if/else) and looping statements (for, while,
+                      do-while).
+                    </li>
+                    <li>
+                      Debug and troubleshoot code: Gain essential skills to
+                      identify and fix errors in your programs.
+                    </li>
+                    <li>
+                      Write basic Java programs: You'll gain the ability to
+                      construct programs that perform calculations, take user
+                      input, and produce output.
+                    </li>
+                    <li>
+                      Work with methods and functions: Master the concept of
+                      methods, which are reusable blocks of code that promote
+                      modularity and code organization.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Course Content -->
+              <!-- Requirements -->
+              <!-- Audience -->
+
+              <!-- Instructor -->
+              <div
+                class="flex flex-col gap-5 p-10 bg-white shadow-xl rounded-xl leading-7"
+              >
+                <!-- Intro Section -->
+                <!-- First Instructor -->
+                <div>
+                  <div class="flex flex-col gap-5">
+                    <h2
+                      class="font-medium text-2xl text-gray-800 border-b border-1 border-slate-200 pb-5"
+                    >
+                      Instructor
+                    </h2>
+
+                    <!-- Copy from here -->
+                    <div class="flex flex-col gap-10 xl:flex-row">
+                      <div
+                        class="max-w-44 min-w-44 overflow-hidden place-self-center xl:place-self-start"
+                      >
+                        <img
+                          class="rounded-full"
+                          src="/img/codroid-logo-symbol.png"
+                          alt="team-3"
+                        />
+                      </div>
+                      <div class="flex flex-col text-gray-700 gap-2">
+                        <h2 class="text-xl font-bold text-center xl:text-start">
+                          CodroidHub
+                        </h2>
+                        <p
+                          class="text-md font-medium text-center xl:text-start"
+                        >
+                          Advanced Educator
+                        </p>
+                        <div
+                          class="flex flex-col sm:flex-row gap-4 items-center text-sm font-medium justify-center xl:justify-start"
+                        >
+                          <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-video"></i>
+                            <p>20 Course</p>
+                          </div>
+                        </div>
+                        <p
+                          class="text-sm leading-6 mt-2 text-center xl:text-start"
+                        >
+                          Codroidhub Private Limited, is a leading e-learning
+                          company specializing in providing world-class
+                          digital-age education to academic institutions all
+                          across India.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Instructor Social Links -->
+                    <div class="flex gap-5 justify-center">
+                      <a href="https://x.com/codroidhub" target="_blank"
+                        ><i
+                          class="bg-gray-100 text-gray-700 px-4 py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+                        ></i
+                      ></a>
+                      <a
+                        href="https://www.facebook.com/codroidhubpvtltd"
+                        target="_blank"
+                        ><i
+                          class="bg-gray-100 text-gray-700 px-4 py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+                        ></i
+                      ></a>
+                      <a
+                        href="https://www.instagram.com/codroidhub/"
+                        target="_blank"
+                        ><i
+                          class="bg-gray-100 text-gray-700 px-4 py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+                        ></i
+                      ></a>
+                      <a
+                        href="https://in.linkedin.com/company/codroidhub"
+                        target="_blank"
+                        ><i
+                          class="bg-gray-100 text-gray-700 px-[17px] py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+                        ></i>
+                      </a>
+                    </div>
+
+                    <!-- Second Instructor -->
+                    <div class="flex flex-col gap-10 xl:flex-row mt-5">
+                      <div
+                        class="max-w-44 min-w-44 overflow-hidden place-self-center xl:place-self-start"
+                      >
+                        <img
+                          class="w-full h-full rounded-full"
+                          src="/img/teamImages/team-1.jpg"
+                          alt="team-3"
+                        />
+                      </div>
+                      <div class="flex flex-col text-gray-700 gap-2">
+                        <h2 class="text-xl font-bold text-center xl:text-start">
+                          Devashish Kumar
+                        </h2>
+                        <p
+                          class="text-md font-medium text-center xl:text-start"
+                        >
+                          Founder & Director
+                        </p>
+                        <p
+                          class="text-sm leading-6 mt-2 text-center xl:text-start"
+                        >
+                          Intel Edge AI Certified || AWS Certified Solutions
+                          Architect Associate || Ex-WhiteHat Jr
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Instructor Social Links -->
+                    <div class="flex gap-5 justify-center">
+                      <a href="#"
+                        ><i
+                          class="bg-gray-100 text-gray-700 px-4 py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="bg-gray-100 text-gray-700 px-4 py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="bg-gray-100 text-gray-700 px-4 py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="bg-gray-100 text-gray-700 px-[17px] py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Section -->
+            <div
+              class="sticky top-28 flex flex-col min-w-[350px] max-h-[800px] bg-white shadow-xl rounded-xl ring ring-1 ring-codroid_purple overflow-hidden"
+            >
+              <div class="p-10">
+                <div class="flex gap-2 items-center justify-between">
+                  <div class="relative flex flex-col">
+                    <h2 class="text-xl font-medium">₹12,999.00</h2>
+                    <h3 class="text-sm text-gray-500 line-through">
+                      ₹15,999.00
+                    </h3>
+                  </div>
+                  <p
+                    class="text-xs text-amber-500 font-bold py-2 px-3 bg-[#f59f0b15] rounded-sm"
+                  >
+                    <i class="mr-1 fa-regular fa-clock"></i>3 Days Left
+                  </p>
+                </div>
+                <div class="flex flex-col gap-5 mt-5">
+                  <a class="block w-full" href="/pages/auth/studentForm.html">
+                    <button
+                      class="bg-codroid_purple w-full py-4 font-medium rounded-full border border-1 border-codroid_purple text-white text-sm hover:bg-codroid_hover_purple transition ease-in-out duration-[0.4s]"
+                    >
+                      Buy Now
+                    </button>
+                  </a>
+                </div>
+
+                <div class="grid grid-rows-5 pt-10">
+                  <div
+                    class="flex justify-between border-b border-1 border-slate-200 pb-3 mb-5"
+                  >
+                    <p class="text-sm font-medium text-gray-700">Total Time</p>
+                    <span
+                      class="ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >30hrs</span
+                    >
+                  </div>
+
+                  <div
+                    class="flex justify-between border-b border-1 border-slate-200 pb-3 mb-5"
+                  >
+                    <p class="text-sm font-medium text-gray-700">Lectures</p>
+                    <span
+                      class="ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >35</span
+                    >
+                  </div>
+
+                  <div
+                    class="flex justify-between border-b border-1 border-slate-200 pb-3 mb-5"
+                  >
+                    <p class="text-sm font-medium text-gray-700">Skill Level</p>
+                    <span
+                      class="ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >Basic</span
+                    >
+                  </div>
+
+                  <div
+                    class="flex justify-between border-b border-1 border-slate-200 pb-3 mb-5"
+                  >
+                    <p class="text-sm font-medium text-gray-700">Langugage</p>
+                    <span
+                      class="ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >English</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col bg-slate-100 px-10 gap-3 py-5 h-full justify-center"
+              >
+                <p class="text-xs text-gray-500 font-medium text-center">
+                  For Detail about the Course
+                </p>
+                <div class="text-gray-700 font-medium">
+                  <p class="text-center">
+                    Call Us: +91 91385-5566-1/2/3<br />
+                    Email: info@codroidhub.in
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container m-auto w-[450px] sm:w-[800px] xl:w-[1320px]"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 cursor-default">
+      <div
+        class="flex flex-col-reverse xl:flex-row items-center justify-center xl:items-start xl:justify-between w-full xl:w-[1330px] m-auto p-10 sm:gap-10"
+      >
+        <div class="flex flex-col items-center xl:items-start gap-2 mt-5">
+          <div class="max-w-[200px]">
+            <img class="w-auto" src="/img/logo-company.png" />
+          </div>
+          <div
+            class="flex flex-col sm:items-center xl:items-start text-sm text-white gap-2 max-w-full xl:max-w-xs"
+          >
+            <p class="text-center xl:text-start">
+              Flat No. K-401 NTPC Shanti Vihar – Khajpura, Patna – Bihar, India
+              – 800014
+            </p>
+            <p class="text-center xl:text-start">
+              Operational: Ambala, Mohali, Kurukshetra, Noida
+            </p>
+            <p class="text-center xl:text-start">
+              Nepal: Kathmandu, Birendranagar
+            </p>
+          </div>
+          <div class="flex gap-3 mt-4">
+            <a href="https://x.com/codroidhub" target="_blank"
+              ><i
+                class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+              ></i
+            ></a>
+            <a href="https://www.facebook.com/codroidhubpvtltd" target="_blank"
+              ><i
+                class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+              ></i
+            ></a>
+            <a href="https://www.instagram.com/codroidhub/" target="_blank"
+              ><i
+                class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+              ></i
+            ></a>
+            <a href="https://in.linkedin.com/company/codroidhub" target="_blank"
+              ><i
+                class="bg-gray-100 text-gray-700 px-[9px] py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Quick Links
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="/">Home</a></li>
+              <li><a href="/pages/courses/index.html">Courses</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Services
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Cyber Security</a></li>
+              <li><a href="#">Blockchain</a></li>
+              <li><a href="#">AI and ML</a></li>
+              <li><a href="#">Product Design</a></li>
+              <li><a href="#">Quality Assurance</a></li>
+              <li><a href="#">Data Science</a></li>
+              <li><a href="#">Cloud Computing</a></li>
+              <li><a href="#">Cloud Computing</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Account
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="#">Manage Account</a></li>
+              <li>
+                <a href="/pages/auth/login.html">Login to Student Portal</a>
+              </li>
+              <li>
+                <a href="/pages/auth/register.html">Create an Account</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Others
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="/pages/blogs/index.html">Blogs</a></li>
+              <li><a href="/pages/events/index.html">Events</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-8 border-t border-1 border-slate-600">
+        <p class="flex justify-center text-xs text-white">
+          Copyright © 2024 CodroidHub.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/pages/courses/course.js"></script>
+  </body>
+</html>

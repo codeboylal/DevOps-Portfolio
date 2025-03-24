@@ -1,0 +1,202 @@
+
+
+.sidebar {
+  background-color: #fff;
+  width: 237px;
+  z-index: 20;
+  display: flex;  
+  position: relative;
+  top: 30px;
+  height: 1150px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.span{
+  width: max-content;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  /* height: 100%; */
+}
+
+.profilePic:hover {
+  /* background: #e33737; */
+  color: #f0f0f0;
+  transition-duration: 0.3s;
+  box-shadow: 4px 8px 10px rgba(8, 8, 8, 0.3);
+}
+
+
+.profilePic {
+  width: 100px; 
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
+.profileInfo h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.profileInfo p {
+  font-size: 14px;
+  color: gray;
+}
+
+.logo {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.commonMenuList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust this to create spacing between .navMenu and .logout */
+  height: 100%; 
+  background-color: #FFFFFF;
+  padding-left: 18px; 
+  padding-right: 24px;
+}
+
+.navMenu {
+  width: 165px;
+  margin-bottom: auto; /* This will push the logout section down */
+}
+
+.navMenu ul {
+  list-style: none;
+}
+
+.span{
+  display: flex;
+}
+.navMenu li {
+  padding-top: 20px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  width: 202.4px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.menuItem:hover {
+  background-color: #fff6f2;
+  ;
+  color: black;
+  /* width: 213.4px; */
+  width: 202.4px;
+
+  /* transition-duration: .3s; */
+
+}
+
+.icon {
+  margin-right: 6px;
+  stroke:wheat;
+  /* fill: #1c1d1d; */
+  /* transition: white 0.3s ease; */
+  
+}
+
+.menuItem:hover .icon {
+  stroke: black !important;
+  /* fill: white !important; If the icon has fill */
+}
+
+.menuItem:hover .support {
+  /* stroke: white !important; */
+  fill: white !important;
+}
+
+/* .icon.active {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
+.icon.inactive {
+  filter: brightness(0) saturate(100%) invert(0%);
+} */
+
+.sidebar.collapsed {
+  width: 7%;
+}
+
+.collapsed .profilePic {
+  width: 50px;
+  height: 50px;
+}
+
+.collapsed .profileInfo,
+.collapsed .span {
+  display: none;
+}
+
+
+
+
+.logout {
+  display: flex;
+  align-items: center;
+  width:  213.4px;
+  padding: 10px 16px;
+  position: fixed; /* Fixed positioning to place it relative to the viewport */
+  bottom: 0px; /* Distance from the bottom of the screen */
+  left: 10px; /* Distance from the left side of the screen */
+  background-color: white;
+  color: #ff7b42;
+  font-size: 16px;
+  z-index: 1000; /* Ensure it stays on top */
+  /* border-radius: 8px; */
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  transition: background-color 0.3s, color 0.3s;
+}
+.logout:hover {
+  background-color: #ff7b42;
+  color: #f0f0f0;
+  width:  213.4px;
+  border-radius: 10px;
+padding: 12px 16px 12px 16px;
+}
+
+.logoutIcon {
+  color: #ff7b42;
+  margin-right: 10px;
+  font-size: 24px;
+  border-radius: 10px;
+
+}
+
+.logout:hover .logoutIcon{
+  background-color: #ff7b42;
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+.activeMenuItem {
+  background-color: #ff7b42;
+  color: white;
+  font-weight: 400;
+  width: 202.4px ;
+}

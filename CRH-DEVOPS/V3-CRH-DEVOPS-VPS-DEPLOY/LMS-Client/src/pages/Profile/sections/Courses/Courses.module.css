@@ -1,0 +1,56 @@
+.courseDiv{
+    width: 100%;
+    min-height: 120px;
+    max-height: max-content;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 20px;
+}
+
+.coursesDiv{
+    padding-top: 70px;
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgDiv{
+    width: 120px;
+    height: 53px;
+    border-radius: 10px;
+}
+
+.courseItemDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #001220;
+}
+.courseItemDiv:hover{
+    background-color: #FFF7F3;
+    cursor: pointer;
+}
+
+.iconDisplay{
+    visibility: hidden;
+}
+
+.courseItemDiv:hover .iconDisplay{
+    visibility: visible;
+}
+
+
+
+
+
+

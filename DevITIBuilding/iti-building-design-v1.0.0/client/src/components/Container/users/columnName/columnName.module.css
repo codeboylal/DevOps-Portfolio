@@ -1,0 +1,65 @@
+.mainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    border-radius: 8px;
+    padding: 0px 24px;
+}
+
+.userDiv{
+    /* max-width: 194px;
+    min-width: 140px; */
+    width: 194px;
+}
+
+.accountTypeDiv{
+    /* width: 107px;
+    min-width: 81px; */
+    width: 110px;
+}
+
+.roleDiv{
+    width: 76px;
+    /* max-width: 76px;
+    min-width: 47px; */
+    display: flex;
+    justify-content: center;
+}
+
+.permissionDiv{
+    width: 256px;
+    /* max-width: 256px;
+    min-width: 256px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discountDiv{
+    /* max-width: 85px;
+    min-width: 29px; */
+    width: 85px;
+}
+
+.paymentDiv{
+    /* max-width: 70px;
+    min-width: 70px; */
+width: 90px;
+}
+
+.manageDiv{
+    /* max-width: 85px;
+    min-width: 72px; */
+    width: 72px;
+}
+
+
+@media (max-width:900px){
+    .mainDiv{
+        margin: 0px 12px;
+    }
+}

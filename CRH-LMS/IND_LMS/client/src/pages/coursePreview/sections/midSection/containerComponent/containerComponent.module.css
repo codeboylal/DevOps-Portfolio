@@ -1,0 +1,42 @@
+.mainDiv{
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px .25rem .25rem 0px rgba(0, 0, 0, 0.25);
+    border-radius: 1.5rem;
+    flex-direction: column;
+    /* gap: 1rem; */
+}
+
+.flex{
+    display: flex;
+}
+
+.heading{
+    color: #FF702D;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+}
+
+.none{
+    display: none;
+}
+
+.modules{
+    justify-content: center;
+    width: 9.625rem;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1rem;
+    font-weight: 400;
+    border-bottom:3px solid #FF702D;
+    border-top-left-radius: .1875rem;
+    border-top-right-radius: .1875rem;
+}
+
+@media(max-width:701px){
+   
+    #fullWidth{
+        width: 100%;
+        max-width: 100% !important;
+    }
+}

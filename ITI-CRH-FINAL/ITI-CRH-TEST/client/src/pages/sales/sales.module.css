@@ -1,0 +1,454 @@
+/* Center the content container */
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+  text-align: center;
+  flex-direction: column;
+  /* Stack items vertically */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Centered content styling */
+.centeredContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title styling */
+.comingSoonTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #212121;
+  margin-top: 20px;
+}
+
+/* Subtitle styling */
+.comingSoonSubtitle {
+  font-size: 16px;
+  color: #757575;
+  margin-top: 10px;
+  margin-bottom: 120px;
+}
+
+/* Image container styling */
+.imageContainer {
+  margin-bottom: 20px;
+}
+
+/* Image styling */
+.comingSoonImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Sales Header */
+.salesHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+}
+
+.salesHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.headerTitle {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+.statusDropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000;
+  border-radius: 4px;
+}
+
+.dropdownArrow {
+  color: #000000;
+  padding-left: 4px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.1s ease;
+}
+
+/* Card Container */
+.mainCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  height: calc(100vh - 165px);
+  width: 100%;
+}
+
+/* Status filter popup */
+.statusFilterPopup {
+  position: absolute;
+  z-index: 10;
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .salesHeader {
+    padding: 0 18px;
+  }
+
+  .mainCards {
+    padding: 0 18px;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .statusFilterPopup {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 1000;
+  }
+}
+
+/* Small Screens - 1 Card Per Row */
+@media (max-width: 600px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .statusFilterPopup {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 1000;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .mainCards {
+    height: calc(100vh - 225px);
+    margin-top: 0;
+  }
+
+  .mainContainer {
+    padding: 0px;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .statusFilterPopup {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 1000;
+  }
+}
+
+/* modal's css */
+
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  width: calc(100vw - 140px);
+  max-width: 665px;
+  height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+}
+
+.modalHeader {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.modalTitle {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.closeModalBtn {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.leadForm {
+  flex-grow: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 12px 0 20px;
+  margin-right: 8px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.formGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inputLabel {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.input {
+  padding: 12px 20px;
+  border: 1px solid #E4E4E7;
+  border-radius: 4px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.drivewayLabel {
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 21px;
+}
+
+.radioGroup label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.noteSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.noteTitle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #BBBBBB;
+  margin: 18px 0;
+}
+
+.textarea {
+  width: 100%;
+  padding: 8px;
+  resize: vertical;
+  min-height: 40px;
+}
+
+.charCount {
+  font-size: 14px;
+  color: black;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  padding: 24px 20px;
+}
+
+.footerBtn {
+  background-color: black;
+  color: white;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 100000px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+
+@media (max-width: 665px) {
+  .modalContent {
+    height: 510px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .formGroup {
+    grid-template-columns: 1fr;
+  }
+
+  .leadForm {
+    padding: 32px 12px 0 20px;
+  }
+
+  .modalFooter {
+    padding: 24px 20px;
+  }
+}
+
+
+
+   /* Center the content container */
+   .contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full viewport height */
+    text-align: center;
+    flex-direction: column; /* Stack items vertically */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Centered content styling */
+  .centeredContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Title styling */
+  .comingSoonTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #212121;
+    margin-top: 20px;
+  }
+  
+  /* Subtitle styling */
+  .comingSoonSubtitle {
+    font-size: 16px;
+    color: #757575;
+    margin-top: 10px;
+    margin-bottom: 120px;
+  }
+  
+  /* Image container styling */
+  .imageContainer {
+    margin-bottom: 20px;
+  }
+  
+  /* Image styling */
+  .comingSoonImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+ 

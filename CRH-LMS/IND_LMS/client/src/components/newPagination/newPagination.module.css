@@ -1,0 +1,50 @@
+.pointer{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* left: 48vw; */
+}
+
+.alignCenter{
+    align-items: center;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+
+.padding{
+    padding: .75rem 1.5rem;
+}
+
+.text{
+    color: #FF702D;
+    font-weight: 400;
+    font-size: .875rem;
+}
+
+.normalStyle{
+    border: 2px solid transparent;
+    border-radius: .25rem;
+}
+
+.fw600{
+    font-weight: 600;
+}
+
+.bgOrange{
+    background-color: #FF702D;
+    color: white;
+}
+
+.borderColor{
+    border-color: #FF702D;
+}
+
+.none{
+    display: none;
+}

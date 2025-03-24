@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #F5F5F5;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    /* padding-top: 124px; */
+  }
+  
+  .contentContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 16px; /* Gap between sidebar and content */
+    
+  }
+.mainDiv{
+    display:flex;
+    flex-direction:column; 
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 24px;
+}
+/* Notification Instructor */
+.notiInstructor{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+    padding: 0px 24px;
+}
+.notificationInstructorDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.notiInstructLabel{
+    color:#000000;
+    font-weight:600;
+    font-size:20px;
+}
+
+
+
+/* Analysis downloads design */
+
+.analysisDownloads{
+    display: flex;
+    flex-direction: row;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+}
+.analysisDiv{
+    width: 826px;
+    width: 100%;
+    /* height: 24.2px; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.analysisDivLabel{
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    
+    color: #000000;
+}
+.analysisDivUpper{
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    width: 377px;
+    width: 50%;
+    padding: 24px;
+    height: 337px;
+    box-shadow: 0px 4px 5.3px 0px #00000026;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: 16px;
+
+}
+.analysisDivLower{
+    /* width: 777px; */
+    width: 100%;
+    height: 340px;
+}
+
+/* Perfomance */
+.dropdownPerformance{
+    background-color: #EFF1F3;
+    padding: 6.27px 10.76px;
+    border-radius: 3.59px;
+    color: #424252;
+    font-weight: 500;
+    font-size: 12px;
+    border: 0;
+    outline: 0;
+}
+
+
+/* todo list label design */
+.toDoListLabel1{
+    font-weight: 500;
+    color: #121212;
+    font-size: 14px;
+}
+.toDoListLabel2{
+    font-weight: 400;
+    color: #41475E;
+    font-size: 12px;
+}
+
+
+
+/* download div design */
+.downloaddivStyle{
+    width: 372px;
+    height: 708px;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 24px;
+    opacity: 0px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5.3px 0px #00000026;
+}
+.downloadDataDes{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.performanceTodo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.oranageCards{
+    display: flex;
+    align-items: flex-start;
+    /* width:fit-content ; */
+    width: 100%;
+    padding-left: 22px;
+}
+
+/* .courseCard{
+    width: '1240px';
+    display: 'flex';
+    position: 'relative';
+    margin-top: '124px';
+    align-items: 'center';
+    gap: '24px';
+    flex-direction: 'column';
+} */
+/* Adjust .analysisDownloads layout for specific screen widths */
+@media (max-width: 1500px) {
+    .analysisDivUpper {
+        width: 90%;             /* Full width on smaller screens */
+        /* align-items: flex-start;  */
+                 /* Reset any default margin */
+    }
+
+    .notiInstructor {
+        flex-direction: column;
+        justify-content:flex-start;
+
+      }
+  
+    .performanceTodo, .notificationInstructorDiv  {
+        flex-direction: column;   /* Stack items vertically */
+        /* align-items: flex-start;  Align items to the start (left) */
+        align-items: flex-start;
+    }
+}
+/* Adjust .analysisDownloads layout for specific screen widths */
+@media (max-width: 1400px) {
+    .analysisDivUpper{
+        width: 80%;            
+        /* align-items: flex-start;  */
+                 /* Reset any default margin */
+    }
+
+    .performanceTodo{
+        flex-direction: column;   /* Stack items vertically */
+        /* align-items: flex-start;  Align items to the start (left) */
+        align-items: flex-start;
+    }
+}
+/* Adjust .analysisDownloads layout for specific screen widths */
+@media (max-width: 1300px) {
+    .analysisDivUpper {
+        width: 80%;             /* Full width on smaller screens */
+        /* align-items: flex-start;  */
+                 /* Reset any default margin */
+    }
+
+    .performanceTodo {
+        flex-direction: column;   /* Stack items vertically */
+        /* align-items: flex-start;  Align items to the start (left) */
+        align-items: flex-start;
+    }
+}
+/* Adjust .analysisDownloads layout for specific screen widths */
+@media (max-width: 1200px) {
+    .analysisDivUpper {
+        width: 70%;             /* Full width on smaller screens */
+        /* align-items: flex-start;  */
+                 /* Reset any default margin */
+    }
+
+    .performanceTodo {
+        flex-direction: column;   /* Stack items vertically */
+        /* align-items: flex-start;  Align items to the start (left) */
+        align-items: flex-start;
+    }
+} 
+/* Additional breakpoints for finer control */
+@media (max-width: 1100px) {
+    .analysisDivUpper {
+        width: 60%;             /* Full width on smaller screens */
+        /* align-items: flex-start;  */
+                 /* Reset any default margin */
+    }
+
+    .performanceTodo {
+        flex-direction: column;   /* Stack items vertically */
+        /* align-items: flex-start;  Align items to the start (left) */
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 900px) {
+    .analysisDivUpper {
+        width: 45%;             /* Full width on smaller screens */
+        /* align-items: flex-start;  */
+                 /* Reset any default margin */
+    }
+
+    .performanceTodo {
+        flex-direction: column;   /* Stack items vertically */
+        /* align-items: flex-start;  Align items to the start (left) */
+        align-items: flex-start;
+    }
+    
+}
+
+
+

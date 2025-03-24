@@ -1,0 +1,24 @@
+.filterPopUp{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0px;
+    display: flex;
+    z-index: 99999999;
+    background-color: rgba(0, 0, 0, 0.291);
+}
+.width{
+    width: 388px;
+}
+
+@media (max-width:600px){
+    .filterPopUp{
+        padding-top: 300px;
+        width: 100%;
+        background-color: #00000039;
+    }
+    .width{
+        width: 100%;
+    }
+}

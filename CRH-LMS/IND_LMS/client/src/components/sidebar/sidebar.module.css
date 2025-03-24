@@ -1,0 +1,150 @@
+.pointer {
+    cursor: pointer;
+}
+
+.posRelative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.mainDiv {
+    background-color: white;
+    height: 100vh;
+    max-width: 14.6rem;
+    width: auto;
+    padding: 3.3125rem 0rem .25rem 0rem;
+    position: relative;
+}
+
+.marginBottom {
+    margin-bottom: 2.25rem;
+}
+
+.profile {
+    gap: .75rem;
+}
+
+.profileImgDiv {
+    height: 6.25rem;
+    width: 6.25rem;
+}
+
+.profileImg {
+    width: 100%;
+    height: 100%;
+}
+
+.nameDes {
+    color: #FF702D;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.education {
+    color: #7A7E86;
+    font-weight: 500;
+    font-size: .75rem;
+}
+
+.NavigationDiv {
+    width: 100%;
+    /* gap: 1.5rem; */
+    gap: 1rem;
+}
+
+
+.paddingItems {
+    padding: 0px .75rem;
+}
+
+.NavigationItem {
+    height: 3rem;
+    width: 100%;
+}
+
+.Item {
+    border-radius: .9375rem;
+    padding: .75rem 1rem;
+    gap: .625rem;
+    border: 1px solid transparent;
+}
+
+.NavigationItem:hover .Item {
+    border-color: #FF702D;
+}
+
+.NavigationItem:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #FF702D;
+    color: white;
+}
+
+.ActiveSvgStroke svg path {
+    stroke: white;
+}
+
+.ActiveSvgFill svg path {
+    fill: white;
+}
+
+.logout {
+    color: #FF702D;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.abs{
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.closeNone {
+    display: none !important;
+}
+
+/* Media Queries */
+
+@media (max-width: 1440px) {
+    .none {
+        display: none;
+    }
+
+    .mediaProfileImgDiv {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+
+    .medaiLMSImg {
+        width: 3.375rem;
+    }
+
+    .mediaMainDiv {
+        max-width: 6.3125rem;
+    }
+}

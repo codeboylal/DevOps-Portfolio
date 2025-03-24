@@ -1,0 +1,9 @@
+.widthFull{
+    width: 100%;
+}
+
+.errorDes{
+    color: red;
+    font-size: 12px;
+    padding-top: 3px;
+}

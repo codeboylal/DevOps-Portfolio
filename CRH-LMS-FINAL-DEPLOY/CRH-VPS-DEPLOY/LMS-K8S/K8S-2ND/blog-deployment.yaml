@@ -1,0 +1,28 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blog
+  namespace: lms-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: blog
+  template:
+    metadata:
+      labels:
+        app: blog
+    spec:
+      containers:
+      - name: blog
+        image: technozen2024/crh-lms-project:lms-blog-container # Replace with exact image name
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "64Mi"
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: dockerhub-secret

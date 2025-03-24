@@ -1,0 +1,53 @@
+
+.topLineBelowNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* Filter Button */
+.filterButtonShowing{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+.filterButton{
+    border: 1px solid #BBBBBB;
+    padding: 6px 27px;
+    border-radius: 8px;
+    color: #7E7E7E;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.showingNumCourses{
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    gap: 5px;
+    color: #001220;
+    font-weight: 500;
+    font-size: 16px;
+}
+.disFlexRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1100px) {
+
+
+  }

@@ -1,0 +1,26 @@
+.tabContainer {
+    width: 313px;
+    margin: 0 auto;
+    height: 3px;
+    /* fon */
+    
+
+  }
+  
+  .activeTab {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+
+  }
+  
+  .inactiveTab {
+    color: grey;
+    font-weight: normal;
+    font-size: 16px;
+
+  }
+
+
+
+  

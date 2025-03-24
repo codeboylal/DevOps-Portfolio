@@ -1,0 +1,120 @@
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #F8F8F8;
+    padding: 22px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 10px;    
+    margin-bottom: 16px;
+}
+
+.completeDiv{
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid #E2E8F0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completeDiv{
+    cursor: pointer;
+}
+
+.complete{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.checkTaskName{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.heading{
+    color: 000000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.taskName{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.taskDetail{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+.rightDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.dateDiv{
+    display: flex;
+    flex-direction: column;
+    width: 176px;
+    height: 60px;
+    background-color: #D6D6D6;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+.likeDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #DADADA;
+    border-radius: 8px;
+}
+
+.likeDiv:hover{
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 900px){
+    .mainContainer{
+        margin: 18px;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+    .rightDiv{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .task{
+        position: relative;
+        right: 30px;
+    }
+}

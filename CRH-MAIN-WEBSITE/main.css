@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+
+  .active {
+    color: #27b3df !important;
+  }
+
+  .nav-links a {
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-links a:hover {
+    color: #27b3df !important;
+  }
+  .padding-nav-links a {
+    padding: 10px 0 10px 30px;
+    color: #7c68eecc;
+  }
+  .bruno-font {
+    font-family: 'Bruno Ace SC', sans-serif;
+  }
+
+  .hero {
+    background: url('./img/bg-img.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .cards {
+    background: url('./img/cards-bg-img-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .testimonials {
+    background: url('./img/testimonials.png') no-repeat;
+    background-size: cover;
+  }
+
+  .login-bg {
+    background: url('./img/testimonials-2.png') no-repeat;
+    background-size: cover;
+  }
+
+  .ul-list li::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f058';
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    /* width: 15px;
+    height: 15px;
+    border-radius: 10px; */
+    margin-right: 25px;
+    color: green;
+  }
+
+  .details-list li::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\2714';
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    /* width: 15px;
+    height: 15px;
+    border-radius: 10px; */
+    margin-right: 10px;
+  }
+
+  .scroll-nav-bg {
+    background-color: #1e293bec;
+  }
+
+  .footer-list li::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f054';
+    position: relative;
+    margin-right: 7px;
+    bottom: 2px;
+    color: #27b3df;
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  #menuHam a {
+    transition: background-color ease-in-out 0.3s;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .slider-list {
+    animation: scroll 60s linear infinite
+  }
+}

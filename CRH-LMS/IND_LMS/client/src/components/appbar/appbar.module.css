@@ -1,0 +1,231 @@
+.flex {
+    display: flex;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.height79px{
+    height: 4.9375rem;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.justifySpaceBetween {
+    justify-content: space-between;
+}
+
+.mainDiv {
+    height: 100%;
+    padding: 1.43rem 1.5rem;
+    background-color: white;
+}
+
+.leftSection {
+    width: 100%;
+    gap: 1rem;
+}
+
+.content {
+    min-width: 14rem;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.content__Child1 {
+    color: #211C37;
+    font-weight: 600;
+    font-size: 1.5rem;
+    gap: .5rem;
+}
+
+.content__Child2 {
+    color: #85878D;
+    font-weight: 500;
+    font-size: .875rem;
+}
+
+.wavingHandDes {
+    transform: rotate(-10deg);
+}
+
+.searchDiv {
+    min-width: 2.8125rem;
+    max-width: 25.93rem;
+    height: 2.875rem;
+    border-radius: .99125rem;
+    padding: .75rem;
+    background-color: #EDEDED;
+    box-shadow: 0px 0px 3.965rem 0px #00000012;
+    width: 100%;
+    gap: .75rem;
+    margin: 0px 2.5rem;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    max-width: 6.25rem;
+}
+
+.searchSpan {
+    color: #1C1D1D;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.rightSection {
+    gap: 1.5rem;
+}
+
+.profileDiv {
+    height: 2.93rem;
+    width: 2.93rem;
+    border-radius: 50%;
+    /* border: 1px solid #8c8c8c71; */
+}
+
+.notific {
+    min-width: 1.3125rem;
+}
+
+.profileImg {
+    width: 100%;
+    height: 100%;
+    min-width: 2.875rem;
+}
+
+.sideBarMenu {
+    margin-right: 1rem;
+}
+
+.none {
+    display: none;
+}
+
+.courseFilter {
+    padding: 0rem 1rem;
+    position: relative;
+    padding-bottom: 5px;
+    color: #00000052;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.courseFilter::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    border-top-left-radius: .1875rem;
+    border-top-right-radius: .1875rem;
+}
+
+.activeBorder {
+    color: #000000DE;
+}
+
+.courseFilter.activeBorder::after {
+    background: #FF702D;
+}
+
+.filterPopUp {
+    display: none;
+    /* width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0; */
+    z-index: 99;
+    /* background-color: #00000048; */
+}
+
+.optionsFilter{
+    position: absolute;
+    max-width: 15.625rem;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 3.965px 0px #00000012;
+}
+
+.option{
+    padding: .5rem 1rem;
+    border-bottom: .5px solid #00000012;
+}
+
+.topBorderRadius{
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.bottomBorderRadius{
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.option:hover{
+    background-color: #ff6f2d1c;
+}
+
+.expandarrow {
+    display: none;
+}
+
+.rotateArrow {
+    transform: rotate(180deg);
+    position: relative;
+}
+
+/* Media Queries */
+
+@media(max-width:1260px) {
+    .searchDiv {
+        margin-left: 0rem;
+        max-width: max-content;
+    }
+
+    .courseFilterNone {
+        display: none;
+    }
+
+    .filterPopUp {
+        display: flex;
+    }
+
+    .expandarrow {
+        display: flex;
+    }
+}
+
+@media(max-width:940px) {
+    .searchSpan {
+        display: none;
+    }
+}
+
+@media(max-width:850px) {
+    .contentNone {
+        display: none;
+    }
+
+    .leftSectionCourses {
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+}
+
+@media(min-width:768px) {
+    .sideBarMenu {
+        display: none;
+    }
+}

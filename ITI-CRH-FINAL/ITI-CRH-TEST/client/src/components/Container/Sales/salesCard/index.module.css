@@ -1,0 +1,27 @@
+.cardDiv {
+    width: 99%;
+    max-width: 1128px;
+    border-radius: 18px;
+    border: 1px solid #D8D8D8;
+    padding: 14px;
+    display: flex;
+    gap: 12px;
+}
+
+.cardImg {
+    height: 100%;
+    width: 359px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+@media (max-width: 850px) {
+    .cardDiv {
+        flex-direction: column;
+    }
+
+    .cardImg {
+        height: 251px;
+        width: 100%;
+    }
+}

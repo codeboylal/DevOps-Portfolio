@@ -1,0 +1,27 @@
+.pointer{
+    cursor: pointer;
+}
+
+.none{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.gap24px{
+    gap: 1.5rem;
+}
+
+.gap16px{
+    gap: 1rem;
+}
+
+.cardDiv{
+    flex-wrap: wrap;
+}   

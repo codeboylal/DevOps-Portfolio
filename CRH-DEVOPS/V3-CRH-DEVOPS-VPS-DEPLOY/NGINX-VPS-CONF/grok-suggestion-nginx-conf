@@ -1,0 +1,19 @@
+server {
+    listen 80;
+    server_name codroidhub.com www.codroidhub.com;
+
+    location / {
+        root   /your/path/to/frontend;
+        index  index.html index.htm;
+        try_files $uri $uri/ /index.html;
+    }
+
+    location /api/ {
+        proxy_pass http://LMS-Server:5000; # Assuming your backend is running on port 5000 inside the container
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}

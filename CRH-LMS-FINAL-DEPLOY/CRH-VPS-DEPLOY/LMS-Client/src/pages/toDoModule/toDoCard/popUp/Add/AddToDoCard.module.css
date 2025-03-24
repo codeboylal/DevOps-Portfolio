@@ -1,0 +1,141 @@
+.outerDiv{
+    background-color: #000000B2;
+    width: 100vw;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    z-index: 999;
+    cursor: default;
+}
+.pointer{
+    cursor: pointer;
+}
+.popUpDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    z-index: 5;
+    width: 100%;
+    max-width: 670px;
+    min-height: 238px;
+    height: max-content;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4B4B4B;
+}
+
+.labelDes{
+    color: #FF702D;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 21px;
+}
+
+.labelColorDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #4B4B4B;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.textArea{
+        width: 100%; 
+        resize: none;
+        font-size: 13px;
+        border-radius: 8px;
+        padding: 8px;
+        border: 1px solid #ccc; 
+}
+.textArea:hover{
+    border-color: black;
+}
+
+.textArea:focus{
+    border: 2px solid #FF702D; 
+    outline: 0;
+}
+
+.colorsDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.colorDiv{
+    width: 45px;
+    height: 45px;
+    background-color: #FAF3FF;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activeColor{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff6f2db3;
+    z-index: 99;
+}
+
+.buttonDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.cancelButton{
+    min-width: 95px;
+    min-height: 37px;
+    border-radius: 8px;
+    border: 1px solid #4B4B4B;
+    color: #4B4B4B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.confirmButton{
+    min-width: 95px;
+    min-height: 37px;
+    background-color: #FF702D;
+    border: 1px solid #FF702D;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.textArea.error {
+    border-color: red; 
+  }
+  
+  .textArea.error::placeholder {
+    color: red;
+  }
+  

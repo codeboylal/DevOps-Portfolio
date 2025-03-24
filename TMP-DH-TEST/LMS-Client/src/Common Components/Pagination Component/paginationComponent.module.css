@@ -1,0 +1,29 @@
+.paginationContainers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 24px;
+}
+
+.pageButton {
+    color: #FF6D00; 
+    border: 2px solid #FF6D00;
+    border-radius: 10px;
+    text-transform: none; /* To remove uppercase */
+}
+
+.pageNumber {
+    color: #FF6D00;
+    background-color: white;
+    border: none;
+    text-transform: none; /* To remove uppercase */
+}
+
+.activePage {
+    background-color: #FF6D00;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-transform: none; /* To remove uppercase */
+    border-radius: 10px;
+}

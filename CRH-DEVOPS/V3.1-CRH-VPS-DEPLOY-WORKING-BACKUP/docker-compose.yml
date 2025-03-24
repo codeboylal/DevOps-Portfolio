@@ -1,0 +1,41 @@
+
+services:
+  client:
+    container_name: client-container
+    build:
+      context: ./LMS-Client
+    ports:
+      - "3000:80"
+    networks:
+      - lms-network
+
+  server:
+    container_name: server-container
+    build:
+      context: ./LMS-Server
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./LMS-Server/.env
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+      - JWT_SECRET=${JWT_SECRET}
+    networks:
+      - lms-network
+
+  reverse-proxy:
+    container_name: nginx-reverse-proxy
+    image: nginx:alpine
+    volumes:
+      - ./LMS-Client/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80"
+    depends_on:
+      - client
+      - server
+    networks:
+      - lms-network
+
+networks:
+  lms-network:
+    driver: bridge

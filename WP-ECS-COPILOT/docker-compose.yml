@@ -1,0 +1,24 @@
+services:
+  wordpress:
+    build: ./wordpress
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
+
+  db:
+    build: ./mysql  # Use the custom Dockerfile for MySQL
+    ports:
+      - "3306:3306"  # Optional: Expose MySQL port for local access
+
+  phpmyadmin:
+    build: ./phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: exampleuser
+      PMA_PASSWORD: examplepass

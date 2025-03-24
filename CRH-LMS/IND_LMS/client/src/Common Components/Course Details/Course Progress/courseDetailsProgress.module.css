@@ -1,0 +1,77 @@
+.progressContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+/* width: 1001px; */
+  }
+  
+  .progressLabel {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .progressBar {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .progressPercentage {
+    font-size: 14px;
+    color: #333;
+  }
+  
+
+  .completion{
+    width: 100%;
+    margin-left: 10px;
+    /* margin-right: 10px; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+  }
+
+
+
+
+
+
+
+
+  
+@media (max-width: 1500px) {
+  .mainContainer{
+    width: 88%; 
+    margin: 0 10px; /* Further reduce side margins */
+  }
+}
+@media (max-width: 1350px) {
+  .mainContainer{
+    width: 77%; 
+    margin: 0 10px; /* Further reduce side margins */
+  }
+}
+@media (max-width: 1200px) {
+  .mainContainer{
+    width: 70%; 
+    margin: 0 10px; /* Further reduce side margins */
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .mainContainer{
+    width: 65%; 
+    margin: 0 10px; /* Further reduce side margins */
+  }
+}
+
+
+@media (max-width: 900px) {
+  .mainContainer{
+    width: 60.8%; 
+    margin: 0 10px; /* Further reduce side margins */
+  }
+}

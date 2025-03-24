@@ -1,0 +1,136 @@
+/* .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; 
+    padding: 20px;
+  } */
+/*   
+  .contentContainer {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 20px;
+  }
+  
+  .imageContainer {
+    margin: 20px 0;
+  }
+  
+  .comingSoonImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .textContainer {
+    margin-top: 20px;
+  }
+  
+  .comingSoonTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #212121;
+  }
+  
+  .comingSoonSubtitle {
+    font-size: 16px;
+    color: #757575;
+    margin-top: 10px;
+  }
+   */
+
+
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   .mainContainer {
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    
+  }
+
+   /* Center the content container */
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    flex-direction: column; 
+    max-width: 800px;
+    margin: 0 auto;
+    /* width: 1440px; */
+  }
+  
+  /* Centered content styling */
+  .centeredContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title styling */
+  .comingSoonTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #212121;
+    margin-top: 20px;
+  }
+  
+  /* Subtitle styling */
+  .comingSoonSubtitle {
+    font-size: 16px;
+    color: #757575;
+    margin-top: 10px;
+    margin-bottom: 120px;
+  }
+  
+  /* Image container styling */
+  .imageContainer {
+    margin-bottom: 20px;
+  }
+  
+  /* Image styling */
+  .comingSoonImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .scrollContainer {
+    height: 100vh; /* Full viewport height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+
+
+  .cardsRow {
+    width: 1133px;
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
+    /* gap: 16px; Space between cards */
+    justify-content: flex-start; /* Align cards to the left */
+    align-items: flex-start; /* Align cards at the top */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+ 
+  }
+  
+  .projectCard {
+
+    padding: 14px;
+
+  }

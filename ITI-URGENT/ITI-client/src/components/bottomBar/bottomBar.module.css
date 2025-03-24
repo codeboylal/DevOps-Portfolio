@@ -1,0 +1,76 @@
+.div{
+    border-top: .5px solid #00000026;
+    background-color: #FFFFFF;
+    width: calc(100vw + 12px);
+    height: 76px;
+    /* padding: 12px 22px 0px 14px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.DivChild{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #BBBBBB;
+    font-size: .75rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.imgDes{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.projectsActive .projectsSVG{
+    width: 2.25rem;
+    height: 2.25rem;
+}
+.projectsActive #projects{
+    fill: black;
+}
+.projectsActive #projectsText{
+    display: none;
+}
+.salesActive .salesSVG{
+    width: 2.25rem;
+    height: 2.25rem;
+}
+.salesActive #sales{
+    fill: black;
+}
+.salesActive #salesText{
+    display: none;
+}
+.displayCenterActive .displayCenterSVG{
+    width: 2.25rem;
+    height: 2.25rem;
+}
+.displayCenterActive #displayCenter{
+    fill: black;
+}
+.displayCenterActive #displayCenterText{
+    display: none;
+}
+.settingsActive .settingsSVG{
+    width: 2.25rem;
+    height: 2.25rem;
+}
+.settingsActive #settings{
+    fill: black;
+}
+.settingsActive #settingsText{
+    display: none;
+}
+.inboxActive .inboxSVG{
+    width: 2.25rem;
+    height: 2.25rem;
+}
+.inboxActive #inbox{
+    fill: black;
+}
+.inboxActive #inboxText{
+    display: none;
+}

@@ -1,0 +1,183 @@
+.pointer{
+    cursor: pointer;
+}
+
+.outerDiv{
+    background-color: #000000B2;
+    width: 100vw;
+    height: 100vh; 
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    padding: 24px 12px;
+
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0px;
+    gap: 24px;
+    background-color: white;
+    max-width: 753px;
+    width: 100%;
+    border-radius: 5px;
+    /* height: max-content; */
+    /* overflow-y: scroll; */
+    max-height: 93vh;
+}
+
+.padd{
+    padding: 0px 32px;
+}
+
+.heading{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.profileDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.imgDiv{
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.239);
+    position: relative;
+}
+
+.img{
+    max-width: 163px;
+    max-height: 163px;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.camera{
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightButtonContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cancelButton{
+    border-radius: 100px;
+    border: 1px solid #4B4B4B;
+    color: #4B4B4B;
+    /* width: 76px; */
+    height: 37px;
+    background-color: transparent;    
+    padding: 6px 16px;
+}
+
+.col16{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.subHeading{
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.optionsDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+
+.valueLabelDiv{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkBox{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E2E8F0;
+    border-radius: 3px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radius50{
+    border-radius: 50%;
+}
+
+
+.select{
+    outline: 0;
+    border: 1px solid #EDEEF0;
+    background-color: #F8F8F8;
+    border-radius: 6px;
+    height: 70px;
+    max-width: 332px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #9999A0;
+    font-weight: 500;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+
+.select:hover, .select:focus{
+    border-color: black;
+}
+
+.inputsDiv{
+    flex-direction: row;
+}
+
+
+@media (max-width: 901px){
+    .outerDiv{
+        padding-bottom: 60px;
+    }
+    .mainDiv{
+        max-height: calc(93vh - 150px);
+    }
+}

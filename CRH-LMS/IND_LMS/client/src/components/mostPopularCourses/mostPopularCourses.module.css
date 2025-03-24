@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.gap24px{
+    gap: 1.5rem;
+}
+
+.flexWrap{
+    flex-wrap: wrap;
+}
+
+.gap16px{
+    gap: 1rem;
+}

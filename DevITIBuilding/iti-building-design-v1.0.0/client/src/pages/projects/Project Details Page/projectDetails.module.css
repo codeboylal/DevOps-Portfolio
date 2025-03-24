@@ -1,0 +1,269 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.layoutContainer {
+  display: flex;
+  flex-direction: column; /* Horizontal layout */
+  gap: 20px;
+  /* height: calc(100vh - 28px); */
+}
+
+.sidebarButtonContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  min-width: 100px; /* Adjust based on the desired width */
+}
+
+.superContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1102px;
+  height: calc(100vh - 140px);
+  padding-left: 18px;
+  padding-right: 18px;
+
+ 
+
+}
+
+/* .fileButtonContainer {
+  display: none; /* Hidden by default */
+/* } */
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  border: 1px solid #d8d8d8;
+  padding: 14px;
+  border-radius: 18px;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  width: 50%;
+}
+
+.rightColumn {
+  flex: 1;
+}
+
+.subTaskContainer {
+  margin-top: 40px;
+}
+
+.fileButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; /* Ensures it spans the full width of the parent */
+  padding-right: 20px;
+  display: none;
+  gap: 8px;
+}
+
+.fileButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+  border: 1px solid #EDEEF0;
+}
+
+
+
+.dimOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+
+@media (min-width: 1725px){
+.superContainer{
+  width: 100%;
+}
+
+
+}
+
+
+@media (max-width: 1351px){
+  .superContainer{
+  height: calc(100vh - 185px);
+
+  }
+}
+
+
+
+
+
+/* Responsive for smaller tablets */
+@media (max-width: 1000px) {
+  .contentContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+  }
+
+  /* .superContainer {
+    
+    height: calc(100vh - 160px);
+
+  } */
+}
+
+
+
+
+
+
+
+
+
+.filesToggleButton {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  /* background-color: black; */
+  /* color: white; */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+  z-index: 1000;
+  width: 67px;
+  height: 67px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+
+
+}
+
+/* .filesToggleButton:hover {
+  background-color: rgb(46, 46, 46);
+} */
+
+
+@media (min-width: 1921px){
+  .filesToggleButton {
+    display: none;
+  }
+  .sidebarButtonContainerLeft{
+    display: none;
+  }
+}
+
+
+/* @media (max-width: 1398px){
+.mainContainer{
+
+  width: 97%;
+
+}
+} */
+/* @media(max-width:1398px){
+  .superContainer{
+    width: 98%;
+
+  }
+} */
+
+
+
+/* Responsive for mobile devices */
+@media (max-width: 768px) {
+  .mainContainer {
+    gap: 10px;
+  }
+
+  .layoutContainer {
+    flex-direction: column; /* Stack sidebar and content vertically */
+  }
+
+  .contentContainer {
+    padding: 10px;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+  }
+
+  .sidebarButtonContainer {
+    margin-top: 20px;
+    align-self: center; /* Center the sidebar button */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left:0; */
+  }
+
+  .subTaskContainer {
+    margin-top: 20px;
+  }
+
+
+  .superContainer {
+    
+    height: calc(100vh - 207px);
+
+    /* top: 1; */
+    /* position: absolute; */
+
+    /* bottom: 0; */
+  }
+
+
+  .sidebarButtonContainerLeft{
+    position: relative;
+    top: 50%;
+    /* background-color: (0,0,0,0.5); */
+  }
+ 
+}
+
+
+@media (max-width: 900px) { 
+  .fileButtonContainer {
+    display: flex; /* Show only at 768px */
+    padding-bottom: 10px;
+  }
+
+  .filesToggleButton {
+    display: none;
+  }
+
+  .superContainer{
+    height: calc(100vh - 210px);
+  }
+
+}

@@ -1,0 +1,51 @@
+
+   /* Center the content container */
+   .contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    flex-direction: column; /* Stack items vertically */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Centered content styling */
+  .centeredContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title styling */
+  .comingSoonTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #212121;
+    margin-top: 20px;
+  }
+  
+  /* Subtitle styling */
+  .comingSoonSubtitle {
+    font-size: 16px;
+    color: #757575;
+    margin-top: 10px;
+    margin-bottom: 120px;
+  }
+  
+  /* Image container styling */
+  .imageContainer {
+    margin-bottom: 20px;
+  }
+  
+  /* Image styling */
+  .comingSoonImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+ 

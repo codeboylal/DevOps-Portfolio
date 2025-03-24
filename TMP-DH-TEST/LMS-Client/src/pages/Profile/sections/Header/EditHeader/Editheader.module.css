@@ -1,0 +1,97 @@
+.pointer{
+    cursor: pointer;
+}
+.outerDiv{
+    background-color: #000000B2;
+    width: 100vw;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+}
+.popupDes{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 24px;
+    padding: 32px;
+    background-color: #FFFFFF;
+    z-index: 5;
+    width: 688px;
+}
+
+.HeadingDes{
+    color: #FF702D;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.labelDes{
+    font-weight: 400;
+    font-size: 16px;
+    color: #001220;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.languageDataDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.languageDes{
+    border: 1px solid #FF702D;
+    background-color: #FFEDDE;
+    color: #FF702D;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: max-content;
+}
+
+.saveCancelDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cancelButton{
+    border: 1px solid #4B4B4B;
+    color: #4B4B4B;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 6px 23px;
+    line-height: 24.5px;
+    /* width: 95px; */
+}
+
+.saveButton{
+    border: 1px solid #FF702D;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 6px 23px;
+    line-height: 24.5px;
+    background-color: #FF702D;
+    border-radius: 8px;
+    /* width: 95px; */
+    box-sizing: border-box;
+}

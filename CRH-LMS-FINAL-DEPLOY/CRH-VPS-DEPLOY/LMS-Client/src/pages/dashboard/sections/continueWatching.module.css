@@ -1,0 +1,200 @@
+/* continueWatchingDiv styling */
+.continueWatchingDiv {
+    width: 1227px;
+    height: 457px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0px 24px;
+}
+
+.cardsContainer {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(376px, 1fr)); /* Auto-adjust based on available space */
+    justify-items: start;
+}
+
+.cardDes {
+    width: 376px;
+    height: 421px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    gap: 16px;
+    box-shadow: 0px 4px 5.3px 0px #00000026;
+    padding: 24px;
+    position: relative;
+    padding-top: 235px;
+}
+
+.cardImageDes {
+    background: #FFFFFF;
+    height: 225px;
+    width: 376px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    object-fit: fill;
+}
+
+.cardHeading {
+    font-size: 24px;
+    color: #4B4B4B;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardDesc {
+    font-weight: 500;
+    font-size: 14px;
+    color: #4B4B4B;
+}
+
+
+.lessonStyling{
+    font-weight: 500;
+    font-size: 14px;
+    color: #4B4B4B;
+    
+    
+}
+.lessonStyling2 {
+    font-weight: 700;
+
+
+   
+}
+
+/* continue wwatching left right navigation icon design */
+.circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    color: #4B4B4B;
+    height: 24px;
+    border: 1px solid #4B4B4B;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+
+
+
+@media (max-width: 1500px) {
+   
+    .cardImageDes {
+        width: 320px;
+        
+    }
+    
+    .cardDes {
+        width: 320px;
+        
+    }
+    
+    .cardsContainer {
+        display: grid; /* Ensure proper grid layout */
+        grid-template-columns: repeat(3, 1fr); /* Correct syntax for single-column grid */
+    gap: 0px;
+    /* margin-left: 0px; */
+   
+    }
+
+    .arrowContinue {
+        display: flex;
+        justify-content: space-between;
+        width: 1090px; /* Adjust width as per requirement */
+    }
+}
+
+/* Media Queries for responsive layout */
+@media (max-width: 1400px) {
+
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 130px;
+        gap: 30px;
+        width: 127px;
+        height: 457px;
+    } 
+    
+    .arrowContinue{
+        display: flex;
+        justify-content: space-between;
+        /* width: 60px; */
+          width: 940px;
+      } 
+}
+
+
+@media (max-width: 1200px) {
+
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 80px;
+        gap: 30px;
+        width: 127px;
+        height: 457px;
+    } 
+    
+    .arrowContinue{
+        display: flex;
+        justify-content: space-between;
+        /* width: 60px; */
+          width: 830px;
+      }
+}
+
+
+@media (max-width: 1100px) {
+    /* continueWatchingDiv styling */
+    .cardImageDes {
+        width: 340px;
+
+    }
+    
+    .cardDes {
+        width: 340px;
+        
+    }
+    
+    .cardsContainer {
+        display: grid; /* Ensure proper grid layout */
+        grid-template-columns: repeat(2, 1fr); /* Correct syntax for single-column grid */
+    gap: 24px;
+    margin-left: 0px;
+   
+    }
+
+    .arrowContinue {
+        display: flex;
+        justify-content: space-between;
+        width: 700px; /* Adjust width as per requirement */
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 130px;
+        gap: 30px;
+        width: 127px;
+        height: 457px;
+    } 
+    
+    .arrowContinue{
+        display: flex;
+        justify-content: space-between;
+        /* width: 60px; */
+          width: 500px;
+      }
+}

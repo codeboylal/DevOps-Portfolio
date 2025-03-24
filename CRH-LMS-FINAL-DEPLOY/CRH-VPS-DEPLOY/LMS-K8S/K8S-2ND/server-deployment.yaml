@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server
+  namespace: lms-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: server
+  template:
+    metadata:
+      labels:
+        app: server
+    spec:
+      containers:
+      - name: server
+        image: technozen2024/crh-lms-project:lms-server-container  # Replace with exact image name
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            cpu: "1"
+            memory: "512Mi"
+        ports:
+        - containerPort: 5000
+        envFrom:
+        - secretRef:
+            name: lms-secrets
+      imagePullSecrets:
+      - name: dockerhub-secret

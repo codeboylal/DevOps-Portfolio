@@ -1,0 +1,74 @@
+
+# Working
+services:
+  client:
+    container_name: client-container
+    build:
+      context: ./LMS-Client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80" 
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          # memory: "512M"
+          memory: "256M"
+    depends_on:
+      - server
+    networks:
+      - lms-networks 
+
+  server:
+    container_name: server-container
+    build:
+      context: ./LMS-Server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000" 
+    env_file:
+      - ./LMS-Server/.env 
+    environment:
+      - MONGODB_URI=${MONGODB_URI} 
+      - JWT_SECRET=${JWT_SECRET}
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          # memory: "1024M"
+          memory: "512M"
+    networks:
+      - lms-networks
+
+  blog:
+    container_name: blog-container
+    build:
+      context: ./LMS-Blog
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80" 
+    
+    # Hiding for testing purpose
+
+    # env_file:
+    #   - ./LMS-Blog/.env 
+    # environment:
+    #   - MONGODB_URI=${MONGODB_URI} 
+    #   - JWT_SECRET=${JWT_SECRET}
+
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          # memory: "128M"
+          memory: "64M"
+    networks:
+      - lms-networks
+  
+
+networks:
+  lms-networks:
+    driver: bridge
+
+
+

@@ -1,0 +1,96 @@
+.courseDiv {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat( 4, 1fr); 
+    justify-content: space-between;
+}
+
+.courseItemDiv {
+    width: 276px; /* Let the grid control the width */
+    height: 162px;
+    background-image: linear-gradient(68.86deg, #FF9D6F 1.99%, #FF702D 93.51%);
+    border-radius: 12px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.courseHeadingLabel {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.courseMidDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 64px;
+    font-weight: 700;
+}
+/* 
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1400px) {
+
+    .courseItemDiv{
+
+        width: 100%;
+        min-width: 251px;
+       
+    }
+  
+    
+}
+
+
+@media (max-width: 1300px) {
+
+    .courseItemDiv{
+
+        width: 100%;
+        min-width: 220px;
+       
+    }
+    
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .courseItemDiv{
+        width: 100%;
+        min-width: 400px;
+       
+    }
+    
+    .courseDiv{
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr); 
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .courseItemDiv{
+
+        width: 100%;
+        max-width: 336px;
+       
+    }
+    
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .courseItemDiv{
+        width: 100%;
+        max-width: 290px;
+    }
+}

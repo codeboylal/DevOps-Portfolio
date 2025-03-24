@@ -1,0 +1,73 @@
+.instructorDiv {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem; /* Rounded corners */
+    box-shadow: 0px 0.25rem 0.33rem rgba(0, 0, 0, 0.15); 
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    position: relative;
+    width: 100%;
+    max-width: 90vw; /* Ensures it does not exceed 90% of the viewport width */
+    height: auto; /* Auto height based on content */
+    margin: 0 auto; /* Centers the div */
+    min-height: 20.125rem;
+}
+
+/* Instructor Item */
+.instructorItem {
+    display: flex;
+    /* gap: 0.75rem; Consistent spacing */
+    flex-direction: column;
+}
+
+/* Instructor Image */
+.imgDesInstructor {
+    width: 2.5rem; /* Responsive size */
+    max-width: 100%; /* Prevents overflow */
+}
+
+/* "See All" Button */
+.instructorSeeAll {
+    color: #FF702D;
+    background-color: #FFEAE1;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    border-radius: 0.75rem;
+    font-size: 1rem; /* Responsive font size */
+    text-align: center;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: calc(100% - 3rem);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .instructorDiv {
+        padding: 1rem; /* Reduce padding for smaller screens */
+        max-width: 95vw;
+    }
+
+    .imgDesInstructor {
+        width: 2rem; /* Slightly smaller on mobile */
+        height: 2rem;
+    }
+
+    .instructorSeeAll {
+        padding: 0.5rem; /* Adjust button size */
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .instructorDiv {
+        padding: 0.75rem;
+    }
+
+    .instructorSeeAll {
+        font-size: 0.85rem;
+        padding: 0.4rem;
+    }
+}

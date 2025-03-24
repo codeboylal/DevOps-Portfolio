@@ -1,0 +1,265 @@
+.imgPopUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Dark overlay for background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    overflow: hidden;
+    cursor: default;
+  
+}
+
+.upperDiv{
+    position: fixed;
+    top: 0;
+    height: 71px;
+    background-color: white;
+    width: 100%;
+    /* padding: 16px; */
+    padding-top: 25.5px;
+    padding-left: 31.5px;
+    z-index: 9999;
+}
+
+
+
+.imgDiv {
+    width: max-content;
+    height: 90%;
+    background-color: transparent;
+    /* position: relative; */
+    max-width: 1132px;
+    max-height: 850px;
+    border-radius: 18px;
+    display: flex;
+}
+
+/* .zoomControls {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    margin-left: 300px;
+    margin-top: 600px;
+
+} */
+
+.zoomControls {
+    position: fixed;
+    bottom: 20px;
+    right: 45%;
+
+    /* display: flex; */
+    gap: 20px;
+    z-index: 1000;
+}
+
+.buttonAlingment {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 1000; */
+}
+
+.zoomButton {
+    height: 44px;
+    width: 44px;
+    background-color: #131314;
+    color: white;
+    /* border: 1px solid white; */
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    /* transition: background-color 0.2s; */
+}
+
+
+
+@media (min-width: 1133px) {
+    .imgDiv__Plan {
+        width: max-content !important;
+        height: 90% !important;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+    cursor: grab;
+}
+
+
+.close {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    /* border: .2px solid #D8D8D8; */
+    backdrop-filter: blur(4px);
+    background-color: #131314;
+}
+
+.leftArrow {
+    position: absolute;
+    cursor: pointer;
+    top: 48%;
+    left: 80px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.rightArrow {
+    position: absolute;
+    cursor: pointer;
+    top: 48%;
+    right: 80px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 1250px) {
+    .leftArrow {
+        left: 20px;
+    }
+
+    .rightArrow {
+        right: 20px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .leftArrow {
+        left: 20px;
+    }
+
+    .rightArrow {
+        right: 20px;
+    }
+}
+
+
+@media (max-width: 1800px) {
+    .leftArrow {
+        left: 20px;
+    }
+
+    .rightArrow {
+        right: 20px;
+    }
+}
+
+
+@media (min-width: 830px) {
+    .imgDiv__Facade {
+        width: max-content !important;
+        height: 90% !important;
+    }
+
+
+}
+
+
+@media (max-width:700px) {
+    .arrow {
+        width: 44px;
+        height: 44px;
+    }
+    .upperDiv{
+
+        padding-left: 19.5px;
+
+    }
+    
+
+}
+
+
+
+@media (max-width: 700px) {
+    .zoomControls {
+        display: none;
+    }
+    .imgDiv{
+        height: 50%;
+        /* width: 70%; */
+    }
+}
+
+
+
+/* @media (max-width: 1500px){
+.zoomControls{
+    margin-left: 280px;
+    margin-top: 530px;
+}
+}
+
+
+@media (max-width: 1300px){
+    .zoomControls{
+        margin-left: 250px;
+        margin-top: 470px;
+    }
+    }
+
+
+
+    @media (max-width: 1200px){
+        .zoomControls{
+            margin-left: 230px;
+            margin-top: 420px;
+        }
+        }
+
+
+        @media (max-width: 1100px){
+            .zoomControls{
+                margin-left: 200px;
+                margin-top: 360px;
+            }
+            }
+
+
+            @media (max-width: 900px){
+                .zoomControls{
+                    margin-left: 160px;
+                    margin-top: 280px;
+                }
+                }
+
+                @media (max-width: 800px){
+                    .zoomControls{
+                        margin-left: 130px;
+                        margin-top: 230px;
+                    }
+                    } */

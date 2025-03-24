@@ -1,0 +1,67 @@
+.pointer{
+    cursor: pointer;
+}
+
+.outerDiv{
+    background-color: #000000B2;
+    width: 100vw;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+}
+.deletePopUp{
+    width: 100%;
+    max-width: 641px;
+    min-height: 219.83px;
+    height: max-content;
+    border-radius: 17.08px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2.85px 2.85px 0px #00000040;
+}
+
+.labelDes{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #4B4B4B;
+}
+
+.flexEnd{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.cancelButton{
+    color: #4B4B4B;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: 1px solid #4B4B4B;
+    background-color: transparent;
+}
+
+.confirmButton{
+    background-color: #FF702D;
+    padding: 10px 20.5px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 16.94px;
+    font-size: 14px;
+    border: 1px solid #FF702D;
+}

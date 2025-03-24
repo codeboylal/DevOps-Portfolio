@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../tailwind.config.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c83f347ff1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Courses</title>
+  </head>
+  <body>
+    <!-- Nav Bar bg-[#292f36] -->
+    <div
+      class="fixed top-0 sm:py-2 w-full z-10 transition ease-in-out duration-[0.4s] scroll-nav-bg"
+    >
+      <div
+        class="flex items-center justify-between container w-full sm:w-[1350px] m-auto px-10 sm:px-0"
+      >
+        <div class="ml-2">
+          <a href="/"
+            ><img class="max-w-44" src="../../img/logo-company.png" alt="logo"
+          /></a>
+        </div>
+        <ul
+          class="hidden sm:flex flex-col sm:flex-row text-white text-lg  font-medium nav-links padding-nav-links mr-3"
+        >
+          <li><a href="/">Home</a></li>
+          <li><a class="active" href="../courses/index.html">Courses</a></li>
+          <li><a href="../blogs/index.html">Blogs</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+        <!-- Hidden Hamburger Menu -->
+        <button class="sm:hidden" id="menu-btn">
+          <i class="text-white text-2xl fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <ul
+        class="hidden sm:hidden flex flex-col relative justify-center bg-white shadow-lg"
+        id="menu-ham"
+      >
+        <li>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#">Home</a>
+        </li>
+        <li>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+            >Courses</a
+          >
+        </li>
+        <li>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+            >Blogs</a
+          >
+        </li>
+        <li>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+            >Login</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Course Section -->
+    <section class="cursor-default">
+      <div class="h-full bg-gradient-to-t from-codroid_purple pt-36 pb-20">
+        <div
+          class="container m-auto w-[450px] sm:w-[800px] lg:[1000px] xl:w-[1250px] 2xl:w-[1320px]"
+        >
+          <div class="flex flex-col-reverse xl:flex-row gap-10">
+            <div class="flex flex-col justify-center gap-5 text-gray-800">
+
+              <div class="hidden md:flex md:text-sm font-medium mb-16 items-center gap-3">
+                <a class="hover:underline" href="#">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <a class="hover:underline" href="#">Courses</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <a class="hover:underline" href="#">Game Development</a>
+              </div>
+
+              <div class="flex flex-col gap-3 text-center xl:text-start">
+                <h2 class="text-3xl md:text-5xl font-medium">
+                  Machine Learning & IoT
+                </h2>
+                <p class="text-md md:text-lg font-medium text-gray-700">
+                  Master Python By Building 100 projects in 100 Days. Learn Data
+                  Science Automation, Build Websites, Games and Apps!
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 items-center xl:items-start">
+                <div class="flex gap-2 items-center text-gray-700 font-medium">
+                  <div class="relative flex gap-2">
+                    <p>4.8</p>
+                    <div
+                      class="absolute flex gap-1 text-sm text-amber-400 start-8 top-[3px]"
+                    >
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 ml-28 items-center text-sm">
+                    <p
+                      class="py-2 px-4 text-md bg-white bg-opacity-10 rounded-full text-white font-normal text-opacity-80"
+                    >
+                      388,602 ratings
+                    </p>
+                    <p class="font-medium text-md">1,294,956 students</p>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-800 font-medium">
+                  Created by <a class="underline" href="#">CodroidHub</a>
+                </p>
+                <div class="flex gap-4 text-gray-800 font-medium mt-2">
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p class="text-sm">Last updated 06/2024</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-globe"></i>
+                    <p class="text-sm">English</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="place-self-center max-w-[400px] max-w-[400px] md:max-w-[500px] md:min-w-[500px] h-full overflow-hidden rounded-2xl h-full shadow-xl"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="../../img/courses/game-development.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 py-10">
+        <div
+          class="container m-auto w-[450px] sm:w-[800px] lg:w-[1000px] xl:w-[1250px] 2xl:w-[1320px]"
+        >
+          <!-- Left Section -->
+          <div class="flex flex-col lg:flex-row gap-10">
+            <div class="flex flex-col gap-10">
+              <div
+                class="flex flex-col gap-5 p-10 bg-white shadow-xl rounded-xl leading-7"
+              >
+                <h2
+                  class="font-medium text-2xl text-gray-800 border-b border-1 border-slate-200 pb-5"
+                >
+                  What You'll Learn
+                </h2>
+                <p class="text-gray-700">
+                  The “Machine Learning & IoT” course provides a comprehensive
+                  understanding of the integration of Machine Learning (ML)
+                  techniques with Internet of Things (IoT) technologies. The
+                  course explores how ML algorithms can be applied to IoT data
+                  to extract valuable insights, make informed decisions, and
+                  enable intelligent automation in various domains.
+                </p>
+                <div class="mt-5">
+                  <ul
+                    class="grid grid-cols-1 md:grid-cols-2 details-list text-gray-700 gap-x-10 gap-y-4"
+                  >
+                    <li>
+                      Understanding of Machine Learning (ML) and Internet of
+                      Things (IoT) Technologies
+                    </li>
+                    <li>IoT Data Acquisition and Preprocessing</li>
+                    <li>Machine Learning Fundamentals</li>
+                    <li>ML Models for IoT</li>
+                    <li>Security and Privacy in ML-based IoT Systems</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Copy From here -->
+              <div
+                class="flex flex-col gap-5 p-10 bg-white shadow-xl rounded-xl"
+              >
+                <h2 class="font-medium text-lg text-gray-800">
+                  Course Content
+                </h2>
+                <div
+                  class="group flex justify-between border-b border-slate-200 py-3 cursor-pointer"
+                  id="firstDetailSection"
+                >
+                  <p class="text-gray-700">
+                    Basics of Machine Learning<span
+                      class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >1hr 40min</span
+                    >
+                  </p>
+                  <button
+                    class="text-gray-700 group-hover:text-codroid_purple"
+                    id="firstSectionBtn"
+                  >
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+
+                <!-- Sub Section -->
+                <div
+                  class="hidden flex flex-col gap-5"
+                  id="firstSectionDetails"
+                >
+                  <div class="flex justify-between text-sm">
+                    <div class="flex items-center text-gray-700 gap-3">
+                      <i class="fa-regular fa-circle-play"></i>
+                      <p>Course Intro</p>
+                    </div>
+                    <div class="hidden md:flex items-center gap-5">
+                      <p>30 min</p>
+                      <a href="#"
+                        ><span
+                          class="text-sm text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                          ><i class="fa-regular fa-eye"></i> Preview</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between text-sm">
+                    <div class="flex items-center text-gray-700 gap-3">
+                      <i class="fa-regular fa-circle-play"></i>
+                      <p>Watch Before Start</p>
+                    </div>
+                    <div class="hidden md:flex items-center gap-5">
+                      <p>0.5 min</p>
+                      <a href="#"
+                        ><span
+                          class="text-sm text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                          ><i class="fa-regular fa-eye"></i> Preview</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between text-gray-700 text-sm">
+                    <div class="relative flex flex-col">
+                      <h2 class="text-xl font-medium">₹5,040.00</h2>
+                      <h3
+                        class="text-sm text-gray-500 line-through"
+                      >
+                        ₹7,200.00
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex justify-between border-b border-slate-200 py-3 flex-wrap"
+                >
+                  <p class="text-gray-700">
+                    Machine Learning in Depth<span
+                      class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >40min</span
+                    >
+                  </p>
+                  <button>
+                    <i class="text-gray-700 fa-solid fa-plus"></i>
+                  </button>
+                </div>
+                <div
+                  class="flex justify-between border-b border-slate-200 py-3"
+                >
+                  <p class="text-gray-700">
+                    Introduction to IoT<span
+                      class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >2hrs</span
+                    >
+                  </p>
+                  <button>
+                    <i class="text-gray-700 fa-solid fa-plus"></i>
+                  </button>
+                </div>
+                <div
+                  class="flex justify-between border-b border-slate-200 py-3"
+                >
+                  <p class="text-gray-700">
+                    Machine Learning integration with AI<span
+                      class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >1hr 15min</span
+                    >
+                  </p>
+                  <button>
+                    <i class="text-gray-700 fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Materials Include -->
+              <div
+                class="flex flex-col gap-5 p-10 bg-white shadow-xl rounded-xl leading-7"
+              >
+                <h2
+                  class="font-medium text-2xl text-gray-800 border-b border-1 border-slate-200 pb-5"
+                >
+                  Material Includes
+                </h2>
+                <div class="mt-5">
+                  <ul
+                    class="grid grid-cols-1 md:grid-cols-2 details-list text-gray-700 gap-x-10 gap-y-4"
+                  >
+                    <li>Course Textbooks and Reference Materials</li>
+                    <li>Lecture Slides</li>
+                    <li>Hands-on Exercises and Projects</li>
+                    <li>Case Studies and Real-world Examples</li>
+                    <li>Supplemental Readings and Resources</li>
+                    <li>Assessment Materials</li>
+                  </ul>
+
+                  <!-- Requirements -->
+                  <div>
+                    <h2
+                      class="font-medium text-2xl text-gray-800 border-b border-1 border-slate-200 pb-5 mt-16"
+                    >
+                      Requirements
+                    </h2>
+                    <div class="mt-5">
+                      <ul
+                        class="grid grid-cols-1 md:grid-cols-2 details-list text-gray-700 gap-x-10 gap-y-4"
+                      >
+                        <li>
+                          Basic understanding of blockchain technology and its
+                          fundamental concepts.
+                        </li>
+                        <li>
+                          Familiarity with cybersecurity principles and
+                          practices.
+                        </li>
+                        <li>
+                          Knowledge of cryptographic concepts, such as
+                          encryption, digital signatures, and hash functions.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Audience -->
+                  <div>
+                    <h2
+                      class="font-medium text-2xl text-gray-800 border-b border-1 border-slate-200 pb-5 mt-16"
+                    >
+                      Audience
+                    </h2>
+                    <div class="mt-5">
+                      <ul
+                        class="grid grid-cols-1 md:grid-cols-2 details-list text-gray-700 gap-x-10 gap-y-4"
+                      >
+                        <li>Cryptocurrency and Blockchain Enthusiasts</li>
+                        <li>Cybersecurity Professionals</li>
+                        <li>Blockchain Developers and Engineers</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Instructor -->
+              <div
+                class="flex flex-col gap-5 p-10 bg-white shadow-xl rounded-xl leading-7"
+              >
+                <!-- Intro Section -->
+                <div class="flex flex-col gap-5">
+                  <h2
+                    class="font-medium text-2xl text-gray-800 border-b border-1 border-slate-200 pb-5"
+                  >
+                    Instructor
+                  </h2>
+                  <div class="flex flex-col gap-10 xl:flex-row">
+                    <img
+                      class="w-44 rounded-full place-self-center xl:place-self-start"
+                      src="../../img/team-3.jpg"
+                      alt="team-3"
+                    />
+                    <div class="flex flex-col text-gray-700 gap-2">
+                      <h2 class="text-xl font-bold text-center xl:text-start">William Anderson</h2>
+                      <p class="text-md font-medium text-center xl:text-start">Advanced Educator</p>
+                      <div class="flex flex-col sm:flex-row gap-4 items-center text-sm font-medium justify-center xl:justify-start">
+                        <div class="flex gap-2 items-center">
+                          <i class="text-amber-400 fa-solid fa-star"></i>
+                          <p>75,254 Review</p>
+                        </div>
+
+                        <p
+                          class="py-1 px-3 text-codroid_purple bg-codroid_purple_transparent_time rounded-sm"
+                        >
+                          4.4 Rating
+                        </p>
+
+                        <div class="flex gap-2 items-center">
+                          <i class="fa-solid fa-users"></i>
+                          <p>158,557 Students</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                          <i class="fa-solid fa-video"></i>
+                          <p>20 Course</p>
+                        </div>
+                      </div>
+                      <p class="text-sm leading-6 mt-2 text-center xl:text-start">
+                        William is Brilliant Educator. Whose Life Was Spent For
+                        Computer Science And Lover Of Nature.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Instructor Social Links -->
+                <div class="flex gap-5 justify-center">
+                  <a href="#"
+                    ><i
+                      class="bg-gray-100 text-gray-700 px-4 py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="bg-gray-100 text-gray-700 px-4 py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="bg-gray-100 text-gray-700 px-4 py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="bg-gray-100 text-gray-700 px-[17px] py-4 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Section -->
+            <div
+              class="sticky top-24 flex flex-col min-w-[350px] max-h-[800px] bg-white shadow-xl rounded-xl ring ring-1 ring-codroid_purple overflow-hidden"
+            >
+              <div class="p-10">
+                <div class="flex gap-2 items-center justify-between">
+                  <div class="relative flex gap-2 items-center">
+                    <h2 class="text-3xl font-medium">$72</h2>
+                    <h3
+                      class="absolute text-md text-gray-500 line-through start-16 bottom-[1px]"
+                    >
+                      $150
+                    </h3>
+                  </div>
+                  <p
+                    class="text-xs text-amber-500 font-bold py-2 px-3 bg-[#f59f0b15] rounded-sm"
+                  >
+                    <i class="mr-1 fa-regular fa-clock"></i>3 Days Left
+                  </p>
+                </div>
+                <div class="flex flex-col gap-5 mt-5">
+                  <button
+                    class="bg-codroid_purple py-4 font-medium rounded-full border border-1 border-codroid_purple text-white text-sm hover:bg-codroid_hover_purple transition ease-in-out duration-[0.4s]"
+                  >
+                    Add To Cart
+                  </button>
+                  <button
+                    class="bg-white py-4 font-medium text-codroid_purple rounded-full text-sm border border-1 border-codroid_purple hover:bg-violet-100 transition ease-in-out duration-[0.4s]"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+
+                <div class="grid grid-rows-5 pt-10">
+                  <div
+                    class="flex justify-between border-b border-1 border-slate-200 pb-3 mb-5"
+                  >
+                    <p class="text-sm font-medium text-gray-700">Total Time</p>
+                    <span
+                      class="ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >4hrs 40min</span
+                    >
+                  </div>
+
+                  <div
+                    class="flex justify-between border-b border-1 border-slate-200 pb-3 mb-5"
+                  >
+                    <p class="text-sm font-medium text-gray-700">Enrolled</p>
+                    <span
+                      class="ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >100</span
+                    >
+                  </div>
+
+                  <div
+                    class="flex justify-between border-b border-1 border-slate-200 pb-3 mb-5"
+                  >
+                    <p class="text-sm font-medium text-gray-700">Lectures</p>
+                    <span
+                      class="ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >10</span
+                    >
+                  </div>
+
+                  <div
+                    class="flex justify-between border-b border-1 border-slate-200 pb-3 mb-5"
+                  >
+                    <p class="text-sm font-medium text-gray-700">Skill Level</p>
+                    <span
+                      class="ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >Basic</span
+                    >
+                  </div>
+
+                  <div
+                    class="flex justify-between border-b border-1 border-slate-200 pb-3 mb-5"
+                  >
+                    <p class="text-sm font-medium text-gray-700">Langugage</p>
+                    <span
+                      class="ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                      >English</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col bg-slate-100 px-10 gap-5 py-5 h-full justify-center"
+              >
+                <p class="text-xs text-gray-500 font-medium text-center">
+                  For Detail about the Course
+                </p>
+                <button
+                  class="group bg-codroid_purple_transparent_time py-4 font-medium rounded-full border border-2 border-white text-codroid_purple text-sm hover:bg-codroid_hover_purple hover:text-white transition ease-in-out duration-[0.4s] shadow-lg"
+                >
+                  <i
+                    class="text-codroid_purple group-hover:text-white mr-4 transition ease-in-out duration-[0.4s] fa-solid fa-phone"
+                  ></i>
+                  Call Us: +1234567890
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container m-auto w-[450px] sm:w-[800px] xl:w-[1320px]"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 cursor-default">
+      <div
+        class="flex flex-col-reverse xl:flex-row items-center justify-center xl:items-start xl:justify-between w-full lg:w-[1000px] xl:w-[1350px] m-auto py-10 sm:gap-10"
+      >
+        <div class="flex flex-col items-center xl:items-start gap-1 mt-5">
+          <div class="max-w-[200px]">
+            <img class="w-auto" src="../../img/logo-company.png" />
+          </div>
+          <div
+            class="flex flex-col sm:items-center xl:items-start text-sm text-white gap-2 max-w-full xl:max-w-xs"
+          >
+            <p class="text-center xl:text-start">
+              Flat No. K-401 NTPC Shanti Vihar – Khajpura, Patna – Bihar, India
+              – 800014
+            </p>
+            <p class="text-center xl:text-start">
+              Operational: Ambala, Mohali, Kurukshetra, Noida
+            </p>
+            <p class="text-center xl:text-start">
+              Nepal: Kathmandu, Birendranagar
+            </p>
+          </div>
+          <div class="flex gap-3 mt-4">
+            <a href="#"
+              ><i
+                class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="bg-gray-100 text-gray-700 px-[9px] py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Quick Links
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="/">Home</a></li>
+              <li><a href="../courses/index.html">Courses</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Services
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Cyber Security</a></li>
+              <li><a href="#">Blockchain</a></li>
+              <li><a href="#">AI and ML</a></li>
+              <li><a href="#">Product Design</a></li>
+              <li><a href="#">Quality Assurance</a></li>
+              <li><a href="#">Data Science</a></li>
+              <li><a href="#">Cloud Computing</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Account
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="#">Manage Account</a></li>
+              <li><a href="#">Login to Student Portal</a></li>
+              <li><a href="#">Create an Account</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Others
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="../blogs/index.html">Blogs</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-8 border-t border-1 border-slate-600">
+        <p class="flex justify-center text-xs text-white">
+          Copyright © 2024 CodroidHub.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      let firstSection = false
+
+      document
+        .getElementById('firstDetailSection')
+        .addEventListener('click', () => {
+          console.log('Hello There!')
+          if (firstSection) {
+            document
+              .getElementById('firstSectionDetails')
+              .classList.add('hidden')
+            document.getElementById('firstSectionBtn').innerHTML =
+              '<i class="fa-solid fa-plus"></i>'
+            firstSection = false
+          } else {
+            document
+              .getElementById('firstSectionDetails')
+              .classList.remove('hidden')
+            document.getElementById('firstSectionBtn').innerHTML =
+              '<i class="text-codroid_purple fa-solid fa-minus"></i>'
+            firstSection = true
+          }
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 27px;
+
+  }
+  
+  .box {
+    display: flex;
+    width: max-content;
+
+    align-items: center;
+    padding: 4px 8px 4px 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 8px;
+    color: #4B4B4B;
+  }
+
+
+
+  
+  .icon {
+    margin-right: 4px;
+    font-size: 20px;
+    color: #4B4B4B;
+  }
+  
+  .text {
+    font-size: 14px;
+    font-weight: 600;
+ }
+  

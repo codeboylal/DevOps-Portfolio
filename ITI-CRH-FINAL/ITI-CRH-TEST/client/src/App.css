@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=TT Hoves:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent; /* Removes blue highlight on tap */
+  -webkit-touch-callout: none; /* Prevents callout (e.g., long press menu on iOS) */
+  user-select: none; 
+}
+
+body{
+  font-family: 'TT Hoves', sans-serif;
+  overflow: hidden;
+  /* background-color: rgba(159, 159, 159, 0.040); */
+  background-color: white;
+}
+
+button{
+  font-family: 'TT Hoves', sans-serif;
+}
+
+/* @media (max-width: 900px){
+  html{
+    font-size: 70%;
+  }
+} */
+
+img {
+  pointer-events: none; /* Disables interactions */
+  -webkit-user-drag: none; /* Prevents dragging in Safari */
+  user-select: none; /* Prevents selection */
+  -webkit-touch-callout: none; /* Disables long-press menu in iOS */
+}

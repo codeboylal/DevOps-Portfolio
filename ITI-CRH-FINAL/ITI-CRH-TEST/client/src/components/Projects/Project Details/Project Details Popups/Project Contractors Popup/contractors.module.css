@@ -1,0 +1,166 @@
+.container {
+  width: 505px;
+  /* max-width: 530px; */
+  /* height: 460px; */
+  height: 487px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 22px;
+  /* font-family: Arial, sans-serif; */
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 16px; */
+  color: #000;
+  font-weight: 600;
+  border-bottom: 1px solid #E4E4E4;
+  padding-bottom: 14px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  /* margin-top: 32PX; */
+
+
+ 
+}
+
+.editButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.detailRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #E4E4E4;
+  padding-bottom: 14px;
+}
+
+.brRemove{
+  border-bottom: none !important;
+}
+
+.icon {
+  /* width: 20px; */
+  /* height: 20px; */
+  margin-right: 12px;
+}
+
+.label {
+  font-weight: 500;
+  flex: 1;
+  color: #555;
+  font-size: 16px;
+  white-space: nowrap
+}
+
+/* .value {
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+} */
+
+.value {
+  width: 200px;
+  text-align: right;    
+  /* padding-right: 30px;    */
+  /* overflow: hidden;      */
+  /* white-space: nowrap;    */
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+  word-wrap: break-word; /* Allow the text to wrap onto a new line if it overflows */
+  /* overflow: visible; */
+  overflow-wrap: break-word;
+  display: block;
+}
+
+
+/* Hide the collapse button on large screens */
+/* .collapseButton { */
+/* display: none; */
+/* } */
+@media (max-width: 1400px) {
+  .container{
+    width: 100%;
+    /* width: 780px; */
+    /* height: 100%; */
+   
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container{
+    height: auto;
+  }
+.collapseButton {
+  display: block;  /* Show button on small screens */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.collapseIcon {
+  width: 24px;
+  height: 24px;
+  transform: rotate(0deg);  /* You can animate the rotation if you like */
+}
+
+}
+
+.detailRow {
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+}
+
+.value {
+flex-grow: 1;
+text-align: right;
+/* padding-right: 30px; */
+width: 300px;
+}
+.collapseButton {
+  width: 100%;
+  background-color: #e5e5e5;
+  border: none;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.arrowIcon {
+font-size: 20px;
+color: black;
+}
+
+
+
+@media (min-width: 1725px){
+  .container{
+    width:100%;
+  }
+}
+

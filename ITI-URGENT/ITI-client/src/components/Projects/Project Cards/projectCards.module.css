@@ -1,0 +1,109 @@
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #0E0E0F0D;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    font-family: Arial, sans-serif;
+    height: 310px;
+    width: 348px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 22px;
+  }
+  
+  .projectNumber {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .status {
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+  }
+  
+  .status.inprogress {
+    background-color: #ffd700;
+    color: #000;
+  }
+  
+  .favoriteButton {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .favoriteButton:hover {
+    color: #000;
+  }
+  
+  .address {
+    margin: 12px 0;
+    font-size: 16px;
+    color: #555;
+    white-space: pre-wrap;
+  }
+
+  .addressContainer {
+    margin-top: 14px;
+    width: 304px; 
+    height: 60px;
+    padding: 10px 8px; 
+    gap: 10px; 
+    border-radius: 4px 4px 4px 4px; 
+    border: 0.5px solid #ABABAB; 
+    opacity: 1; 
+    display: flex; 
+    align-items: center; 
+    background-color: #0E0E0F0D; 
+  }
+  
+  
+  .details {
+    margin-top: 15px;
+  }
+  
+  .detailItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0; 
+  }
+  
+  .label {
+    font-size: 16px;
+    color: #000000;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center; /* Center the icon and text vertically */
+    gap: 10px; /* Space between the icon and the label text */
+  }
+  
+
+  
+  .value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .icon{
+    height: 18px;
+    width: 18px;
+  }

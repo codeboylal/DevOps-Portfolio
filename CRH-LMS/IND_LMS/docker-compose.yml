@@ -1,0 +1,37 @@
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: lms-client
+    ports:
+      - 8066:3000
+    restart: unless-stopped
+    environment:
+      - BASEURL=${BASEURL}
+    networks:
+      - lms-test-network
+    depends_on:
+      - server
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: lms-server
+    restart: unless-stopped
+    environment:
+      - PORT=${PORT}
+      - Client_URL=${Client_URL}
+      - MY_SECRET_KEY=${MY_SECRET_KEY}
+      - BASEURL=${BASEURL}
+      - Mongo_URL=${Mongo_URL}
+
+    ports:
+      - 8077:8000
+    networks:
+      - lms-test-network
+
+networks:
+  lms-test-network:
+    driver: bridge

@@ -1,0 +1,42 @@
+.pointer{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alignCenter{
+    align-items: center;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+
+.gap24px{
+    gap: 1.5rem;
+}
+
+.backDiv{
+    border-radius: 50%;
+    width: 2.625rem;
+    height: 2.625rem;
+    background-color: #FFFFFF;
+}
+
+.moduleDiv{
+    background-color: #686868;
+    padding: .5rem 1rem;
+    border-radius: .3125rem;
+    width: 7.5rem;
+    /* height: 1.8125rem; */
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.activeModule{
+    background-color: #FF702D;
+}

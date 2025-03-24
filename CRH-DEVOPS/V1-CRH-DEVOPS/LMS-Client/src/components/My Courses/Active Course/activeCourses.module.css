@@ -1,0 +1,36 @@
+.allCoursesContainer {
+    display: flex;
+    width: 1228px;
+    /* width:100%; */
+    align-items: center;
+    justify-content: center;
+ 
+
+  }
+
+ 
+  .courseGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    row-gap: 24px; 
+    column-gap: 24px;
+    padding: 20px;
+    width: 100%;
+    /* margin-left: 200px; */
+    padding-left: 300px;
+    padding-top: 150px;
+
+  }
+  
+  @media (max-width: 1024px) {
+    .courseGrid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .courseGrid {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  

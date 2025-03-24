@@ -1,0 +1,169 @@
+.pointer {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.gap24px {
+    gap: 1.5rem;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.width23 {
+    width: 23.625rem;
+}
+
+.width48 {
+    width: 48.8125rem;
+}
+
+.container1p {
+    color: #767676;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.gap14px {
+    gap: .875rem;
+}
+
+.gap12px {
+    gap: .75rem;
+}
+
+.learnLabels {
+    color: #41475E;
+}
+
+.imgDes {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.instructor {
+    border-bottom: .5px solid #D8D8D8;
+    padding-bottom: .75rem;
+}
+
+.paddingTop {
+    padding-top: .75rem;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.instructorName {
+    font-size: 1.125rem;
+    line-height: 50%;
+    color: #4B4B4B;
+}
+
+.instructorPost {
+    line-height: 0%;
+    font-size: .75rem;
+    color: #7A7E86;
+}
+
+.courseImg {
+    border-radius: .625rem;
+    width: 5.5625rem;
+    height: 3.3125rem;
+}
+
+.moduleData {
+    /* justify-content: space-between; */
+    gap: .25rem;
+    width: 100%;
+}
+
+.moduleName {
+    color: #001220;
+    font-size: 1rem;
+}
+
+.moduleCount {
+    color: #767676;
+    font-weight: 500;
+    font-size: .75rem;
+}
+
+.moduleDuration {
+    color: #1D963F;
+    font-size: .75rem;
+}
+
+.module {
+    padding: .8rem 1.5rem .8rem 1.5rem;
+}
+
+.module:hover {
+    background-color: #FFF7F3;
+}
+
+.redirectNone {
+    display: none;
+}
+
+.module:hover .redirectShow {
+    display: block;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.childrenPadding {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.paddingTopList {
+    padding-top: .75rem;
+}
+
+.moduleBorderRadius {
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+
+
+/* Media Queries */
+
+@media(max-width:851px){
+    .mainDiv{
+        flex-direction: column;
+    }
+    .rightDiv{
+        flex-direction: row ;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .leftDiv{
+        width: 100%;
+    }
+    #fullWidth{
+        width: 100%;
+    }
+}
+
+@media(max-width:701px){
+    .rightDiv{
+        flex-direction: column ;
+    }
+}

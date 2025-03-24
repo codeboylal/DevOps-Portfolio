@@ -1,0 +1,132 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9; /* Light background */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Spacing inside the card */
+  /* width: 100%; */
+  width: 530px; /* Full width */
+  height: 142px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* font-family: "Arial", sans-serif; */
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.projectTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212121; /* Darker text color */
+  display: flex;
+  justify-content: space-between;
+}
+
+.numberNone{
+  margin-left: 5px;
+
+}
+
+.status {
+  height: 34px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      padding: 4px 12px;
+      border-radius: 40px;
+      font-size: 14px;
+      font-weight: 500;
+      /* text-transform: uppercase; */
+      text-transform: capitalize;
+      color: #000;
+}
+
+.status.inprogressStatus  {
+  background-color: rgb(245, 212, 81); /* Yellow for "In Progress" */
+  color: black;
+}
+
+.status.completed {
+  background-color: rgb(81, 206, 96); /* Green for "Completed" */
+  color: white;
+}
+
+.status.onhold {
+  background-color: #000000;
+}
+
+
+.favoriteButton{
+  margin-right: 15px;
+}
+
+
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.addressContainer {
+  /* margin-top: 14px; */
+  width: 530px; 
+  height: 60px; 
+  /* padding: 10px 8px; */
+  gap: 10px;
+  border-radius: 4px;
+  /* border: 0.5px solid #ABABAB; */
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  /* background-color: #0E0E0F0D; */
+  overflow: hidden; /* Ensure the content doesn't overflow the container */
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #757575; /* Muted icon color */
+}
+
+
+@media (min-width: 1725px){
+  .card{
+    width:100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .card{
+    width: 100%;
+    /* width: 780px; */
+
+  }
+}
+@media (max-width: 1300px) {
+  .card{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(max-width:430px){
+  .numberNone{
+    display: none;
+  }
+}
+
+@media (max-width: 901px){
+  .favoriteButton{
+    display: none;
+  }
+}

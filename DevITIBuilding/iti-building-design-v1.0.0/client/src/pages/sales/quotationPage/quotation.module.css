@@ -1,0 +1,58 @@
+
+.headText{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.btn1{
+    padding: 12px 20px 12px 20px;
+}
+
+.flex{
+    display: flex;
+    gap: 20px;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+
+.justifyBetween{
+    justify-content: space-between;
+}
+
+.quoteContainer{
+    padding: 15px 17px;
+    margin-top: 25px;
+    border-radius: 18px;
+}
+
+.p{
+    padding: 13px 20px;
+}
+
+.check{
+    padding:13px 20px 0px 20px
+}
+
+.innerPadding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tableMargin{
+    margin-top: 65px;
+}
+
+.tableInnerMargin{
+    padding-top: 30px;
+}
+
+.th{
+    font-weight: 500;
+}

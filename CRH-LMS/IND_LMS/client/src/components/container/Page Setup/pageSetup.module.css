@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.alignCenter{
+    align-items: center;
+}
+
+.widthFull{
+    width: 100%;
+}
+
+.gap16px{
+    gap: 1rem;
+}
+
+.contentDiv{
+    height: 100vh;
+}
+
+.childrenDiv{
+    max-width: 70.5rem;
+    width: 100%;
+    min-height: calc(100vh - 7.5rem);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px){
+    .sideBarDiv{
+        display: none;
+    }
+}

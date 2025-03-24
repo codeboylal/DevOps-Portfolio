@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+  }
+  
+  .backButton {
+    color: #5f5f5f;
+    min-width: 0;
+    /* padding: 0.5rem; */
+    /* background-color: #f5f5f5; */
+    border-radius: 50%;
+  }
+  
+  .moduleButtons {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+  }
+  
+  .moduleButton {
+    background-color: #5f5f5f;
+    color: white;
+    text-transform: none;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+  }
+  
+  .active {
+    background-color: #ff6a00;
+  }
+  
+  .circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    color: #4B4B4B;
+    height: 24px;
+    border: 1px solid #4B4B4B;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

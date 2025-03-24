@@ -1,0 +1,89 @@
+
+# services:
+#   client:
+#     container_name: client-container
+#     build:
+#       context: ./LMS-Client
+#       dockerfile: Dockerfile
+#     ports:
+#       - "3000:80" 
+#     deploy:
+#       resources:
+#         limits:
+#           cpus: "1.0"
+#           memory: "512M"
+#     depends_on:
+#       - server
+#     networks:
+#       - lms-networks 
+
+#   server:
+#     container_name: server-container
+#     build:
+#       context: ./LMS-Server
+#       dockerfile: Dockerfile
+#     ports:
+#       - "5000:5000" 
+#     env_file:
+#       - ./LMS-Server/.env 
+#     environment:
+#       - MONGODB_URI=${MONGODB_URI} 
+#       - JWT_SECRET=${JWT_SECRET}
+#     deploy:
+#       resources:
+#         limits:
+#           cpus: "1.0"
+#           memory: "2048M"
+#     networks:
+#       - lms-networks
+
+# networks:
+#   lms-networks:
+#     driver: bridge
+
+
+
+
+
+#V2
+# docker-compose.yml for LMS Project
+
+services:
+  client:
+    container_name: lms-client
+    build:
+      context: ./LMS-Client
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - /etc/nginx/certs:/etc/nginx/certs
+    networks:
+      - lms-network
+    restart: always
+
+  server:
+    container_name: lms-server
+    build:
+      context: ./LMS-Server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - JWT_SECRET=${JWT_SECRET}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+    networks:
+      - lms-network
+    restart: always
+
+networks:
+  lms-network:
+    driver: bridge
+
+volumes:
+  nginx-certs:
+

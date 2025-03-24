@@ -1,0 +1,28 @@
+
+services:
+  client:
+    container_name: jp-client-container
+    build:
+      context: ./CareerPad-client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    networks:
+      - app-network
+
+  server:
+    container_name: jp-server-container
+    build:
+      context: ./JobSphere-Server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - NODE_ENV=production
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

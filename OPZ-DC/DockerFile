@@ -1,0 +1,59 @@
+# Creates an image from Docker Hub PHP:8.3
+FROM php:8.3-fpm
+
+# Set working directory
+WORKDIR /var/www
+
+# Define consistent user and group values
+ARG user=sagun
+ARG uid=1003
+ARG gid=1003
+
+# Installs necessary packages
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    unzip \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install necessary PHP extensions
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+
+# Install composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Create group with specific GID
+RUN groupadd -g $gid $user || true
+
+# Create user with specific UID and GID
+RUN useradd -u $uid -g $gid -ms /bin/bash $user || true
+
+# Add user to www-data group for proper permissions
+RUN usermod -a -G www-data $user
+
+# Create entrypoint script
+RUN echo '#!/bin/bash\n\
+# Fix permissions on container start\n\
+find /var/www -type f -exec chmod 644 {} \\;\n\
+find /var/www -type d -exec chmod 755 {} \\;\n\
+chown -R sagun:www-data /var/www/storage /var/www/bootstrap/cache\n\
+chmod -R ug+rwx /var/www/storage /var/www/bootstrap/cache\n\
+\n\
+# Execute the main command\n\
+exec "$@"\n' > /usr/local/bin/docker-entrypoint.sh
+
+# Make the entrypoint script executable
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+# Set the entrypoint
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+
+# Expose port for PHP-FPM
+EXPOSE 9000
+
+# Run PHP-FPM
+CMD ["php-fpm"]

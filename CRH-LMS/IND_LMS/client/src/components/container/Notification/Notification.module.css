@@ -1,0 +1,21 @@
+.instructorItem{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+}
+
+
+.notificationDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0px 4px 5.3px 0px #00000026;
+    width:100%;
+    height:auto;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    height: auto;
+    min-height: 20.125rem;
+}

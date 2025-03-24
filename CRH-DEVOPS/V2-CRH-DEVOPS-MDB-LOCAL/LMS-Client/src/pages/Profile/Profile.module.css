@@ -1,0 +1,56 @@
+.pointer{
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    /* background-color: red; */
+    /* padding-top: 124px; */
+  }
+  
+  .contentContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 16px; /* Gap between sidebar and content */
+    
+  }
+
+.mainDiv{
+    display:flex;
+    flex-direction:column; 
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 24px;
+    /* width: 1179px; */
+    width: 100%;
+    max-width: 1179px;
+}
+
+.BioEdu{
+    display: flex;
+    flex-direction: column;
+    /* width: 737px; */
+    width: 2000px;
+    gap: 24px;
+}
+
+
+
+
+
+
+
+
+

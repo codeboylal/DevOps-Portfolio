@@ -1,0 +1,99 @@
+.mainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    border-radius: 8px;
+    background-color: #F3F3F3;
+    min-height: 125px;
+    padding: 0px 24px;
+    margin: 0px 0px 16px 0px;
+}
+
+.email {
+    color: #71717A;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.userDiv {
+    /* max-width: 194px;
+    min-width: 140px; */
+    width: 194px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.accountTypeDiv {
+    /* max-width: 107px; */
+    /* min-width: 81px; */
+    width: 110px;
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.roleDiv {
+    /* max-width: 76px;
+    min-width: 47px; */
+    width: 76px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.permissionDiv {
+    width: 256px;
+    /* max-width: 256px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    /* min-width: 220px; */
+}
+
+.discountDiv {
+    /* max-width: 85px; */
+    /* min-width: 30px; */
+    width: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+.paymentDiv {
+    width: 90px;
+    /* max-width: 79px; */
+    /* min-width: 70px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manageDiv {
+    /* max-width: 85px; */
+    width: 72px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.emailVerifyDiv {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+@media (max-width:900px) {
+    .mainDiv {
+        margin: 0px 12px;
+    }
+}

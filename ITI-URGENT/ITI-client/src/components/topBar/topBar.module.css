@@ -1,0 +1,47 @@
+.pointer{
+    cursor: pointer;
+}
+.topBar{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 32px;
+    align-items: center;
+}
+.displayDes{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 28.27px;
+    color: #020617;
+}
+.filterDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #000000;
+}
+
+@media (max-width: 900px){
+    /* .topBar{
+        height: 30px;
+        margin-top: 0px;
+        padding-left: 15px;
+    } */
+
+    
+    .displayDes{
+        display: none;
+    }
+}
+
+
+@media (min-width: 1730px){
+    .filterDiv{
+        display: none;
+    }
+
+    
+}

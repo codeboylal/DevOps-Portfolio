@@ -1,0 +1,33 @@
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #000000;
+    font-size: 1.75rem;
+    align-items: center;
+}
+
+.innerDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bottomDiv{
+    display: flex;
+    gap: 5px;
+    color: #9999A0;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.label{
+    color:#000000;
+    text-decoration: none;
+    font-weight: bold;
+}

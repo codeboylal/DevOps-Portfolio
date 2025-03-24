@@ -1,0 +1,55 @@
+
+.tabContainer {
+    width: 100%;
+    /* margin: 20px 0; */
+    /* top: 0px; */
+    margin-bottom: 5px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .tab {
+    /* width: 100%; */
+    
+    /* border-bottom: 1px solid #4B4B4B; */
+
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4B4B4B;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .activeTab {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-bottom: none;
+  }
+  
+  .tabIndicator {
+    display: none;
+  }
+  
+  .tabContent {
+    padding: 20px;
+    background-color: white;
+    /* border: 1px solid #ddd; */
+    border-top: none;
+  }
+
+
+
+  .tabSubContainer{
+    border: 1px solid #A5A5A5;
+    background-color: white;
+    /* background-color: red; */
+    /* width: 100px; */
+  }

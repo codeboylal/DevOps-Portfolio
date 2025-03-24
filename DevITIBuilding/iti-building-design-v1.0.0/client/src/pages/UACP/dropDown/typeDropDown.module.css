@@ -1,0 +1,59 @@
+.pointer{
+    cursor: pointer;
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 26px 0px;
+    background-color: white;
+    border-radius: 6px;
+    /* min-width: 250px; */
+    /* max-width: 332px; */
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #EDEEF0;
+    position: absolute;
+    top: 0px;
+}
+
+.optionContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 150px;
+    padding: 0px 20px;
+}
+
+.arrow{
+    transform: rotate(180deg);
+}
+
+.spaceBetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.orgCancel{
+    padding: 4px 8px;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid #4B4B4B;
+    color: #4B4B4B;
+}
+
+.orgSave{
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+.inputOrg{
+    padding: 4px 8px;
+    outline: 0;
+    border: 0px;
+    border-bottom: 1px solid #4B4B4B;
+}

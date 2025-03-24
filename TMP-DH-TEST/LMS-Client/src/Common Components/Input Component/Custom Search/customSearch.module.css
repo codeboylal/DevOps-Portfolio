@@ -1,0 +1,131 @@
+/* customSearch.module.css */
+.searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-right: 11px;
+    padding-left: 20px;
+    border-radius: 18px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); For shadow effect
+     */
+
+  box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.25);
+
+    width: 685px;
+    height: 72px;
+    border-color: black;
+  }
+
+  .searchInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400px;
+    padding: 10px 12px;
+    border-radius: 25px;
+    color: #4B4B4B;
+
+  }
+  
+  .searchButton {
+    background-color: #FF702D; /* Orange color */
+    width: 157px;
+    height: 52px;
+    color: white;
+    padding: 10px 24px 10px 24px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  
+  .searchButton:hover {
+    background-color: #FF8F00; /* Slightly darker on hover */
+  }
+
+
+  .searchWithIconContainer {
+    display: flex;
+    align-items: center;
+    background-color: #EDEDED; /* Light grey background */
+    /* padding: 8px; */
+    width: 523px;
+    height: 46px;
+
+    border-radius: 15px;
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .searchIcon {
+    margin-left: 10px;
+    /* margin-top: 2px; */
+    color: #888; /* Grey color for the icon */
+    font-size: 18px;
+  }
+  
+  .searchInputWithIcon {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    /* padding: 10px 0; */
+    background-color: transparent; /* Transparent to match container */
+    flex: 1;
+  }
+  
+
+.searchWithButton{
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding-right: 11px;
+  padding-left: 20px;
+  border-radius: 18px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); For shadow effect
+   */
+
+box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.25);
+
+  width: 685px;
+  height: 72px;
+  border-color: black;
+}
+
+
+
+@media (max-width: 1300px){
+  .searchWithButton {
+    width: 600px; 
+    margin: 0 20px; 
+  }
+}
+
+
+
+
+
+
+
+  @media (max-width: 1450px){
+    .searchWithIconContainer {
+      width: 300px; /* Adjust width */
+      margin: 0 20px; /* Reduce side margins */
+    }
+  }
+
+
+@media  (max-width: 1200px),(max-width: 1350px){
+  .searchWithIconContainer {
+    width: 150px; /* Adjust width */
+    margin: 0 20px; /* Reduce side margins */
+  }
+}
+
+/* Responsive for screens up to 900px */
+@media (max-width: 1100px) ,(max-width: 900px)  {
+  .searchWithIconContainer {
+    width: 150px; /* Full width for narrow screens */
+    margin: 0 10px; /* Further reduce side margins */
+  }
+}
